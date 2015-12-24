@@ -1,6 +1,6 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var path = require('path')
 var webpack = require('webpack')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -21,21 +21,14 @@ module.exports = {
   resolve: {
     root: path.join(__dirname, 'src'),
     modulesDirectories: [
-      'bower_components',
-      'lib_cached',
-      'lib',
       'node_modules'
     ],
     alias: {
-      'material.js': path.join(__dirname, 'bower_components/material-design-lite/material.js'),
-      'material.css': path.join(__dirname, 'bower_components/material-design-lite/material.css')
+      'material.js': path.join(__dirname, 'node_modules/material-design-lite/material.js'),
+      'material.css': path.join(__dirname, 'node_modules/material-design-lite/material.css')
     }
   },
   plugins: [
-    new webpack.ResolverPlugin([
-      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(
-        ['bower.json'], ['main'])
-    ]),
     new webpack.optimize.UglifyJsPlugin({
       compress: true,
       mangle: true,
