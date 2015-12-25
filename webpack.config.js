@@ -24,8 +24,10 @@ module.exports = {
       'node_modules'
     ],
     alias: {
-      'material.js': path.join(__dirname, 'node_modules/material-design-lite/material.js'),
-      'material.css': path.join(__dirname, 'node_modules/material-design-lite/material.css')
+      'highlight.css': path.join(__dirname, 'node_modules/highlight.js/styles/monokai.css'),
+      'highlight.js': path.join(__dirname, 'node_modules/highlight.js/lib/index.js'),
+      'material.css': path.join(__dirname, 'node_modules/material-design-lite/material.css'),
+      'material.js': path.join(__dirname, 'node_modules/material-design-lite/material.js')
     }
   },
   plugins: [
