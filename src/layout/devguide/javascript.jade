@@ -1,0 +1,21 @@
+extends ../base.jade
+
+block resources 
+    script(src='../../../dest/top.bundle.js')
+    link(rel='stylesheet', type='text/css', media='screen', href='../../../dest/top.bundle.css')
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--8-col
+      :markdown
+        ```html
+        <script>
+        !function(e,t,n,c,r,u,s){e.USERDIVEObject=r,e[r]=e[r]||function(){(e[r].queue=e[r].queue||[]).push(arguments)},
+        u=t.createElement(n),s=document.getElementsByTagName(n)[0],u.async=1,u.src=c,s.parentNode.insertBefore(u,s)
+        }(window,document,"script","//harpoon3.userdive.com/static/UDTracker.js?" + new Date().getTime(),"ud");
+        ud("create", "xx-xx");
+        ud("analyze");
+        </script>
+        ```
+        
+      block tldr 

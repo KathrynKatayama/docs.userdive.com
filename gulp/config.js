@@ -6,5 +6,7 @@ module.exports = {
   app: path.join(root, 'app'),
   dist: path.join(root, 'dist'),
   root: root,
-  templates: path.join(root, 'src/template/*.jade')
+  templates: [
+    path.join(root, 'src/content/**/**/*.jade')
+  ]
 }
