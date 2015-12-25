@@ -24,7 +24,7 @@ module.exports = {
       'node_modules'
     ],
     alias: {
-      'highlight.css': path.join(__dirname, 'node_modules/highlight.js/styles/monokai.css'),
+      'highlight.css': path.join(__dirname, 'node_modules/highlight.js/styles/github.css'),
       'highlight.js': path.join(__dirname, 'node_modules/highlight.js/lib/index.js'),
       'material.css': path.join(__dirname, 'node_modules/material-design-lite/material.css'),
       'material.js': path.join(__dirname, 'node_modules/material-design-lite/material.js')
