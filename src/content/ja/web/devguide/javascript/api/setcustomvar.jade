@@ -1,0 +1,38 @@
+extends ../../../../../../layout/devguide/javascript/api/setcustomvar.jade
+
+block tldr
+  :markdown
+    ### カスタム変数
+
+    USERDIVE ではカスタム変数を独自に定義することが可能です。
+
+    ### カスタム変数にセットできる内容
+
+    カスタム変数には下記の条件があります
+
+    - 3バイト以下の UTF-8 文字列
+    - 最大 5 つまで
+    - 最大 128 文字
+
+    **一意にユーザが特定できる文字列** の設定は非推奨とさせて頂いております。
+
+    - ID
+    - 氏名
+    - メールアドレス
+
+    ### API
+
+    API は二種類提供しています。
+
+    #### 1. `create` API を利用したカスタム変数の設定
+
+    [ `create` API のドキュメント](#)を参照ください。
+
+
+block detail
+  :markdown
+    #### 2. `setCustomVar` を利用したカスタム変数の設定
+
+    `setCustomVar` は任意のタイミングで実行することが可能です
+
+    `<script>` タグ内だけではなく、任意の javascript 内より実行することが可能です
