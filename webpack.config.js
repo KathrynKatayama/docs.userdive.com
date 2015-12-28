@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     // sourceMapFilename: '[name].bundle.map',
-    path: path.join(__dirname, 'app/dest'),
+    path: path.join(__dirname, 'app/assets'),
     filename: '[name].bundle.js'
   },
   // devtool: '#source-map',

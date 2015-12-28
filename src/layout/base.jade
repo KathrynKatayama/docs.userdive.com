@@ -17,15 +17,11 @@ html
         .mdl-layout__header-row
           .mdl-layout-spacer
           nav.mdl-navigation
-            a.mdl-navigation__link(href='') Guides 
-            a.mdl-navigation__link(href='') Reference 
-            a.mdl-navigation__link(href='') Support 
+            include ./nav/link.jade
       .mdl-layout__drawer
-        span.mdl-layout-title Title
+        span.mdl-layout-title Menu
         nav.mdl-navigation
-          a.mdl-navigation__link(href='') Guides 
-          a.mdl-navigation__link(href='') Reference 
-          a.mdl-navigation__link(href='') Support 
+          include ./nav/link.jade
       main.mdl-layout__content
         .page-content
           block content
@@ -35,6 +31,8 @@ html
           .mdl-logo Uncovertruth Co., Ltd
           ul.mdl-mega-footer__link-list
             li
-              a(href='#') userdive 
+              a(href='#') Userdive
+            li
+              a(href='#') Userdive for Apps
             li
               a(href='#') Privacy & Terms
