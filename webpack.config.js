@@ -15,7 +15,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.png$/, loader: 'url-loader?mimetype=image/png' },
-      { test: /\.s?css$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap'] }
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') }
     ]
   },
   resolve: {
