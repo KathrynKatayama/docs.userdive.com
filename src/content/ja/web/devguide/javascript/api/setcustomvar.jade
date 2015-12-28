@@ -10,7 +10,7 @@ block tldr
 
     カスタム変数には下記の条件があります
 
-    - 3byte 以下の UTF-8 文字列
+    - 3バイト以下の UTF-8 文字列
     - 最大 5 つまで
     - 最大 128 文字
 
@@ -22,16 +22,17 @@ block tldr
 
     ### API
 
-    APIは二種類提供しています。
+    API は二種類提供しています。
 
-    #### 1. CREATE API を利用したカスタム変数の設定
+    #### 1. `create` API を利用したカスタム変数の設定
 
-    [CREATE API のドキュメント](#)を参照ください。
+    [ `create` API のドキュメント](#)を参照ください。
 
 
 block detail
   :markdown
-    #### 2. setCustomVar を利用したカスタム変数の設定
+    #### 2. `setCustomVar` を利用したカスタム変数の設定
 
-    **setCustomVar** は任意のタイミングで実行することが可能です
-    **<script>** タグ内だけではなく、任意の javascript 内より実行することが可能です
+    `setCustomVar` は任意のタイミングで実行することが可能です
+
+    `<script>` タグ内だけではなく、任意の javascript 内より実行することが可能です
