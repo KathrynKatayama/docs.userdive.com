@@ -1,0 +1,10 @@
+extends ../base.jade
+
+block resources 
+    script(src='../../../assets/top.bundle.js')
+    link(rel='stylesheet', type='text/css', media='screen', href='../../../assets/top.bundle.css')
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--8-col
+      block tldr
