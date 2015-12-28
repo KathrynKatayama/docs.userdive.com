@@ -15,7 +15,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.png$/, loader: 'url-loader?mimetype=image/png' },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') }
+      { test: /\.s?css$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap'] }
     ]
   },
   resolve: {
@@ -26,9 +26,14 @@ module.exports = {
     alias: {
       'highlight.css': path.join(__dirname, 'node_modules/highlight.js/styles/github.css'),
       'highlight.js': path.join(__dirname, 'node_modules/highlight.js/lib/index.js'),
-      'material.css': path.join(__dirname, 'node_modules/material-design-lite/material.css'),
+      'material.css': path.join(__dirname, 'src', 'scss', 'application.scss'),
       'material.js': path.join(__dirname, 'node_modules/material-design-lite/material.js')
     }
+  },
+  sassLoader: {
+    includePaths: [
+      path.join(__dirname, 'node_modules', 'material-design-lite', 'src')
+    ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
