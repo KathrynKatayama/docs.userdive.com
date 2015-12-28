@@ -3,7 +3,7 @@
 
 .DS_Store
 *.html
-app/dest/
+app/assets/
 
 bower_components/
 node_modules/
