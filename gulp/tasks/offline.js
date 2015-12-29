@@ -6,10 +6,10 @@ gulp.task('offline', ['build'], function () {
   return oghliner.offline({
     rootDir: 'dist/',
     fileGlobs: [
-      'images/**',
-      'index.html',
-      'scripts/**',
-      'styles/**'
+      'assets/**',
+      'en/**',
+      'ja/**',
+      'images/**'
     ]
   })
 })

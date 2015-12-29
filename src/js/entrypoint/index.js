@@ -1,3 +1,5 @@
+require('js/offline-manager')
+
 require('material.js')
 require('material.css')
 
