@@ -4,11 +4,12 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    top: path.join(__dirname, 'src/js/entrypoint/index.js')
+    top: path.join(__dirname, 'src/js/entrypoint/top.js'),
+    devguide: path.join(__dirname, 'src/js/entrypoint/devguide.js')
   },
   output: {
     // sourceMapFilename: '[name].bundle.map',
-    path: path.join(__dirname, 'app/assets'),
+    path: path.join(__dirname, 'dist/assets'),
     filename: '[name].bundle.js'
   },
   // devtool: '#source-map',
@@ -16,7 +17,15 @@ module.exports = {
     loaders: [
       { test: /\.png$/, loader: 'url-loader?mimetype=image/png' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') }
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
+      }
     ]
   },
   resolve: {
