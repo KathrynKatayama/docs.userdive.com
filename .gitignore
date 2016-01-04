@@ -2,9 +2,6 @@
 # http://creativecommons.org/publicdomain/zero/1.0/
 
 .DS_Store
-*.html
-app/assets/
-
 bower_components/
 node_modules/
 dist/

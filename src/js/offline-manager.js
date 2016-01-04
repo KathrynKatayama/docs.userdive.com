@@ -1,11 +1,11 @@
 /* Any copyright is dedicated to the Public Domain.
  * http://creativecommons.org/publicdomain/zero/1.0/ */
 
-function updateFound () {
-  var installingWorker = this.installing
+const updateFound = () => {
+  const installingWorker = this.installing
 
   // Wait for the new service worker to be installed before prompting to update.
-  installingWorker.addEventListener('statechange', function () {
+  installingWorker.addEventListener('statechange', () => {
     switch (installingWorker.state) {
       case 'installed':
         // Only show the prompt if there is currently a controller so it is not
@@ -25,7 +25,7 @@ function updateFound () {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('offline-worker.js').then(function (registration) {
+  navigator.serviceWorker.register('offline-worker.js').then((registration) => {
     console.log('offline worker registered')
     registration.addEventListener('updatefound', updateFound)
   })

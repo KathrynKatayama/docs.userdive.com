@@ -1,8 +1,8 @@
 extends ../layout/base.jade
 
 block resources 
-    script(src='./assets/top.bundle.js')
     link(rel='stylesheet', type='text/css', media='screen', href='./assets/top.bundle.css')
+    script(async, src='./assets/top.bundle.js')
 
 block content
   .mdl-grid
@@ -14,15 +14,15 @@ block content
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="")
             | How to use
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./ja/web/devguide/javascript/")
-            | How to setup 
+            | How to setup
           .mdl-layout-spacer
     .mdl-cell.mdl-cell--6-col
       .mdl-card.mdl-shadow--2dp
         .mdl-card__title.mdl-card--expand
             h4 USERDIVE FOR APPS 
         .mdl-card__actions.mdl-card--border
-          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="#")
-            | How to use 
-          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="#")
-            | How to setup 
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="")
+            | How to setup
+          a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./ja/web/devguide/javascript/")
+            | How to use
           .mdl-layout-spacer
