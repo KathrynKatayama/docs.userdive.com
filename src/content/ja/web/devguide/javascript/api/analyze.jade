@@ -1,0 +1,25 @@
+extends ../../../../../../layout/devguide/javascript/api/analyze.jade
+
+block tldr
+  :markdown
+    ### 計測を開始する
+    
+    `analyze` API を用いて、サイトの計測を開始します。  
+    `analyze` APIを実行する前に、必ず `create` API をご利用ください。
+    サイトの計測には USERDIVE のアカウント情報が必要です。
+
+    - [ `create` API について](./create.html)
+
+block detail
+  :markdown
+    上記のコードで行われる主な処理は下記の
+    
+    1. アカウント情報を USERDIVE に問い合わせし、セッションを作成する。
+    1. イベントの計測を行う。
+      - 主なイベントデータ
+        - click(tap)
+        - scroll 
+        - tap
+    1. イベントデータの送信を行う。
+    
+    送信されたイベントデータは一定時間たった後、 USERDIVE に反映されます。
