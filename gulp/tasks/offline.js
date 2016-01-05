@@ -9,7 +9,7 @@ gulp.task('offline', ['build'], function () {
       'assets/**',
       'en/**',
       'ja/**',
-      'images/**'
+      'locales/**'
     ]
   })
 })

@@ -8,7 +8,7 @@ block tldr
   
     - プロジェクト情報の設定
       - 複数プロジェクトの設定
-    - ダミーページ URL の設定
+    - 仮想ページ URL の設定
     - カスタム変数の設定
     - cookieDomainの設定
 
@@ -18,12 +18,20 @@ block multi-project
     
     複数のプロジェクト情報を登録することが可能です
 
-block dummy-page
+block virtual-page
   :markdown
-    #### ダミーページ
+    #### 仮想ページ
+
+    仮想ページの URL 設定を行う API です。
+    仮想ページは 1URL に対して 1 つ指定することが可能です。
+
+    こちらで設定した URL は、 USERIVE で分析を行う際に必要なお客様のサイト情報を取得するため、
+    USERDIVE のクローラーが `GET` リクエストでアクセスを行う際に利用されます。
+
+    エンドユーザがアクセスされる際に、トラッカーからこちらの設定された URL に対してリクエストを発行することはありません。
     
-    [ダミーページ](../../../guide/dummy.html)の設定を行う API
-  
+    [仮想ページについて](../../../guide/snapshot.html)
+
 block custom-var
   :markdown
     #### カスタム変数
