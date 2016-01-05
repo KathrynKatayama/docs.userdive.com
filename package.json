@@ -21,12 +21,8 @@
     "gulp": "^3.9.0",
     "gulp-connect": "^2.3.1",
     "gulp-jade": "^1.1.0",
-    "highlight.js": "^9.0.0",
-    "i18next": "^2.0.14",
     "jquery": "^2.1.4",
-    "jquery-i18next": "0.0.9",
     "marked": "^0.3.5",
-    "material-design-lite": "^1.0.6",
     "node-sass": "^3.4.2",
     "oghliner": "^1.0.2",
     "require-dir": "^0.3.0",
@@ -34,5 +30,11 @@
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "highlight.js": "^9.0.0",
+    "i18next": "^2.0.14",
+    "jquery-i18next": "0.0.9",
+    "material-design-lite": "^1.0.6"
   }
 }
