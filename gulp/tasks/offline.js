@@ -7,9 +7,9 @@ gulp.task('offline', ['build'], function () {
     rootDir: 'dist/',
     fileGlobs: [
       'assets/**',
+      'fonts/**',
       'en/**',
-      'ja/**',
-      'locales/**'
+      'ja/**'
     ]
   })
 })
