@@ -1,8 +1,8 @@
-extends ../layout/base.jade
+extends ../../layout/base.jade
 
 block resources 
-    link(rel='stylesheet', type='text/css', media='screen', href='./assets/top.bundle.css')
-    script(async, src='./assets/top.bundle.js')
+    link(rel='stylesheet', type='text/css', media='screen', href='../assets/top.bundle.css')
+    script(async, src='../assets/top.bundle.js')
 
 block content
   .mdl-grid
@@ -12,9 +12,9 @@ block content
             h4 USERDIVE
         .mdl-card__actions.mdl-card--border
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./web/guide/")
-            | How to use
+            | 使い方について 
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./web/devguide/javascript/")
-            | How to setup
+            | 設定について(開発者向け) 
           .mdl-layout-spacer
     .mdl-cell.mdl-cell--6-col
       .mdl-card.mdl-shadow--2dp
@@ -22,7 +22,7 @@ block content
             h4 USERDIVE FOR APPS 
         .mdl-card__actions.mdl-card--border
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./apps/guide/")
-            | How to setup
+            | 使い方について 
           a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="./apps/devguide/javascript/")
-            | How to use
+            | 設定について(開発者向け) 
           .mdl-layout-spacer
