@@ -2,6 +2,7 @@ doctype html
 html
   head
     link(rel='stylesheet', href='//fonts.googleapis.com/icon?family=Material+Icons')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     noscript
       iframe(src='//www.googletagmanager.com/ns.html?id=GTM-MQHFVQ', height='0', width='0', style='display:none;visibility:hidden')
     script.
@@ -12,7 +13,7 @@ html
       })(window,document,'script','dataLayer','GTM-MQHFVQ');
     block resources
   body
-    .mdl-layout.mdl-js-layout
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
       header.mdl-layout__header.mdl-layout__header--waterfall
         .mdl-layout__header-row
           a(href='/')
@@ -26,15 +27,15 @@ html
         .mdl-layout__header-row
           .mdl-layout-spacer
           nav.mdl-navigation
-            include ./nav/en/link.jade  
+            include ./nav/en/link.jade
       .mdl-layout__drawer
         span.mdl-layout-title Menu
         nav.mdl-navigation
-          include ./nav/en/link.jade  
+          include ./nav/en/link.jade
       main.mdl-layout__content
         .page-content
           block content
-          
+
       footer.mdl-mega-footer
         .mdl-mega-footer__bottom-section
           .mdl-logo Uncovertruth Co., Ltd
