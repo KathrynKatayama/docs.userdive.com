@@ -19,11 +19,13 @@ html
           a(href='/')
             span.mdl-layout-title Userdive Help Center
           .mdl-layout-spacer
-          .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
-            label.mdl-button.mdl-js-button.mdl-button--icon(for='waterfall-exp')
-              i.material-icons search
-            .mdl-textfield__expandable-holder
-              input#waterfall-exp.mdl-textfield__input(type='text', name='sample')
+          form(action='https://www.google.co.jp/search', target='_blank')
+            .mdl-textfield.mdl-js-textfield.mdl-textfield--expandable.mdl-textfield--floating-label.mdl-textfield--align-right
+              label.mdl-button.mdl-js-button.mdl-button--icon(for='waterfall-exp')
+                i.material-icons search
+              .mdl-textfield__expandable-holder
+                input(type='hidden', name='q', value='site:https://docs.userdive.com')
+                input#waterfall-exp.mdl-textfield__input(type='text', name='q')
         .mdl-layout__header-row
           .mdl-layout-spacer
           nav.mdl-navigation
