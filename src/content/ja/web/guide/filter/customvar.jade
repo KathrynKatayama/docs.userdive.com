@@ -1,5 +1,11 @@
-extends ../../../../../layout/guide/filter/customvar.jade
+extends ../../../../../layout/base.jade
 
-block tldr
-  :marked
-    need description
+block resources 
+    link(rel='stylesheet', type='text/css', media='screen', href='../../../../assets/docs.bundle.css')
+    script(async, src='../../../../assets/docs.bundle.js')
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--8-col
+      :marked
+        need description

@@ -4,8 +4,7 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    top: path.join(__dirname, 'src/js/entrypoint/top.js'),
-    devguide: path.join(__dirname, 'src/js/entrypoint/devguide.js')
+    docs: path.join(__dirname, 'src/js/entrypoint/docs.js')
   },
   output: {
     // sourceMapFilename: '[name].bundle.map',

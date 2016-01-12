@@ -1,42 +1,10 @@
-extends ../../../../../../layout/devguide/javascript/api/analyze.jade
+extends ../../../../../../layout/base.jade
 
-block tldr
-  :marked
-    ### 計測を開始する
-    
-    `analyze` API を用いて、サイトの計測を開始します。  
-    `analyze` APIを実行する前に、必ず `create` API をご利用ください。
-    サイトの計測には USERDIVE のアカウント情報が必要です。
+block resources
+    link(rel='stylesheet', type='text/css', media='screen', href='../../../../../assets/docs.bundle.css')
+    script(async, src='../../../../../assets/docs.bundle.js')
 
-    - [ `create` API について](./create.html)
-
-block detail
-  :marked
-    上記のコードで行われる主な処理は下記の
-    
-    1. アカウント情報を USERDIVE に問い合わせし、セッションを作成する。
-    1. 下記、イベント・ユーザ情報の計測を開始する。
-      - ユーザの環境情報: IP アドレス、ユーザーエージェントから識別可能な情報
-        - 国、地域
-        - デバイス種別
-        - OS種別
-        - ブラウザ種別
-        - 画面サイズ
-      - ユーザが表示しているページの情報
-        - 表示されている URL
-        - ブラウザのウィンドウサイズ
-        - ウェブページのサイズ
-        - ウェブページ内のリンク数
-        - ウェブページ内のフォーム数、インプット項目情報
-      - ユーザが操作したイベント情報
-        - マウスイベント (座標、クリック、ボタン情報)
-        - タップイベント (座標)
-        - デバイスの回転イベント
-        - キーボード操作イベント (キーが押されたかのみ、どのキーが押されたかは収集対象外)
-        - スクロールイベント
-        - フォームへのフォーカス、送信イベント
-        - JavaScript エラー情報
-        - 次ページヘの遷移イベント
-    1. イベントデータの送信を行う。
-    
-    送信されたイベントデータは一定時間たった後、 USERDIVE に反映されます。
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--8-col
+      include:marked ./analyze.md
