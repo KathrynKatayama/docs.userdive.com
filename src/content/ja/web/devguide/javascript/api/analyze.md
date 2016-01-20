@@ -6,12 +6,6 @@
 
 - [ `create` API について](./create.html)
 
-
-| Field   | Type   | required | Description                   |
-|:--------|:-------|:---------|:------------------------------|
-| analyze | String | Yes      | 分析開始するAPIを呼び出します |
-
-
 ```html
 <script>
 ud("analyze");
