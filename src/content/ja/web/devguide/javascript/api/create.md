@@ -1,4 +1,4 @@
-### `create` メソッド
+### `create` API
 
 USERDIVE ではトラッカーに
 
@@ -10,7 +10,7 @@ USERDIVE ではトラッカーに
 
 ```html
 <script>
-ud("create", "xx-xx");
+ud("create", [Project Id]);
 </script>
 ```
 
@@ -20,7 +20,7 @@ ud("create", "xx-xx");
 
 ```html
 <script>
-ud("create", {pc: "xx-xx", sp: "yy-yy"});
+ud("create", {pc: [Project Id2], sp: [Project Id2]});
 </script>
 ```
 
@@ -36,30 +36,34 @@ USERDIVE のクローラーが `GET` リクエストでアクセスを行う際�
 
 [仮想ページについて](../../../guide/snapshot.html)
 
-| Field       | Type   | Required | Description                                           |
-|:------------|:-------|:---------|:------------------------------------------------------|
-| overrideUrl | String | No       | クローラーがアクセスを行うURLを明示的に指定できます。 |
-
 ```html
 <script>
 ud("create", "xx-xx", {
-  "overrideUrl": "http://userdive.com"
+  "overrideUrl": [Virtual Url]
 });
 </script>
 ```
+
+| Field       | Type   | Required | Description                                           |
+|:------------|:-------|:---------|:------------------------------------------------------|
+| Virtual Url | String | No       | クローラーがアクセスを行うURLを明示的に指定できます。 |
 
 #### カスタム変数
 
 [カスタム変数の詳細](../../../guide/filter/customvar.html)
 
-| Field     | Type  | Required | Description                          |
-|:----------|:------|:---------|:-------------------------------------|
-| customVar | Array | No       | カスタム変数を５つまで指定できます。 |
-
 ```html
 <script>
 ud("create", "xx-xx", {
-  "customVar": ["foo"]
+  "customVar": [CustomVar1, CustomVar2, CustomVar3, CustomVar4, CustomVar5]
 });
 </script>
 ```
+
+| Field      | Type   | Required | Description                                                      |
+|:-----------|:-------|:---------|:-----------------------------------------------------------------|
+| CustomVar1 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar2 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar3 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar4 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar5 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |

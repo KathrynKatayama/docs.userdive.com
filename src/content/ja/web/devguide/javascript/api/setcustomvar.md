@@ -1,4 +1,4 @@
-### カスタム変数
+### setCustomVar API
 
 USERDIVE ではカスタム変数を独自に定義することが可能です。
 
@@ -6,7 +6,7 @@ USERDIVE ではカスタム変数を独自に定義することが可能です�
 
 カスタム変数には下記の条件があります
 
-- 3バイト以下の UTF-8 文字列
+- 3バイト以下の UTF-8 文字列 (`string`)
 - 最大 5 つまで
 - 最大 128 文字
 
@@ -24,13 +24,17 @@ API は二種類提供しています。
 
 [ `create` API のドキュメント](../api/create.html)を参照ください。
 
-| Field        | Type  | Required | Description                                      |
-|:-------------|:------|:---------|:-------------------------------------------------|
-| setCustomVar | Array | No       | カスタム変数を最大５つまで指定することが出来ます |
+| Field      | Type   | Required | Description                                                      |
+|:-----------|:-------|:---------|:-----------------------------------------------------------------|
+| CustomVar1 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar2 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar3 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar4 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
+| CustomVar5 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
 
 ```html
 <script>
-ud("setCustomVar", ['foo']);
+ud("setCustomVar", [CustomVar1, CustomVar2, CustomVar3, CustomVar4, CustomVar5]);
 </script>
 ```
 

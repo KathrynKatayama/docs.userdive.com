@@ -27,3 +27,12 @@ ud("analyze");
 1. 弊社の提供する JavaScript を非同期でロードする `<script>` タグを発行します。
 1. `ID` の登録を行います。 [( `create` API について)](./api/create.html)
 1. サイトの計測を開始します。 [( `analyze` API について)](./api/analyze.html)
+
+### API について
+
+USERDIVE では下記の API を利用することができます。
+
+- [`create`](./api/create.html)
+- [`analyze`](./api/analyze.html)
+- [`setcustomVar`](./api/setcustomvar.html)
+- [`changeVirtualUrl`](./api/changevirtualurl.html)
