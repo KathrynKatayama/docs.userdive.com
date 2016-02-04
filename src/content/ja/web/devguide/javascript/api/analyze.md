@@ -4,7 +4,7 @@
 `analyze` APIを実行する前に、必ず `create` API をご利用ください。
 サイトの計測には USERDIVE のアカウント情報が必要です。
 
-- [ `create` API について](./create.html)
+- [`create` API について](./create.html)
 
 ```html
 <script>

@@ -34,7 +34,13 @@ API は二種類提供しています。
 
 ```html
 <script>
-ud("setCustomVar", [CustomVar1, CustomVar2, CustomVar3, CustomVar4, CustomVar5]);
+ud("setCustomVar", [
+  "[ CustomVar1 ]",
+  "[ CustomVar2 ]",
+  "[ CustomVar3 ]",
+  "[ CustomVar4 ]",
+  "[ CustomVar5 ]"
+]);
 </script>
 ```
 

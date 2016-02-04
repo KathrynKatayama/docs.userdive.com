@@ -6,7 +6,7 @@ USERDIVE では同一のURLで動的に要素の追加を行うサイトの分�
 
 ```html
 <script>
-ud("changeVirtualUrl", [Virtual Url]);
+ud("changeVirtualUrl", "[ Virtual Url ]");
 </script>
 ```
 
@@ -21,8 +21,10 @@ ud("changeVirtualUrl", [Virtual Url]);
 - JavaScript フレームワークを利用したサイト
     - Angular.js
     - React.js
+    - Ember.js
+    - Backbone.js
+    - Vue.js
     - etc
-
 
 ### サポート外の項目
 
