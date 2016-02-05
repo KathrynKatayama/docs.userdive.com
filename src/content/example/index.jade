@@ -1,41 +1,5 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    link(rel='stylesheet', href='//fonts.googleapis.com/icon?family=Material+Icons')
+extend ../../layout/example/base.jade
+
+block resources
     link(rel='stylesheet', type='text/css', media='screen', href='../assets/docs.bundle.css')
     script(async, src='../assets/docs.bundle.js')
-    include ../../layout/gtm.jade
-  body
-    .mdl-layout.mdl-layout--fixed-header
-      header.mdl-layout__header.mdl-layout__header--waterfall
-        .mdl-layout__header-row
-          span.mdl-layout-title USERDIVE sample page
-      main.mdl-layout__content
-        form(action='#')
-          ul.mdl-list
-            li.mdl-list__item
-              .mdl-textfield.mdl-js-textfield
-                input#sample1.mdl-textfield__input(type='text')
-                label.mdl-textfield__label(for='sample1') First Name
-            li.mdl-list__item
-              .mdl-textfield.mdl-js-textfield
-                input#sample2.mdl-textfield__input(type='text')
-                label.mdl-textfield__label(for='sample2') Last Name
-            li.mdl-list__item
-              span.mdl-list__item-primary-content Example checkbox  
-              span.mdl-list__item-secondary-action
-                label.mdl-checkbox.mdl-js-checkbox.mdl-js-ripple-effect(for='checkbox-1', style='display: inline;')
-                  input#checkbox-1.mdl-checkbox__input(type='checkbox', checked='')
-
-          button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored Button
-
-        br
-        br
-        p
-          a(ref='http://validator.w3.org/check?uri=referer')
-            img(src='http://www.w3.org/Icons/valid-html401', alt='Valid HTML 4.01 Strict', height='31', width='88')
