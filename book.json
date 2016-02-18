@@ -1,6 +1,6 @@
 {
   "gitbook": "2.x.x",
-  "plugins": ["edit-link", "-highlight", "github", "-search"],
+  "plugins": ["edit-link", "-highlight", "github", "-search", "gtm"],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/uncovertruth/docs.userdive.com/tree/master",
@@ -8,6 +8,9 @@
     },
     "github": {
       "url": "https://github.com/uncovertruth/docs.userdive.com/"
+    },
+    "gtm": {
+      "token": "GTM-MQHFVQ"
     }
   }
 }
