@@ -1,6 +1,13 @@
 {
   "gitbook": "2.x.x",
-  "plugins": ["edit-link", "-highlight", "github", "-search", "gtm"],
+  "plugins": [
+    "-highlight",
+    "-search",
+    "edit-link",
+    "github",
+    "gtm",
+    "japanese-support"
+  ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/uncovertruth/docs.userdive.com/tree/master",
