@@ -1,0 +1,13 @@
+{
+  "gitbook": "2.x.x",
+  "plugins": ["edit-link", "-highlight", "github", "-search"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/uncovertruth/docs.userdive.com/tree/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/uncovertruth/docs.userdive.com/"
+    }
+  }
+}
