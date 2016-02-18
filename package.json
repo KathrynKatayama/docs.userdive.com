@@ -4,5 +4,6 @@
   "private": true,
   "description": "",
   "devDependencies": {
+    "gitbook-cli": "^1.0.1"
   }
 }
