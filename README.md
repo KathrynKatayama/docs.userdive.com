@@ -1,3 +1,20 @@
 # docs.userdive.com
 
-A template app bootstrapped with oghliner.
+## Setup
+
+```
+npm install
+gitbook install
+```
+
+## build
+
+```
+rm _book
+gitbook build
+gulp build
+```
+
+## Auther
+
+Uncovertruth Co., Ltd
