@@ -1,4 +1,4 @@
-### setCustomVar API
+### `setCustomVar` API
 
 USERDIVE ではカスタム変数を独自に定義することが可能です。
 

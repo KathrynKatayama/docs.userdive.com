@@ -10,7 +10,7 @@ gulp.task('build', function (callback) {
   var uglify = require('gulp-uglify');
 
   return gulp.src(path.join(root, '_book/**'))
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('*.js', uglify({preserveComments: 'some'})))
     .pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true})))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
