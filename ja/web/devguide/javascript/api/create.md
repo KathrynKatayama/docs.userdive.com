@@ -10,7 +10,7 @@
 
 ```html
 <script>
-ud("create", "[ Projects Id ]");
+ud("create", "[ Project Id ]");
 </script>
 ```
 

@@ -19,7 +19,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 - ページの遷移を行わず表示の要素が変化するサイト
 - Ajaxなどの非同期通信を利用したサイト
 - JavaScript フレームワークを利用したサイト
-    - Angular.js
+    - AngularJS
     - React.js
     - Ember.js
     - Backbone.js
