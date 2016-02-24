@@ -1,6 +1,6 @@
 # Welcome to USERDIVE
 
-- [ウェブ解析](./web/)
+- ウェブ解析
     - [計測開始](./web/devguide/javascript/index.md)
     - ガイド
         - [仮想ページ](./web/guide/snapshot.md)
