@@ -33,6 +33,26 @@ ud("create", {"pc": "[ Project Id 1 ]", "sp": "[ Project Id 2 ]"});
 | Project Id 1 | String | Yes      | USERDIVE のプロジェクトIDです。 |
 | Project Id 2 | String | Yes      | USERDIVE のプロジェクトIDです。 |
 
+### Encoding
+
+エンコーディングを指定することができます。
+指定されたエンコーディングを下記のものに利用し、 USERDIVE に表示します。
+
+- URL
+- カスタム変数
+
+```html
+<script>
+ud("create", "[ Project Id ]", {
+  "encoding": "[ Encoding ]"
+});
+</script>
+```
+
+| Field      | Type   | Required | Description                                       |
+|:-----------|:-------|:---------|:--------------------------------------------------|
+| Project Id | String | Yes      | USERDIVE のプロジェクトIDです。                   |
+| Encoding   | String | No       | 表示環境の文字コードを指定します。(default UTF-8) |
 
 #### 仮想ページ
 
