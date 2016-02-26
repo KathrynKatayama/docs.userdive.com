@@ -111,7 +111,7 @@ ud("create", "[ Project Id ]", {
 | `hz` | `hzgb`, `hz-gb`, `hz-gb-2312` | 簡体字中国語 |
 | `iso2022_jp` | `csiso2022jp`, `iso2022jp`, `iso-2022-jp` | 日本語 |
 | `iso2022_jp_1` | `iso2022jp-1`, `iso-2022-jp-1` | 日本語 |
-| `iso2022_jp_2` | `iso2022jp-2`, `iso-2022-jp-2` | 日本語, 韓国語, 簡体字中国語, 西欧, ギリシャ語 |
+| `iso2022_jp_2` | `iso2022jp-2`, `iso-2022-jp-2` | 日本語、韓国語、簡体字中国語、西欧、ギリシャ語 |
 | `iso2022_jp_2004` | `iso2022jp-2004`, `iso-2022-jp-2004` | 日本語 |
 | `iso2022_jp_3` | `iso2022jp-3`, `iso-2022-jp-3` | 日本語 |
 | `iso2022_jp_ext` | `iso2022jp-ext`, `iso-2022-jp-ext` | 日本語 |
