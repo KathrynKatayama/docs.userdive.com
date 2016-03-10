@@ -4,21 +4,23 @@
   "private": true,
   "description": "",
   "devDependencies": {
-    "gitbook-cli": "^1.0.1",
+    "gitbook-cli": "^2.1.2",
     "gulp": "^3.9.1",
-    "gulp-connect": "^2.3.1",
+    "gulp-connect": "^3.1.0",
     "gulp-cssnano": "^2.1.1",
     "gulp-htmlmin": "^1.3.0",
     "gulp-if": "^2.0.0",
-    "gulp-uglify": "^1.5.2",
+    "gulp-uglify": "^1.5.3",
     "require-dir": "^0.3.0",
-    "textlint": "^5.3.1",
+    "textlint": "^5.7.0",
     "textlint-plugin-jtf-style": "^1.0.1",
     "textlint-rule-max-ten": "^2.0.1",
     "textlint-rule-no-mix-dearu-desumasu": "^1.4.0",
-    "textlint-rule-spellcheck-tech-word": "^4.1.2"
+    "textlint-rule-spellcheck-tech-word": "^4.2.0"
   },
   "scripts": {
+    "clean": "rm -rf _book && rm -rf dist",
+    "build": "gitbook build && gulp build",
     "test": "npm run lint",
     "lint": "textlint ja"
   }
