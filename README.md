@@ -10,9 +10,7 @@ gitbook install
 ## build
 
 ```
-rm _book
-gitbook build
-gulp build
+npm run build
 ```
 
 ## Auther
