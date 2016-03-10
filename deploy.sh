@@ -6,8 +6,8 @@ git config --global user.name "userdive"
 gitbook install
 npm run clean
 npm run build
-cp assets/CNAME _book/CNAME
-cp assets/robots.txt _book/robots.txt
+cp assets/CNAME dist/CNAME
+cp assets/robots.txt dist/robots.txt
 cd dist
 git init
 git add -A
