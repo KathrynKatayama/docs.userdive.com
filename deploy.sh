@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 
+gitbook install
 npm run clean
 npm run build
 cp assets/CNAME _book/CNAME
