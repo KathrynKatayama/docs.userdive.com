@@ -4,6 +4,7 @@
     - [計測開始](./web/devguide/javascript/index.md)
     - ガイド
         - [仮想ページ](./web/guide/snapshot.md)
+        - [仮想ページの作成](./web/devguide/virtualpage.md)
     - フィルタ
         - [カスタム変数](./web/guide/filter/customvar.md)
     - API

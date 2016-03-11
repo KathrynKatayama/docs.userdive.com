@@ -1,2 +1,2 @@
 # USERDIVE
-Deep Data Analytics Service for Web and App.
+離脱ユーザーのすべてがわかる UX 解析ツール

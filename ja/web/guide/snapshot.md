@@ -22,7 +22,7 @@ USERDIVE では、ウェブページに対して仮想ページを指定する�
 
 仮想ページに関する作業には下記の 2 つが必要な作業になります
 
-- [仮想ページの作成](../devguide/virtual-page.html)
+- [仮想ページの作成](../devguide/virtualpage.html)
 - [仮想ページを指定して計測を開始する](../devguide/javascript/api/create.html)
 
 #### メリット/デメリット
