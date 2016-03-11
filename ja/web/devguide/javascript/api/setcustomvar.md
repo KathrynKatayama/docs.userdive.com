@@ -24,6 +24,10 @@ API は二種類提供しています。
 
 [ `create` API のドキュメント](../api/create.html)を参照ください。
 
+#### 2. `setCustomVar` を利用したカスタム変数の設定
+
+`setCustomVar` は任意のタイミングで実行することが可能です
+
 | Field      | Type   | Required | Description                                                      |
 |:-----------|:-------|:---------|:-----------------------------------------------------------------|
 | CustomVar1 | String | No       | 任意のカスタム変数を設定できます。文字列でない場合は無視されます |
@@ -43,9 +47,5 @@ ud("setCustomVar", [
 ]);
 </script>
 ```
-
-#### 2. `setCustomVar` を利用したカスタム変数の設定
-
-`setCustomVar` は任意のタイミングで実行することが可能です
 
 `<script>` タグ内だけではなく、任意の JavaScript 内より実行することが可能です
