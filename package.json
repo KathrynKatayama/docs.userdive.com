@@ -13,9 +13,9 @@
     "gulp-uglify": "^1.5.3",
     "require-dir": "^0.3.0",
     "textlint": "^5.7.0",
-    "textlint-plugin-jtf-style": "^1.0.1",
     "textlint-rule-max-ten": "^2.0.1",
     "textlint-rule-no-mix-dearu-desumasu": "^1.4.0",
+    "textlint-rule-preset-jtf-style": "^2.1.1",
     "textlint-rule-spellcheck-tech-word": "^4.2.0"
   },
   "scripts": {
