@@ -12,3 +12,5 @@
         - [analyze](./web/devguide/javascript/api/analyze.md)
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
+    - Integration
+        - [vwo](./web/devguide/integration/vwo.md)
