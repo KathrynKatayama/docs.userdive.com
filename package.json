@@ -4,6 +4,7 @@
   "private": true,
   "description": "",
   "devDependencies": {
+    "doctoc": "^1.0.0",
     "gitbook-cli": "^2.1.2",
     "gulp": "^3.9.1",
     "gulp-connect": "^3.2.0",
@@ -19,9 +20,10 @@
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "scripts": {
+    "build": "npm run toc && gitbook build && gulp build",
     "clean": "rm -rf _book && rm -rf dist",
-    "build": "gitbook build && gulp build",
+    "lint": "textlint ja",
     "test": "npm run lint",
-    "lint": "textlint ja"
+    "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README')"
   }
 }

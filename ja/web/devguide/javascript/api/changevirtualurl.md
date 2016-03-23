@@ -1,4 +1,13 @@
-### `changeVirtualUrl` API
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [`changeVirtualUrl` API](#changevirtualurl-api)
+- [サポート外の項目](#%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E5%A4%96%E3%81%AE%E9%A0%85%E7%9B%AE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# `changeVirtualUrl` API
 
 USERDIVE では、ユーザの起こしたアクションを URL (`window.location.href`) 単位に集約し、分析を行うことができます。
 
@@ -26,7 +35,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
     - Vue.js
     - etc
 
-### サポート外の項目
+# サポート外の項目
 
 `changeVirtualUrl` API を利用した分析では、下記のことをサポートしていません。
 
