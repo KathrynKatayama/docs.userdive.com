@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ウェブスナップショット](#%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88)
+- [仮想ページ](#%E4%BB%AE%E6%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
+- [必要なこと](#%E5%BF%85%E8%A6%81%E3%81%AA%E3%81%93%E3%81%A8)
+  - [メリット/デメリット](#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88)
+    - [メリット](#%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88)
+    - [デメリット](#%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ### ウェブスナップショット
 
 USERDIVE ではタグを設置いただいたウェブページ（または仮想ページ）から
