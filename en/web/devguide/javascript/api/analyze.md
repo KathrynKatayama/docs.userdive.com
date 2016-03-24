@@ -1,4 +1,12 @@
-### `analyze` API
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [`analyze` API](#analyze-api)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# `analyze` API
 
 Starting to tracking web site.
 Before running `analyze` API, you have to run `create` API.
@@ -24,11 +32,9 @@ When execute above, runned each steps following.
         - Browser
         - Screen size
     - Information for page in which user is viewing
-
         - URL in which user is viewing
         - Browser window size
         - Size of page
-        - Number of link within a page
         - Number of form, input content info within a page
     - User event data
         - Mouse event (position, click, button etc.)
@@ -39,6 +45,7 @@ When execute above, runned each steps following.
         - Focus on form, submitting event
         - JavaScript errors
         - Transition event to next page
+        - Timestamp
 1. Sending event data.
 
 Sent data which is applied to USERDIVE after the elapse of a certain period of time.
