@@ -47,10 +47,9 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 ```html
 <script>
-var _vis_opt_queue=window._vis_opt_queue||[];_vis_opt_queue.push(function(){var b=window;var d;var f=function(g,i,h){if(/\?.+$/.test(g)){return g+"&"+i+"="+h}return g+"?"+i+"="+h};try{var a;var e=0;for(;e<b._vwo_exp_ids.length;e++){a=b._vwo_exp_ids[e];if(b._vwo_exp[a].ready){d=b._vis_opt_readCookie("_vis_opt_exp_"+a+"_combi");if(typeof(b._vwo_exp[a].combination_chosen)!=="undefined"){d=b._vwo_exp[a].combination_chosen}}}}catch(c){}finally{
-  b.ud("create","[Project Id]",{overrideUrl:f(location.href,"vwo",d)});
-  b.ud("analyze")}
-});
+(function(e,o,_){o._vis_opt_queue=o._vis_opt_queue||[];o._vis_opt_queue.push(function(){var i;var n=function(e,o,_){if(/\?.+$/.test(e)){return e+"&"+o+"="+_}return"?"+o+"="+_};var t;var r=0;var a;try{for(;r<o._vwo_exp_ids.length;r++){t=o._vwo_exp_ids[r];if(o._vwo_exp[t].ready){i=o._vis_opt_readCookie("_vis_opt_exp_"+t+"_combi");if(typeof o._vwo_exp[t].combination_chosen!=="undefined"){i=o._vwo_exp[t].combination_chosen}}}}catch(v){}finally{a=_.protocol+"//"+_.host+_.pathname+n(_.search,"vwo",i)+_.hash;if(a===_.href)a=undefined;o.ud("create",e,{overrideUrl:a});o.ud("analyze")}})})(
+  "[Project Id]",window,location
+);
 </script>
 ```
 
@@ -64,35 +63,42 @@ var _vis_opt_queue=window._vis_opt_queue||[];_vis_opt_queue.push(function(){var 
 
 ```html
 <script>
-var _vis_opt_queue = window._vis_opt_queue || [];
-_vis_opt_queue.push(function () {
-  var root = window;
-  var _vis_combination;
-  var addParam = function (url, param, value) {
-    if (/\?.+$/.test(url)) {
-      return url + '&' + param + '=' + value;
-    }
-    return url + '?' + param + '=' + value;
-  };
-  try {
+(function (userdiveId, root, location) {
+  root._vis_opt_queue = root._vis_opt_queue || [];
+  root._vis_opt_queue.push(function () {
+    var _vis_combination;
+    var addParam = function (search, param, value) {
+      if (/\?.+$/.test(search)) {
+        return search + '&' + param + '=' + value;
+      }
+      return '?' + param + '=' + value;
+    };
     var _vis_id;
     var _vis_l = 0;
-    for (;_vis_l < root._vwo_exp_ids.length; _vis_l++) {
-      _vis_id = root._vwo_exp_ids[_vis_l];
-      if (root._vwo_exp[_vis_id].ready) {
-        _vis_combination = root._vis_opt_readCookie('_vis_opt_exp_' + _vis_id + '_combi');
-        if (typeof (root._vwo_exp[_vis_id].combination_chosen) !== 'undefined') {
-          _vis_combination = root._vwo_exp[_vis_id].combination_chosen;
+    var url;
+    try {
+      for (;_vis_l < root._vwo_exp_ids.length; _vis_l++) {
+        _vis_id = root._vwo_exp_ids[_vis_l];
+        if (root._vwo_exp[_vis_id].ready) {
+          _vis_combination = root._vis_opt_readCookie('_vis_opt_exp_' + _vis_id + '_combi');
+          if (typeof (root._vwo_exp[_vis_id].combination_chosen) !== 'undefined') {
+            _vis_combination = root._vwo_exp[_vis_id].combination_chosen;
+          }
         }
       }
+    } catch (err) {} finally {
+      url = location.protocol + '//' + location.host +
+        location.pathname +
+        addParam(location.search, 'vwo', _vis_combination) +
+        location.hash;
+      if (url === location.href) url = undefined;
+      root.ud('create', userdiveId, {
+        'overrideUrl': url
+      });
+      root.ud('analyze');
     }
-  } catch (err) {} finally {
-    root.ud('create', '[Project Id]', {
-      'overrideUrl': addParam(location.href, 'vwo', _vis_combination)
-    });
-    root.ud('analyze');
-  }
-});
+  });
+})('[Project Id]', window, location);
 </script>
 ```
 
