@@ -24,6 +24,6 @@
     "clean": "rm -rf _book && rm -rf dist",
     "lint": "textlint ja",
     "test": "npm run lint",
-    "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README')"
+    "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README\\|_TEMPLATE')"
   }
 }
