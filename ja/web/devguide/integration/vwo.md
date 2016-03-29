@@ -47,8 +47,8 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 ```html
 <script>
-(function(e,o,_){o._vis_opt_queue=o._vis_opt_queue||[];o._vis_opt_queue.push(function(){var i;var n=function(e,o,_){if(/\?.+$/.test(e)){return e+"&"+o+"="+_}return"?"+o+"="+_};var t;var r=0;var a;try{for(;r<o._vwo_exp_ids.length;r++){t=o._vwo_exp_ids[r];if(o._vwo_exp[t].ready){i=o._vis_opt_readCookie("_vis_opt_exp_"+t+"_combi");if(typeof o._vwo_exp[t].combination_chosen!=="undefined"){i=o._vwo_exp[t].combination_chosen}}}}catch(v){}finally{a=_.protocol+"//"+_.host+_.pathname+n(_.search,"vwo",i)+_.hash;if(a===_.href)a=undefined;o.ud("create",e,{overrideUrl:a});o.ud("analyze")}})})(
-  "[Project Id]",window,location
+(function(o,e){e._vis_opt_queue=e._vis_opt_queue||[];e._vis_opt_queue.push(function(){var i;var _=function(o,e,i){if(/\?.+$/.test(o)){return o+"&"+e+"="+i}return"?"+e+"="+i};var n;var t=0;var a;try{for(;t<e._vwo_exp_ids.length;t++){n=e._vwo_exp_ids[t];if(e._vwo_exp[n].ready){i=e._vis_opt_readCookie("_vis_opt_exp_"+n+"_combi");if(typeof e._vwo_exp[n].combination_chosen!=="undefined"){i=e._vwo_exp[n].combination_chosen}}}}catch(r){}finally{a=e.location.protocol+"//"+e.location.host+e.location.pathname+_(e.location.search,"vwo",i)+e.location.hash;if(a===e.location.href)a=undefined;e.ud("create",o,{overrideUrl:a});e.ud("analyze")}})})(
+  "[Project Id]",window
 );
 </script>
 ```
@@ -63,7 +63,7 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 ```html
 <script>
-(function (userdiveId, root, location) {
+(function (userdiveId, root) {
   root._vis_opt_queue = root._vis_opt_queue || [];
   root._vis_opt_queue.push(function () {
     var _vis_combination;
@@ -87,18 +87,18 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
         }
       }
     } catch (err) {} finally {
-      url = location.protocol + '//' + location.host +
-        location.pathname +
-        addParam(location.search, 'vwo', _vis_combination) +
-        location.hash;
-      if (url === location.href) url = undefined;
+      url = root.location.protocol + '//' + root.location.host +
+        root.location.pathname +
+        addParam(root.location.search, 'vwo', _vis_combination) +
+        root.location.hash;
+      if (url === root.location.href) url = undefined;
       root.ud('create', userdiveId, {
         'overrideUrl': url
       });
       root.ud('analyze');
     }
   });
-})('[Project Id]', window, location);
+})('[Project Id]', window);
 </script>
 ```
 
