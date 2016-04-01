@@ -14,7 +14,7 @@ You use  ( UDTracker.js ) to measure the action of USERDIVE’s user. In the fol
 
 # Setting of the HTML `<script>` tag
 
-I explain a method to set the following HTML `<script>` tag for measuring the site.
+I explain a method to set the following HTML `<script>` tag for tracking the site.
 We recommend that you list this just before `</body>` tag of the site.
 
 The following `xx-xx` is ID published by every project.
@@ -35,7 +35,7 @@ There is the following four kind of main processing the above cord.
 1. Initialization of the global function `ud`
 1. To publish the `<script>` tag which loads the JavaScript that we prodive in async
 1. Register of the ID [(about create API)](./api/create.html)
-1. Start the measurement of the site [(about analyze API)](./api/analyze.md)
+1. Start the tracking of the site [(about analyze API)](./api/analyze.md)
 
 # About API
 
