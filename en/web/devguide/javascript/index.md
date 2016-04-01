@@ -2,13 +2,13 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Start the measurement of a site](#start-the-measurement-of-a-site)
+- [Starting to tracking web site](#starting-to-tracking-web-site)
 - [Setting of the HTML `<script>` tag](#setting-of-the-html-script-tag)
 - [About API](#about-api)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Start the measurement of a site
+# Starting to tracking web site
 
 You use  ( UDTracker.js ) to measure the action of USERDIVE’s user. In the following, I explain a method to add ( UDTracker.js ) to for a site.
 
