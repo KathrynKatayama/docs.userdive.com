@@ -39,5 +39,4 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 `changeVirtualUrl` API を利用した分析では、下記のことをサポートしていません。
 
-- リンク解析、およびそれに関係するイベントの計測
 - フォーム分析、およびそれに関係するイベントの計測
