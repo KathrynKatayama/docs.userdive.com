@@ -18,12 +18,14 @@
     "textlint-rule-no-mix-dearu-desumasu": "^1.4.0",
     "textlint-rule-preset-jtf-style": "^2.1.2",
     "textlint-rule-spellcheck-tech-word": "^5.0.0",
+    "tslint": "^3.7.0",
     "typescript-require": "^0.2.9-1",
     "typings": "^0.7.12"
   },
   "scripts": {
     "build": "npm run toc && gitbook build && gulp build",
     "clean": "rm -rf _book && rm -rf dist",
+    "deploy": "gitbook install && npm run setup && npm run clean && npm run build",
     "lint": "textlint ja",
     "setup": "typings install",
     "test": "npm run lint",
