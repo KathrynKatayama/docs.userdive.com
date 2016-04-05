@@ -25,6 +25,7 @@
     "build": "npm run toc && gitbook build && gulp build",
     "clean": "rm -rf _book && rm -rf dist",
     "lint": "textlint ja",
+    "setup": "typings install",
     "test": "npm run lint",
     "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README\\|_TEMPLATE')"
   }
