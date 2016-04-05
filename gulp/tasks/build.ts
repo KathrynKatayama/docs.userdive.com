@@ -1,7 +1,7 @@
 /// <reference path="../../typings/main.d.ts" />
 import gulp = require("gulp");
 
-gulp.task("build", function (callback) {
+gulp.task("build", function (callback: Function) {
   let path: any = require("path");
   let root: any = require("../config").root;
   let gulpIf: any =  require("gulp-if");
