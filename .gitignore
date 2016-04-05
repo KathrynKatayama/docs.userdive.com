@@ -1,3 +1,6 @@
+*.js
+
+typings/
 _book/
 bower_components/
 dist/

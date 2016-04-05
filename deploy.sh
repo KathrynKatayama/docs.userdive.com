@@ -4,6 +4,7 @@ git config --global user.email "develop@uncovertruth.jp"
 git config --global user.name "userdive"
 
 gitbook install
+npm run setup
 npm run clean
 npm run build
 cp assets/CNAME dist/CNAME

@@ -17,12 +17,15 @@
     "textlint-rule-max-ten": "^2.0.1",
     "textlint-rule-no-mix-dearu-desumasu": "^1.4.0",
     "textlint-rule-preset-jtf-style": "^2.1.2",
-    "textlint-rule-spellcheck-tech-word": "^5.0.0"
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
+    "typescript-require": "^0.2.9-1",
+    "typings": "^0.7.12"
   },
   "scripts": {
     "build": "npm run toc && gitbook build && gulp build",
     "clean": "rm -rf _book && rm -rf dist",
     "lint": "textlint ja",
+    "setup": "typings install",
     "test": "npm run lint",
     "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README\\|_TEMPLATE')"
   }
