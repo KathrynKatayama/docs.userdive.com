@@ -1,4 +1,5 @@
-import * as gulp from "gulp";
+/// <reference path="../../typings/main.d.ts" />
+import gulp = require("gulp");
 
 gulp.task("build", function (callback) {
   let path: any = require("path");
