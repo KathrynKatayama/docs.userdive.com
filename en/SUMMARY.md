@@ -4,6 +4,7 @@
     - [Starting to tracking web site](./web/devguide/javascript/index.md)
     - API
         - [analyze](./web/devguide/javascript/api/analyze.md)
+        - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
         - [vwo](./web/devguide/integration/vwo.md)
 - App analytics
