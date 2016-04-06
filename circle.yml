@@ -16,5 +16,5 @@ deployment:
       - cd dist
       - git init
       - git add -A
-      - git commit -m '[ci skip] auto update'
+      - git commit -am '[ci skip] auto update'
       - git push -f git@github.com:uncovertruth/docs.userdive.com.git master:gh-pages
