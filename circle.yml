@@ -11,10 +11,12 @@ deployment:
     commands:
       - git config --global user.email "develop@uncovertruth.jp"
       - git config --global user.name "userdive"
+      - node --version
       - npm run deploy || exit 1
       - cp assets/CNAME dist/CNAME
       - cp assets/robots.txt dist/robots.txt
       - cd dist
+      - ls
       - git init
       - git add -A
       - git commit -am '[ci skip] auto update'
