@@ -4,7 +4,6 @@
 
 ```
 npm install
-gitbook install
 ```
 
 ## build
@@ -12,6 +11,10 @@ gitbook install
 ```
 npm run build
 ```
+
+## deploy
+
+CiecleCi acts for you
 
 ## Auther
 
