@@ -26,7 +26,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 `changeVirtualUrl` API can use the following web site.
 
-- Change the element of display without page transitions
+- Change the element of display without any page transitions
 - Use asynchronous transmission as the Ajax
 - Use JavaScript framework
     - AngularJS
