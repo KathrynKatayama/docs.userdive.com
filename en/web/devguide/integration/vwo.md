@@ -11,7 +11,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Linkage with VWO
+# Integration with VWO
 
 USERDIVE can receive test information by following process.
 
