@@ -39,4 +39,5 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 `changeVirtualUrl` API does not support the following two.
 
-- Tracking on the form analysis, and events to related to it
+- Tracking on the form analysis
+- Events to related to it
