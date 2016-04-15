@@ -9,10 +9,9 @@
 
 # `changeVirtualUrl` API
 
-USERDIVE can gather user action by the URL (`window.location.href`) and analyze.
+USERDIVE can track and analyse the user action on each URL. (`window.location.href`)
 
-USERDIVE can also analyze a web site that adds the element dynamically with
-the same URL.
+USERDIVE can also analyze a web site that adds the element dynamically within the same URL.
 
 ```html
 <script>
@@ -24,10 +23,10 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 |:------------|:-------|:---------|:-----------------------------------------------------------------------|
 | Virtual URL | String | Yes      | [ virtual page](../../../guide/snapshot.html) URL of the current state |
 
-`changeVirtualUrl` API can use the following web site.
+`changeVirtualUrl` API can be use the following web site.
 
-- Change the element of display without any page moves
-- Use asynchronous transmission as the Ajax
+- Web site that changes the element of display without any page moves
+- Web site that uses asynchronous transmission like Ajax
 - Use following JavaScript framework
     - AngularJS
     - React.js
