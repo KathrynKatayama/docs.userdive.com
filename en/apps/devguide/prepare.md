@@ -18,14 +18,14 @@ Open [USERDIVE for Apps web site](https://detector.userdive.com/en/apps/) and cr
 Input the followings.
 
 - App Name
-- Bundle ID **(インストールする際に使用する正しい値を入力してください)**
+- Bundle ID **(Input the same Bundle ID as from the Xcode)**
 - Max Session/Day
 - Put a check mark on enable recording
 
 ![](./files/create_app_2.png)
 
 Check the Bundle ID on Xcode project.   
-**Bundle ID must be the same as a value registered on USERDIVE.**
+**Input the same Bundle ID as from the Xcode.**
 
 ![bundle id on Xcode](http://drive.google.com/uc?export=view&id=0B7UxsiswNc5_Tno4VHA4Snh3alE)
 Window size: 1500 x 1057
