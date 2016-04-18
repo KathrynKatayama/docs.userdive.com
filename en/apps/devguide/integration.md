@@ -4,7 +4,7 @@ You can install USERDIVE iOS SDK from CocoaPods.
 
 ## How to write Podfile
 
-You write `Podfile`.
+Write `Podfile`.
 
 ```
 pod 'Userdive-iOS-SDK', '~> 1.0'
@@ -12,7 +12,7 @@ pod 'Userdive-iOS-SDK', '~> 1.0'
 
 ## Install Pods
 
-You install Pods.
+Install Pods.
 
 ```
 pod install
@@ -20,7 +20,7 @@ pod install
 
 ## To start developing
 
-You open workspace.
+Open workspace.
 
 ```
 open YourProject.xcworkspace
