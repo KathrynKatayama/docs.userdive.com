@@ -19,6 +19,6 @@ Add `SystemConfigurationframework` to the project.
 
 ## Change Linker option
 
-You open the Build Settings and add `-ObjC` to Linking -> Other Linker Flags.
+Open the Build Settings and add `-ObjC` to Linking -> Other Linker Flags.
 
 ![](./files/install_manual_2.png)
