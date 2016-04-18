@@ -16,16 +16,16 @@
         - [vwo](./web/devguide/integration/vwo.md)
 - アプリ解析
     - 導入ガイド
-        - [事前チェック](./apps/guide/precheck.md)
-        - [下準備](./apps/guide/prepare.md)
+        - [事前チェック](./apps/devguide/precheck.md)
+        - [下準備](./apps/devguide/prepare.md)
         - アプリへの組み込み
-            - [CocoaPodsでインストール](./apps/guide/integration.md)
-            - [手動でインストール](./apps/guide/integration_manual.md)
+            - [CocoaPodsでインストール](./apps/devguide/integration.md)
+            - [手動でインストール](./apps/devguide/integration_manual.md)
         - SDKの実行
-            - [デベロッパモード](./apps/guide/sdk_mode_dev.md)
-            - [トラッキングモード](./apps/guide/sdk_mode_tracking.md)
+            - [デベロッパモード](./apps/devguide/sdk_mode_dev.md)
+            - [トラッキングモード](./apps/devguide/sdk_mode_tracking.md)
         - 動作確認
-            - [デベロッパモード](./apps/guide/sdk_verification_dev.md)
-            - [トラッキングモード](./apps/guide/sdk_verification_tracking.md)
+            - [デベロッパモード](./apps/devguide/sdk_verification_dev.md)
+            - [トラッキングモード](./apps/devguide/sdk_verification_tracking.md)
     - API
     - FAQ
