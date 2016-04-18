@@ -28,4 +28,16 @@
             - [デベロッパモード](./apps/devguide/sdk_verification_dev.md)
             - [トラッキングモード](./apps/devguide/sdk_verification_tracking.md)
     - API
-    - FAQ
+        - [+(void)startTrackingMode:](./apps/devguide/api/start_tracking_mode.md)
+        - [+(void)startTrackingMode:trackers:](./apps/devguide/api/start_tracking_mode_trackers.md)
+        - [+(void)startDeveloperMode:](./apps/devguide/api/start_developer_mode.md)
+        - [+(void)startDeveloperMode:trackers:](./apps/devguide/api/start_developer_mode_trackers.md)
+        - [+(void)setLogEnabled:](./apps/devguide/api/set_log_enabled.md)
+        - [+(void)pause](./apps/devguide/api/pause.md)
+        - [+(void)resume](./apps/devguide/api/resume.md)
+        - [+(void)updateScreen](./apps/devguide/api/update_screen.md)
+        - [+(void)webViewDidFinishLoad:](./apps/devguide/api/webview_did_finish_load.md)
+        - [+(void)setScreenName:](./apps/devguide/api/set_screen_name.md)
+        - [+(void)setCustomField1:](./apps/devguide/api/set_custom_field.md)
+        - [+(void)setLatitude:longitude:horizontalAccuracy:verticalAccuracy](./apps/devguide/api/set_latitude_longitude_horizontalaccuracy_verticalaccuracy.md)
+      - FAQ
