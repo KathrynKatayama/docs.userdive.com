@@ -71,12 +71,12 @@
 
 アップロードの確認は次のようになります。
 
-![](./files/sdk_verification_capture_1.png)
+![upload confirmation dialog](./files/sdk_verification_capture_1.png)
 
 アップロードに成功すると次のダイアログが表示されます。
 また、後述のログ出力も確認してください。
 
-![](./files/sdk_verification_capture_2.png)
+![upload status dialog](./files/sdk_verification_capture_2.png)
 
 ```
 2016-04-11 18:07:01.909 AppDiveSample[41018:2951170] ADVResourceAPIClient.m(34) -[ADVResourceAPIClient init] Resource API Base URL=https://detector.userdive.com/

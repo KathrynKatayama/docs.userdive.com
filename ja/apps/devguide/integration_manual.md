@@ -15,10 +15,10 @@
 
 プロジェクトに`SystemConfigurationフレームワーク`を追加します。
 
-![](./files/install_manual_1.png)
+![add systemconfiguration framework](./files/install_manual_1.png)
 
 ## リンカオプションの変更
 
 Build Settingsを開き、Linking -> Other Linker Flagsに`-ObjC`を追加します。
 
-![](./files/install_manual_2.png)
+![add objc linker flag](./files/install_manual_2.png)
