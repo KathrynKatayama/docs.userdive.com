@@ -4,3 +4,10 @@
     - [Starting to tracking web site](./web/devguide/javascript/index.md)
     - API
         - [analyze](./web/devguide/javascript/api/analyze.md)
+- App analytics
+    - Implementation guide
+        - [precheck](./apps/devguide/precheck.md)
+        - [prepare for integration](./apps/devguide/prepare.md)
+    - Integration
+        - [Integration using CocoaPods](./apps/devguide/integration.md)
+        - [Integration manually](./apps/devguide/integration_manual.md)
