@@ -28,5 +28,3 @@ Check the Bundle ID on Xcode project.
 **Input the same Bundle ID as from the Xcode.**
 
 ![bundle id on Xcode](http://drive.google.com/uc?export=view&id=0B7UxsiswNc5_Tno4VHA4Snh3alE)
-Window size: 1500 x 1057
-Viewport size: 1500 x 941
