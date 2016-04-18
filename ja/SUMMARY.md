@@ -40,4 +40,4 @@
         - [+(void)setScreenName:](./apps/devguide/api/set_screen_name.md)
         - [+(void)setCustomField1:](./apps/devguide/api/set_custom_field.md)
         - [+(void)setLatitude:longitude:horizontalAccuracy:verticalAccuracy](./apps/devguide/api/set_latitude_longitude_horizontalaccuracy_verticalaccuracy.md)
-      - FAQ
+    - FAQ
