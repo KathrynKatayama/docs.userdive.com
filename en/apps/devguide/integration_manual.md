@@ -9,11 +9,11 @@ Download USERDIVE SDK corresponding to the platform from the following links.
 
 ## Add SDK
 
-You decompress the file which you downloaded and add it to the Xcode project of application you want to.
+Decompress the file which you downloaded, and add it to the Xcode project on application you want to analyse.
 
 ## Add framework
 
-You add `SystemConfigurationframework` to the project.
+Add `SystemConfigurationframework` to the project.
 
 ![](./files/install_manual_1.png)
 
