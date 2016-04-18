@@ -15,10 +15,10 @@ Decompress the file which you downloaded, and add it to the Xcode project on app
 
 Add `SystemConfigurationframework` to the project.
 
-![](./files/install_manual_1.png)
+![install manual 1](../../../ja/apps/devguide/files/install_manual_1.png)
 
 ## Change Linker option
 
 Open the Build Settings and add `-ObjC` to Linking -> Other Linker Flags.
 
-![](./files/install_manual_2.png)
+![install manual 2](../../../ja/apps/devguide/files/install_manual_2.png)

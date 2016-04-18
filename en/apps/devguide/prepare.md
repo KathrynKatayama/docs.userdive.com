@@ -6,14 +6,14 @@
 
 Open [USERDIVE For Apps website](https://detector.userdive.com/en/apps/) and check your team ID.
 
-![](./files/create_app_0.png)
+![check team id](../../../ja/apps/devguide/files/create_app_0.png)
 
 
 ## Create New App
 
 Open [USERDIVE for Apps web site](https://detector.userdive.com/en/apps/) and create new app.
 
-![](./files/create_app_1.png)
+![create app 1](../../../ja/apps/devguide/files/create_app_1.png)
 
 Input the followings.
 
@@ -22,7 +22,7 @@ Input the followings.
 - Max Session/Day
 - Put a check mark on enable recording
 
-![](./files/create_app_2.png)
+![create app 2](../../../ja/apps/devguide/files/create_app_2.png)
 
 Check the Bundle ID on Xcode project.   
 **Input the same Bundle ID as from the Xcode.**
