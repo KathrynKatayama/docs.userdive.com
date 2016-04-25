@@ -9,11 +9,11 @@ On Developer Mode, it captures screen images shown on UIWindow as a back ground 
 
 ### Automatically captures screen image
 
-**Note: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
+**Note: If capturing the screen image at voluntary timing, then follow the steps below; "Manually captures screen image"**
 
 When UINavigationController or UITabBarController are bring used, USERDIVE reconizes the page movements automatically and upload the screen image one by one. Follow the steps below.
 
-USERDIVE iOS SDKヘッダをインポートします。
+Import USERDIVE iOS SDK headder.
 
 ```objectivec
 #import "Userdive.h"
