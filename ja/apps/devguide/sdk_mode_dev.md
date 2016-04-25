@@ -39,6 +39,8 @@ USERDIVE iOS SDKヘッダをインポートします。
 アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
 *送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
 
+![sdk_mode_dev_1.png](./files/sdk_mode_dev_1.png)
+
 ### 手動で画面キャプチャを取得する
 
 独自のビュー構成を採用している場合、手動で画面キャプチャを取得する必要があります。
@@ -85,3 +87,5 @@ USERDIVE iOS SDKヘッダをインポートします。
   [Userdive setScreenName:@"screen A"];
 }
 ```
+
+![sdk_mode_dev_1.png](./files/sdk_mode_dev_1.png)
