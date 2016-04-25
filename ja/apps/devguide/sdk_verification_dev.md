@@ -5,7 +5,7 @@
 - 動作ログ
 - キャプチャのアップロード
 
-## 開始動作
+## 開始動作の確認
 
 デベロッパモード開始後、次のログが出力されることを確認してください。
 
@@ -15,56 +15,8 @@
 2016-04-11 17:53:58.001 AppDiveSample[41018:2951170] [Userdive][INFO] FOR DEVELOPMENT ONLY! start capturing (team_id=1)
 ```
 
-## トラッキング動作
 
-画面遷移やUIオブジェクトの操作など、アプリを操作してください。
-次のようなログが出力されることを確認してください。
-
-```
-2016-04-11 18:05:17.116 AppDiveSample[41018:2951170] ADVLogManager.m(60) -[ADVLogManager logEvent:] {
-    area = main;
-    event = tap;
-    "screen_count" = 0;
-    "screen_x" = 102;
-    "screen_y" = 93;
-    timestamp = "2016-04-11T09:05:17.115";
-    x = 102;
-    y = 30;
-}
-2016-04-11 18:05:17.119 AppDiveSample[41018:2951170] ADVLogManager.m(60) -[ADVLogManager logEvent:] {
-    event = ui;
-    row = 0;
-    "screen_count" = 0;
-    section = 0;
-    timestamp = "2016-04-11T09:05:17.118";
-    type = tableView;
-}
-2016-04-11 18:05:17.661 AppDiveSample[41018:2951170] ADVLogManager.m(60) -[ADVLogManager logEvent:] {
-    action = close;
-    event = screen;
-    meta =     {
-        "looking_time" =         (
-                        {
-                bottom = 672;
-                time = 679597;
-                top = 0;
-            }
-        );
-        "next_screen_name" = PageListViewController;
-        orientation = portrait;
-        "previous_screen_name" = "<null>";
-        "screen_exit_time" = "2016-04-11T09:05:17.661";
-        "screen_start_time" = "2016-04-11T08:53:58.062";
-        "screen_staying_time" = "679.5989570021629";
-        "scroll_reached" = 736;
-    };
-    "screen_count" = 0;
-    "screen_name" = CatalogViewController;
-    timestamp = "2016-04-11T09:05:17.661";
-}
-```
-
-## キャプチャ動作
+## キャプチャ動作の確認
 
 画面が遷移するとキャプチャが行われます。
 アップロードダイアログの表示と、アップロード成功後の表示を確認してください。
@@ -84,3 +36,19 @@
 2016-04-11 18:07:03.327 AppDiveSample[41018:2993544] ADVAPIClient.m(104) __58-[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:]_block_invoke response code: 200
 2016-04-11 18:07:03.328 AppDiveSample[41018:2993544] ADVAPIClient.m(105) __58-[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:]_block_invoke response body: {"status": "OK"}
 ```
+
+## アップロードされた画面キャプチャの確認
+
+アップロードされた画面キャプチャは管理画面上で確認することができます。
+アプリの設定を開きます。
+
+![sdk_verification_capture_3.png](./files/sdk_verification_capture_3.png)
+
+下部の `アップロード済み画面キャプチャの確認` を開きます。
+
+![sdk_verification_capture_4.png](./files/sdk_verification_capture_4.png)
+
+画面名と画面キャプチャの一覧が表示されます。
+`画面イメージを表示` をクリックすると、アップロード済みの画面キャプチャが表示されます。
+
+![sdk_verification_capture_5.png](./files/sdk_verification_capture_5.png)

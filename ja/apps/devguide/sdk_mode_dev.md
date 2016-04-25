@@ -20,7 +20,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -34,12 +34,14 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
-
 アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
 *送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
 
-![sdk_mode_dev_1.png](./files/sdk_mode_dev_1.png)
+![sdk_verification_capture_1.png](./files/sdk_verification_capture_1.png)
+
+画面キャプチャのアップロード状態はダイアログで表示されます。
+
+![sdk_verification_capture_2.png](./files/sdk_verification_capture_2.png)
 
 
 ### 手動で画面キャプチャを取得する
@@ -55,6 +57,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:trackers:` を追加します。
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -73,8 +76,6 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
-
 画面キャプチャを取得したい画面が表示されたら、次のようにメソッドを呼び出してください。
 
 - `updateScreen`を呼び出すと、画面キャプチャ取得の準備を行います
@@ -90,4 +91,11 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-![sdk_mode_dev_1.png](./files/sdk_mode_dev_1.png)
+アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
+*送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
+
+![sdk_verification_capture_1.png](./files/sdk_verification_capture_1.png)
+
+画面キャプチャのアップロード状態はダイアログで表示されます。
+
+![sdk_verification_capture_2.png](./files/sdk_verification_capture_2.png)
