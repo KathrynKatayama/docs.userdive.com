@@ -5,7 +5,7 @@
 On Developer Mode, it captures screen images shown on UIWindow as a back ground image for heatmaps.
 
 
-## Implimentation 組み込み
+## Implimentation
 
 ### Automatically captures screen image
 
