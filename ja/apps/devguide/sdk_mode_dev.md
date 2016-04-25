@@ -18,7 +18,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:<YOUR_TEAM_ID>` を追加します。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。
 *<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
 
 ```objectivec
