@@ -9,10 +9,10 @@
 
 ### 自動で画面をキャプチャする
 
-UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
-1ページずつ画面キャプチャを取得することができます。
-
 **ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
+
+UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
+1ページずつ画面キャプチャを取得することができます。次の手順で実施します。
 
 USERDIVE iOS SDKヘッダをインポートします。
 
@@ -41,9 +41,12 @@ USERDIVE iOS SDKヘッダをインポートします。
 
 ![sdk_mode_dev_1.png](./files/sdk_mode_dev_1.png)
 
+
 ### 手動で画面キャプチャを取得する
 
-独自のビュー構成を採用している場合、手動で画面キャプチャを取得する必要があります。
+画面を動的に切り替えた場合、画面表示内容が変更されたことをSDKに通知する必要があります。
+アプリケーション上で `Userdive:updateScreen` を呼び出すことで、SDKは画面遷移が実施されたと判断します。
+次のように実装します。
 
 USERDIVE iOS SDKヘッダをインポートします。
 
@@ -51,10 +54,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:<YOUR_TEAM_ID>:trackers:` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
-
-**ノート: 開始時のメソッドが異なることに注意してください。**
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:trackers:` を追加します。
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -72,6 +72,8 @@ USERDIVE iOS SDKヘッダをインポートします。
   return YES;
 }
 ```
+
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 画面キャプチャを取得したい画面が表示されたら、次のようにメソッドを呼び出してください。
 
