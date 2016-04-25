@@ -1,4 +1,4 @@
-# Install manually
+# Integration done manually
 
 ## Download the file
 
