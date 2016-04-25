@@ -10,4 +10,4 @@
         - [prepare for integration](./apps/devguide/prepare.md)
     - Integration
         - [Integration using CocoaPods](./apps/devguide/integration.md)
-        - [Integration manually](./apps/devguide/integration_manual.md)
+        - [Integration done manually](./apps/devguide/integration_manual.md)
