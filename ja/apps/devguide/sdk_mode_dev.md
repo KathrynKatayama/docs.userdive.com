@@ -9,8 +9,10 @@
 
 ### 自動で画面をキャプチャする
 
-UINavigationController, UITabBarControllerを利用している場合、遷移を自動認識して画面キャプチャを取得することができます。
-キャプチャ取得時に確認ダイアログが表示されるので、*送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
+UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
+1ページずつ画面キャプチャを取得することができます。
+
+**ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
 
 USERDIVE iOS SDKヘッダをインポートします。
 
@@ -19,7 +21,6 @@ USERDIVE iOS SDKヘッダをインポートします。
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,7 +34,10 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-アプリを起動すると、画面遷移時に画面イメージをアップロードすることができます。
+*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
+
+アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
+*送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
 
 ### 手動で画面キャプチャを取得する
 
