@@ -4,6 +4,9 @@
   "dependencies": {},
   "ambientDevDependencies": {
     "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "gulp-htmlmin": "registry:dt/gulp-htmlmin#1.3.0+20160316155526",
+    "gulp-if": "registry:dt/gulp-if#0.0.0+20160316155526",
+    "gulp-uglify": "registry:dt/gulp-uglify#0.0.0+20160316155526",
     "node": "registry:dt/node#4.0.0+20160330064709",
     "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
     "q": "registry:dt/q#0.0.0+20160323171452"

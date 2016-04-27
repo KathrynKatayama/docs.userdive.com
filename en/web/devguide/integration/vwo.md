@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Linkage with VWO](#linkage-with-vwo)
+- [Integration with VWO](#integration-with-vwo)
   - [Edit HTML](#edit-html)
     - [VWO tag](#vwo-tag)
     - [USERDIVE Load tag](#userdive-load-tag)

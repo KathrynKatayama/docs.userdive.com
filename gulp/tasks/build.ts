@@ -13,5 +13,5 @@ gulp.task("build", function (callback: Function) {
     .pipe(gulpIf("*.js", uglify({preserveComments: "some"})))
     .pipe(gulpIf("*.html", htmlmin({collapseWhitespace: true})))
     .pipe(gulpIf("*.css", cssnano()))
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest(path.join(root, "dist")));
 });
