@@ -11,7 +11,7 @@ On Developer Mode, it captures screen images shown on UIWindow as a back ground 
 
 **Note: If capturing the screen image at voluntary timing, then follow the steps below; "Manually captures screen image"**
 
-When UINavigationController or UITabBarController are bring used, USERDIVE reconizes the page movements automatically and upload the screen image one by one. Follow the steps below.
+When `UINavigationController` or `UITabBarController` are bring used, USERDIVE reconizes the page movements automatically and upload the screen image one by one. Follow the steps below.
 
 Import USERDIVE iOS SDK headder.
 
@@ -19,7 +19,7 @@ Import USERDIVE iOS SDK headder.
 #import "Userdive.h"
 ```
 
-Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`. Make sure to put your team ID in `<YOUR_TEAM_ID>`.
+Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`. Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,7 +27,7 @@ Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunch
   [Userdive setLogEnabled:YES];
 
   // START DEVELOPER MODE
-  [Userdive startDeveloperMode:<your team id>];
+  [Userdive startDeveloperMode:<YOUR_TEAM_ID>];
 
   return YES;
 }
@@ -59,7 +59,7 @@ Import USERDIVE iOS SDK headder.
 ```
 
 Add `Userdive:startDeveloperMode:trackers:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
-Make sure to put your team ID in `<YOUR_TEAM_ID>`.
+Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -67,7 +67,7 @@ Make sure to put your team ID in `<YOUR_TEAM_ID>`.
   [Userdive setLogEnabled:YES];
 
   // START DEVELOPER MODE WITHOUT TRACKERS
-  [Userdive startDeveloperMode:<your team id>
+  [Userdive startDeveloperMode:<YOUR_TEAM_ID>
                       trackers:@[
                       [NSNumber numberWithInteger:1],
                       [NSNumber numberWithInteger:2],
