@@ -8,12 +8,12 @@ Like in Developer Mode, Tracking Mode have two way of noticing screen transition
 Multiple trackers are prepaerd deoending on the events to collect.
 When choosing trackers manually, use the following IDs as references. 
 
-| ID | Tracker          | Function                                | Auto Tracking | Manual Tracking |
-|:---|:--------------------|:------------------------------------|:-----------------|:-----------------|
-| 0  | ScreenEventTracker  | Screen Transition                            | ON               | Voluntary |
-| 1  | RotateEventTracker  | Screen Rotation  (portrait / landscape) | ON               | Voluntary |
-| 2  | InputEventTracker   | Keyboard Input                      | ON               | Voluntary |
-| 3  | GestureEventTracker | Gestures like Swipes          | ON               | Voluntary |
+| ID | Tracker          | Function                                   | Auto Tracking | Manual Tracking |
+|:---|:--------------------|:----------------------------------------|:--------------|:----------------|
+| 0  | ScreenEventTracker  | Screen Transition                       | ON            | Voluntary       |
+| 1  | RotateEventTracker  | Screen Rotation  (portrait / landscape) | ON            | Voluntary       |
+| 2  | InputEventTracker   | Keyboard Input                          | ON            | Voluntary       |
+| 3  | GestureEventTracker | Gestures like Swipes                    | ON            | Voluntary       |
 
 
 ## Automatically notice screen transitions, and start tracking
@@ -27,14 +27,14 @@ Import USERDIVE iOS SDK headder.
 #import "Userdive.h"
 ```
 
-Add `Userdive:startTrackingMode:<YOUR_TEAM_ID>` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
-Make sure to put your team ID in *<YOUR_TEAM_ID>*.
+Add `Userdive:startTrackingMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
+Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Userdive setLogEnabled:YES];
-    [Userdive startTrackingMode:<your team id>];  // <-- HERE
+    [Userdive startTrackingMode:<YOUR_TEAM_ID>];  // <-- HERE
 
     return YES;
 }
@@ -51,7 +51,7 @@ Import USERDIVE iOS SDK headder.
 ```
 
 Add `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
-Make sure to put your team ID in *<YOUR_TEAM_ID>*.
+Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -59,7 +59,7 @@ Make sure to put your team ID in *<YOUR_TEAM_ID>*.
   [Userdive setLogEnabled:YES];
 
   // START TRACKING MODE WITHOUT SCREEN TRACKER
-  [Userdive startTrackingMode:1
+  [Userdive startTrackingMode:<YOUR_TEAM_ID>
                      trackers:@[
                      [NSNumber numberWithInteger:1],
                      [NSNumber numberWithInteger:2],
