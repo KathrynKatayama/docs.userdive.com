@@ -46,8 +46,8 @@ The next pop-up shows whether the screen upload was succuessful or not.
 ### Manually captures screen image
 
 When screen is dynamically switched, it must be notified the SDK that the screen content has been changed.
-By calling `Userdive:updateScreen` on the app, SDK determins screen transition has occered.
-The Implimentation is following.
+By calling `Userdive:updateScreen` on the app, SDK determines screen transition has occured.
+The Implementation is following.
 画面を動的に切り替えた場合、画面表示内容が変更されたことをSDKに通知する必要があります。
 アプリケーション上で  を呼び出すことで、SDKは画面遷移が実施されたと判断します。
 次のように実装します。
