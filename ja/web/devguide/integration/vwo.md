@@ -15,7 +15,7 @@
 
 下記の手順を用いて、 USERDIVE にテスト情報を引き渡すことができます。
 
-- [(example)](https://finder3.userdive.com/examples/integration/vwo/)
+- [(example)](https://uncovertruth.github.io/examples/integration/vwo.html)
 
 ## HTML の編集
 
