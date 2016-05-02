@@ -1,26 +1,25 @@
-# デベロッパモード
+# Developer Mode
 
-**警告: リリース版アプリではこのモードを使ってはいけません**
+**Caution: Never use this mode on released app**
 
-デベロッパモードでは、UIWindowに表示されたビューからヒートマップ背景用画像をキャプチャします。
+On Developer Mode, it captures screen images shown on UIWindow as a back ground image for heatmaps.
 
 
-## 組み込み
+## Implementation
 
-### 自動で画面をキャプチャする
+### Automatically captures screen image
 
-**ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
+**Note: If capturing the screen image at voluntary timing, then follow the steps below; "Manually captures screen image"**
 
-UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
-1ページずつ画面キャプチャを取得することができます。次の手順で実施します。
+When `UINavigationController` or `UITabBarController` are bring used, USERDIVE reconizes the page movements automatically and upload the screen image one by one. Follow the steps below.
 
-USERDIVE iOS SDKヘッダをインポートします。
+Import USERDIVE iOS SDK headder.
 
 ```objectivec
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
+Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`. Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -28,36 +27,39 @@ USERDIVE iOS SDKヘッダをインポートします。
   [Userdive setLogEnabled:YES];
 
   // START DEVELOPER MODE
-  [Userdive startDeveloperMode:<your team id>];
+  [Userdive startDeveloperMode:<YOUR_TEAM_ID>];
 
   return YES;
 }
 ```
 
-アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
-*送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
+When activating an app, the following pop-up shows after screen the transition to next page. 
+Choose *Send* to upload screen image to USERDIVE.
 
 ![sdk_verification_capture_1.png](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
 
-画面キャプチャのアップロード状態はダイアログで表示されます。
+The next pop-up shows whether the screen upload was succuessful or not.
 
 ![sdk_verification_capture_2.png](../../../ja/apps/devguide/files/sdk_verification_capture_2.png)
 
 
-### 手動で画面キャプチャを取得する
+### Manually captures screen image
 
+When screen is dynamically switched, it must be notified the SDK that the screen content has been changed.
+By calling `Userdive:updateScreen` on the app, SDK determines screen transition has occured.
+The Implementation is following.
 画面を動的に切り替えた場合、画面表示内容が変更されたことをSDKに通知する必要があります。
-アプリケーション上で `Userdive:updateScreen` を呼び出すことで、SDKは画面遷移が実施されたと判断します。
+アプリケーション上で  を呼び出すことで、SDKは画面遷移が実施されたと判断します。
 次のように実装します。
 
-USERDIVE iOS SDKヘッダをインポートします。
+Import USERDIVE iOS SDK headder.
 
 ```objectivec
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:trackers:` を追加します。
-`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
+Add `Userdive:startDeveloperMode:trackers:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
+Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -65,7 +67,7 @@ USERDIVE iOS SDKヘッダをインポートします。
   [Userdive setLogEnabled:YES];
 
   // START DEVELOPER MODE WITHOUT TRACKERS
-  [Userdive startDeveloperMode:<your team id>
+  [Userdive startDeveloperMode:<YOUR_TEAM_ID>
                       trackers:@[
                       [NSNumber numberWithInteger:1],
                       [NSNumber numberWithInteger:2],
@@ -76,10 +78,10 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-画面キャプチャを取得したい画面が表示されたら、次のようにメソッドを呼び出してください。
+When the screen you want to take capture is shown, call the following method.
 
-- `updateScreen`を呼び出すと、画面キャプチャ取得の準備を行います
-- 再度 `updateScreen` を呼び出すと画面キャプチャを取得します（つまり、キャプチャを取得するまでに合計二度 `updateScreen`を呼び出す必要があります）
+- Call `updateScreen` to prepare for screen image capture.
+- Call `updateScreen` again to take screen image capture. (Total of two `updateScreen` is neccessary to cop .) 
 
 ```objectivec
 - (void)viewDidAppear:(BOOL)animated
@@ -91,11 +93,11 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
-*送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
+When activating an app, the following pop-up shows after screen the transition to next page. 
+Choose *Send* to upload screen image to USERDIVE.
 
 ![sdk_verification_capture_1.png](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
 
-画面キャプチャのアップロード状態はダイアログで表示されます。
+The next pop-up shows whether the screen upload was succuessful or not.
 
 ![sdk_verification_capture_2.png](../../../ja/apps/devguide/files/sdk_verification_capture_2.png)
