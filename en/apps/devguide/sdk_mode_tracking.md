@@ -18,6 +18,8 @@ When choosing trackers manually, use the following IDs as references.
 
 ## Automatically notice screen transitions, and start tracking
 
+**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
+
 USERDIVE iOS SDK can automatically notice and track user gestures or transitions. 
 Call `startTrackingMode:` method to start tracking.
 

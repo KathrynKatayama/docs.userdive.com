@@ -11,6 +11,8 @@ On Developer Mode, it captures screen images shown on UIWindow as a back ground 
 
 **Note: If capturing the screen image at voluntary timing, then follow the steps below; "Manually captures screen image"**
 
+**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面キャプチャを取得する」* の節に従い組込を行なってください。**
+
 When `UINavigationController` or `UITabBarController` are bring used, USERDIVE reconizes the page movements automatically and upload the screen image one by one. Follow the steps below.
 
 Import USERDIVE iOS SDK headder.
