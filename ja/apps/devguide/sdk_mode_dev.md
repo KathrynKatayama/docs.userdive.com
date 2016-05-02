@@ -11,6 +11,9 @@
 
 **ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
 
+**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面キャプチャを取得する」* の節に従い組込を行なってください。**
+
+
 UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
 1ページずつ画面キャプチャを取得することができます。次の手順で実施します。
 
