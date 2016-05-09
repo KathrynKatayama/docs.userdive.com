@@ -1,5 +1,5 @@
-# ブラウザにリダイレクトするとどうなりますか
+# What would happen if we redirect the users to browser site?
 
-アプリ起動からバックグラウンドモードへ移行するまでを1セッションと定義しています。
-従って、ブラウザへリダイレクトしたタイミングでセッションが終了します。
-ブラウザから復帰後、新しいセッションとして再開されます。
+USERDIVE define that one session is from the activation of APP to its background mode. 
+Therefore, a session ends when the users are redirected to browser site. 
+When the users return to the APP, they are counted as new inflows.
