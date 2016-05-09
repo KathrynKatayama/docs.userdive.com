@@ -1,3 +1,3 @@
-# Androidに対応していますか
+# Do you support Android?
 
-Android OSには対応しておりません。
+As of now, we do not support Android OS.
