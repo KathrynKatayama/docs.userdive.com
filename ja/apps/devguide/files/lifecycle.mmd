@@ -1,0 +1,14 @@
+graph TB
+    subgraph App
+    Start-->|Start App|Running
+    Running-->|Call Userdive:startTracking:|T
+    Running-->|Enter background|Background
+    Background-->Stop
+        subgraph SDK
+            T(Tracking)-->|Call Userdive:Pause|P
+            P(Pause)-->|Call Userdive:Resume|T
+            T-->|Enter background|U(Uploading)
+            P-->|Enter background|U
+            U-->|Succeed|S(Stop)
+        end
+    end
