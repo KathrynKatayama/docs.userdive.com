@@ -1,3 +1,3 @@
-# カスタム変数はいくつまで設定できますか
+# How many custom valuable can we set?
 
-最大で5つまで設定することができます。
+Maximum 5 custam valuables. Id you would like to add more, please contact us.
