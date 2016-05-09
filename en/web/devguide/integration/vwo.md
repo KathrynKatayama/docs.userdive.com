@@ -15,7 +15,7 @@
 
 USERDIVE can receive test information by following process.
 
-- [(example)](https://finder3.userdive.com/examples/integration/vwo/)
+- [(example)](https://uncovertruth.github.io/examples/integration/vwo.html)
 
 ## Edit HTML
 
