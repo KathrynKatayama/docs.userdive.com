@@ -13,3 +13,5 @@
     - Integration
         - [Integration using CocoaPods](./apps/devguide/integration.md)
         - [Integration done manually](./apps/devguide/integration_manual.md)
+    - Specification
+        - [Tracking data](./apps/devguide/tracking_data.md)

@@ -1,0 +1,3 @@
+# AlertViewやActionSheetなどのビューをプレイバックできますか
+
+AlertView, ActionSheetはプレイバックすることが出来ません。
