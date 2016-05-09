@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Integration done manually](#integration-done-manually)
+  - [Download the file](#download-the-file)
+  - [Add SDK](#add-sdk)
+  - [Add framework](#add-framework)
+  - [Change Linker option](#change-linker-option)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Integration done manually
 
 ## Download the file

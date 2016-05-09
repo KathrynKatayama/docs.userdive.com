@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [デベロッパモード](#%E3%83%87%E3%83%99%E3%83%AD%E3%83%83%E3%83%91%E3%83%A2%E3%83%BC%E3%83%89)
+  - [組み込み](#%E7%B5%84%E3%81%BF%E8%BE%BC%E3%81%BF)
+    - [自動で画面をキャプチャする](#%E8%87%AA%E5%8B%95%E3%81%A7%E7%94%BB%E9%9D%A2%E3%82%92%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%99%E3%82%8B)
+    - [手動で画面キャプチャを取得する](#%E6%89%8B%E5%8B%95%E3%81%A7%E7%94%BB%E9%9D%A2%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # デベロッパモード
 
 **警告: リリース版アプリではこのモードを使ってはいけません**
