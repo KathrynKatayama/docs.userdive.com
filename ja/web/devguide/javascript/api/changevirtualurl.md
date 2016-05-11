@@ -11,6 +11,8 @@
 
 USERDIVE では、ユーザの起こしたアクションを URL (`window.location.href`) 単位に集約し、分析を行うことができます。
 
+[(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html)
+
 USERDIVE では同一のURLで動的に要素の追加を行うサイトの分析も行うことができます。
 
 ```html
