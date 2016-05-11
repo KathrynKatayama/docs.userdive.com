@@ -11,6 +11,8 @@
 
 USERDIVE can track and analyse the user action on each URL. (`window.location.href`)
 
+[(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html)
+
 USERDIVE can also analyze a web site that adds the element dynamically within the same URL.
 
 ```html
