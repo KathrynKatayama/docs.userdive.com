@@ -13,6 +13,7 @@
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
+        - [kaizen platform](./web/devguide/integration/kaizenplatform.md)
         - [vwo](./web/devguide/integration/vwo.md)
 - アプリ解析
     - SDK導入ガイド
