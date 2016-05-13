@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.0.0以降      |
+|                |                                   |
+|:---------------|:----------------------------------|
+| 最終更新       | {{ file.mtime }}                  |
+| 対応バージョン | 1.0.0以降                         |
 | 概要           | WebViewのトラッキングを開始する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [Userdive webViewDidFinishLoad:webView];

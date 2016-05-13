@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.0.0以降      |
+|                |                    |
+|:---------------|:-------------------|
+| 最終更新       | {{ file.mtime }}   |
+| 対応バージョン | 1.0.0以降          |
 | 概要           | 画面名を設定する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (void)viewWillAppear:(id)sender
 {
     [super viewWillAppear:sender];

@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.0.0以降      |
+|                |                          |
+|:---------------|:-------------------------|
+| 最終更新       | {{ file.mtime }}         |
+| 対応バージョン | 1.0.0以降                |
 | 概要           | トラッキングを再開する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (IBAction)resumeButtonTapped:(id)sender
 {
     [Userdive resume];

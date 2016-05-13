@@ -21,10 +21,10 @@
 
 | ID | トラッカー          | 機能                                | 自動トラッキング | 手動トラッキング |
 |:---|:--------------------|:------------------------------------|:-----------------|:-----------------|
-| 0  | ScreenEventTracker  | 画面遷移                            | ON               | 任意 |
-| 1  | RotateEventTracker  | 回転イベント (portrait / landscape) | ON               | 任意 |
-| 2  | InputEventTracker   | キーボード入力                      | ON               | 任意 |
-| 3  | GestureEventTracker | スワイプ等のジェスチャ入力          | ON               | 任意 |
+| 0  | ScreenEventTracker  | 画面遷移                            | ON               | 任意             |
+| 1  | RotateEventTracker  | 回転イベント (portrait / landscape) | ON               | 任意             |
+| 2  | InputEventTracker   | キーボード入力                      | ON               | 任意             |
+| 3  | GestureEventTracker | スワイプ等のジェスチャ入力          | ON               | 任意             |
 
 
 ## 自動で画面遷移を認識し、トラッキングする
@@ -37,14 +37,14 @@ USERDIVE iOS SDKはユーザのジェスチャや画面遷移を自動的に認�
 
 USERDIVE iOS SDKのヘッダをインポートします。
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>` を追加します。
 *<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Userdive setLogEnabled:YES];
@@ -61,14 +61,14 @@ USERDIVE iOS SDKのヘッダをインポートします。
 
 USERDIVE iOS SDKのヘッダをインポートします。
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` を追加します。
 *<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -88,7 +88,7 @@ USERDIVE iOS SDKのヘッダをインポートします。
 画面遷移が発生したタイミングで `updateScreen` メソッドを呼び出してください。
 画面名をセットする場合は、追加で `setScreenName:` メソッドを呼び出します。
 
-```objectivec
+```objective-c
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];

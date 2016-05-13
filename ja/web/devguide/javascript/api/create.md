@@ -196,6 +196,8 @@ ud("create", "[ Project Id ]", {
 | Project Id  | String | Yes      | USERDIVE のプロジェクトIDです。                       |
 | Virtual Url | String | No       | クローラーがアクセスを行うURLを明示的に指定できます。 |
 
+仮想ページを指定するAPIとして [`changeVirtualUrl`](./changevirtualurl.html) を利用する方法もあります。
+
 ## カスタム変数
 
 [カスタム変数の詳細](../../../guide/filter/customvar.html)

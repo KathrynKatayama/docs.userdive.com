@@ -66,10 +66,10 @@ USERDIVE for Apps limits the number of data collected to prevent clogging on App
 
 SDKを組み込むアプリの仕様を確認し、追加SDK、問い合わせについてご確認ください。
 
-| Confirmation items                                                | In the case of YES                     |
-|:--------------------------------------------------------|:-------------------------------------|
-| Does your App have Unity?                                 | Use [Unity Plugin](https://github.com/uncovertruth/userdive-ios-sdk-for-unity)    |
-| Does your App have WebView?                               | URLの組み合わせを限定するため、URLパラメータを管理画面上で制限することができます。Please contact us for more information. |
+| Confirmation items                                       | In the case of YES                                                                                                              |
+|:---------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
+| Does your App have Unity?                                | Use [Unity Plugin](https://github.com/uncovertruth/userdive-ios-sdk-for-unity)                                                  |
+| Does your App have WebView?                              | URLの組み合わせを限定するため、URLパラメータを管理画面上で制限することができます。Please contact us for more information.       |
 | Does your App have same screen name for different pages? | Please set unique ViewController name for each category. (Instruction will be provided) Please contact us for more information. |
 
 
@@ -81,12 +81,12 @@ Example of SDK lifecycle.
 
 SDK has the following conditions.
 
-| State Name | Action |
-|:-|:-|
-| Tracking | Tracking of user operation |
-| Pause | Pause tracking of user operation |
-| Uploading | Uploading tracking log |
-| Stop | Stop action |
+| State Name | Action                           |
+|:-----------|:---------------------------------|
+| Tracking   | Tracking of user operation       |
+| Pause      | Pause tracking of user operation |
+| Uploading  | Uploading tracking log           |
+| Stop       | Stop action                      |
 
 ![lifecycle](../../../ja/apps/devguide/files/lifecycle.png)
 
@@ -102,16 +102,16 @@ SDKは`Userdive:startTracking:`呼び出すとUserdiveサーバにセッショ�
 
 The coverage of each function differ depending on Apps.
 
-| Functions                     | SDK | Unity Plugin |
-|:-------------------------|:----------|:----------------|
-| Tap Heatmap       | ◯         | ◯             |
-| Scroll Heatmap   | ◯         | ×※1          |
-| Looking Heatmap   | ◯         | ×※1          |
-| Other event information     | ◯         | ×※1          |
-| Location Heatmap | ◯         | ×※2          |
-| Funnel Analysis                 | ◯         | ◯             |
-| Session Playback   | ◯         | ◯             |
-| Filter Function                | ◯         | ◯             |
+| Functions               | SDK | Unity Plugin |
+|:------------------------|:----|:-------------|
+| Tap Heatmap             | ◯   | ◯            |
+| Scroll Heatmap          | ◯   | ×※1          |
+| Looking Heatmap         | ◯   | ×※1          |
+| Other event information | ◯   | ×※1          |
+| Location Heatmap        | ◯   | ×※2          |
+| Funnel Analysis         | ◯   | ◯            |
+| Session Playback        | ◯   | ◯            |
+| Filter Function         | ◯   | ◯            |
 
 ※1 Can not to get Scroll Heatmap, Looking Heatmap and Other event information on Unity GameView. But can get those out of Unity GameView. Please contact us for more information.
 

@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.1.0以降      |
+|                |                      |
+|:---------------|:---------------------|
+| 最終更新       | {{ file.mtime }}     |
+| 対応バージョン | 1.1.0以降            |
 | 概要           | ログ出力を制御する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // True=ログ出力, False=ログを出力しない

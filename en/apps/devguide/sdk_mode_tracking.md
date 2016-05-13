@@ -17,9 +17,9 @@ Like in Developer Mode, Tracking Mode have two way of noticing screen transition
 ## Kinds of Tracker
 
 Multiple trackers are prepaerd deoending on the events to collect.
-When choosing trackers manually, use the following IDs as references. 
+When choosing trackers manually, use the following IDs as references.
 
-| ID | Tracker          | Function                                   | Auto Tracking | Manual Tracking |
+| ID | Tracker             | Function                                | Auto Tracking | Manual Tracking |
 |:---|:--------------------|:----------------------------------------|:--------------|:----------------|
 | 0  | ScreenEventTracker  | Screen Transition                       | ON            | Voluntary       |
 | 1  | RotateEventTracker  | Screen Rotation  (portrait / landscape) | ON            | Voluntary       |
@@ -31,19 +31,19 @@ When choosing trackers manually, use the following IDs as references.
 
 **ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
 
-USERDIVE iOS SDK can automatically notice and track user gestures or transitions. 
+USERDIVE iOS SDK can automatically notice and track user gestures or transitions.
 Call `startTrackingMode:` method to start tracking.
 
 Import USERDIVE iOS SDK headder.
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 Add `Userdive:startTrackingMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
 Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Userdive setLogEnabled:YES];
@@ -59,14 +59,14 @@ When using own view structure (such as different from iPO standard view structur
 
 Import USERDIVE iOS SDK headder.
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 Add `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
 Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -86,7 +86,7 @@ Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 Call `updateScreen` method when the screen transition happens.
 Call `setScreenName:` method when setting the screen name additionally
 
-```objectivec
+```objective-c
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
