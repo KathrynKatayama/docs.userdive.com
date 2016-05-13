@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.2.0以降      |
+|                |                              |
+|:---------------|:-----------------------------|
+| 最終更新       | {{ file.mtime }}             |
+| 対応バージョン | 1.2.0以降                    |
 | 概要           | 画面遷移を手動で切り替える。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (void)viewDidAppear:(BOOL) animated
 {
     [super viewDidAppear:animated];

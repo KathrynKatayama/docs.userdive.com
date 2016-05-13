@@ -8,7 +8,7 @@
 
 ## 使い方
 
-```objectivec
+```objective-c
 /**
  * Set user location.
  */

@@ -30,13 +30,13 @@ UINavigationController, UITabBarControllerを利用している場合、画面�
 
 USERDIVE iOS SDKヘッダをインポートします。
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -66,14 +66,14 @@ USERDIVE iOS SDKヘッダをインポートします。
 
 USERDIVE iOS SDKヘッダをインポートします。
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:trackers:` を追加します。
 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -95,7 +95,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 - `updateScreen`を呼び出すと、画面キャプチャ取得の準備を行います
 - 再度 `updateScreen` を呼び出すと画面キャプチャを取得します（つまり、キャプチャを取得するまでに合計二度 `updateScreen`を呼び出す必要があります）
 
-```objectivec
+```objective-c
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];

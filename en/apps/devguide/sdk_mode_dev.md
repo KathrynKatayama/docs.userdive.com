@@ -28,13 +28,13 @@ When `UINavigationController` or `UITabBarController` are bring used, USERDIVE r
 
 Import USERDIVE iOS SDK headder.
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`. Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -46,7 +46,7 @@ Add `Userdive:startDeveloperMode:` to `AppDeletegate:application:didFinishLaunch
 }
 ```
 
-When activating an app, the following pop-up shows after screen the transition to next page. 
+When activating an app, the following pop-up shows after screen the transition to next page.
 Choose *Send* to upload screen image to USERDIVE.
 
 ![sdk_verification_capture_1.png](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
@@ -67,14 +67,14 @@ The Implementation is following.
 
 Import USERDIVE iOS SDK headder.
 
-```objectivec
+```objective-c
 #import "Userdive.h"
 ```
 
 Add `Userdive:startDeveloperMode:trackers:` to `AppDeletegate:application:didFinishLaunchingWithOptions:`.
 Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [Userdive setLogEnabled:YES];
@@ -94,9 +94,9 @@ Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 When the screen you want to take capture is shown, call the following method.
 
 - Call `updateScreen` to prepare for screen image capture.
-- Call `updateScreen` again to take screen image capture. (Total of two `updateScreen` is neccessary to cop .) 
+- Call `updateScreen` again to take screen image capture. (Total of two `updateScreen` is neccessary to cop .)
 
-```objectivec
+```objective-c
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
@@ -106,7 +106,7 @@ When the screen you want to take capture is shown, call the following method.
 }
 ```
 
-When activating an app, the following pop-up shows after screen the transition to next page. 
+When activating an app, the following pop-up shows after screen the transition to next page.
 Choose *Send* to upload screen image to USERDIVE.
 
 ![sdk_verification_capture_1.png](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)

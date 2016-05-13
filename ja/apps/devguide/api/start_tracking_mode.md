@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.0.0      |
+|                |                                  |
+|:---------------|:---------------------------------|
+| 最終更新       | {{ file.mtime }}                 |
+| 対応バージョン | 1.0.0                            |
 | 概要           | アプリのトラッキングを開始する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Team IDを引数として渡す

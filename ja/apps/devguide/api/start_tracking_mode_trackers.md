@@ -11,15 +11,15 @@
 
 # API
 
-|                |            |
-|:---------------|:-----------|
-| 最終更新       | {{ file.mtime }} |
-| 対応バージョン | 1.2.0以降  |
+|                |                                                            |
+|:---------------|:-----------------------------------------------------------|
+| 最終更新       | {{ file.mtime }}                                           |
+| 対応バージョン | 1.2.0以降                                                  |
 | 概要           | 任意のトラッカーを指定してアプリのトラッキングを開始する。 |
 
 ## 使い方
 
-```objectivec
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // 起動したい任意のトラッカーを指定する
