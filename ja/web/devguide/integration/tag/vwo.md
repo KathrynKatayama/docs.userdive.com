@@ -42,6 +42,6 @@
       }
     } catch (err) {};
   });
-})('[Project ID]', window);
+})('[Project Id]', window);
 </script>
 ```
