@@ -2,7 +2,7 @@
   "name": "docs.userdive.com",
   "version": false,
   "dependencies": {},
-  "ambientDevDependencies": {
+  "globalDevDependencies": {
     "clean-css": "registry:dt/clean-css#3.4.9+20160316155526",
     "gulp": "registry:dt/gulp#3.8.0+20160316155526",
     "gulp-htmlmin": "registry:dt/gulp-htmlmin#1.3.0+20160316155526",
