@@ -10,9 +10,10 @@
 
 - Common
     - Timestamp
+    - IP address
     - Session ID
 - Information about user environment
-    - Country / Region
+    - Country / Region (estimated based on GeoIP)
     - Device type
     - OS version
     - Display size
