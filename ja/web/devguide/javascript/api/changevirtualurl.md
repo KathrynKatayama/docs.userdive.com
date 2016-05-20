@@ -51,6 +51,6 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 examples ではヘッダー内に存在している `About` をクリックすることにより、 `changeVirtualUrl` を実行します。
 
 1. `//harpoon3.userdive.com/tracking.php` への送信データに含まれる `attr[url]` の値を確認ください。
-1. `changeVirtualUrl` を実行後、引数に与えら得たURLに `attr[url]` の値が変更されていることを確認してください。
+1. `changeVirtualUrl` を実行後、引数に与えられたURLに `attr[url]` の値が変更されていることを確認してください。
 
 ![debug image](./files/changeVirtualUrlDebug.png)
