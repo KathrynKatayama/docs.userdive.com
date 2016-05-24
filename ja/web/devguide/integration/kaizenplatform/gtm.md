@@ -54,9 +54,13 @@ Kaizen Platform 連携タグの反映には下記の2つが必要です。
     ![custom eventをする](./img/custom_event.png)
 1. 下記のコードを配信するタグに登録し、トリガーを **作成したカスタムイベント** のもので登録し、配信を行う
 
-
 {% include '../tag/kaizenplatform/userdive.md' %}
 
 | Field        | Type   | Required | Description                     |
 |:-------------|:-------|:---------|:--------------------------------|
 | [Project Id] | String | Yes      | USERDIVE のプロジェクトIDです。 |
+
+上記の連携に成功した場合
+
+- USERDIVE上では`_kzs_var_id` というパラメータ付きURLに対してデータの計測が開始されます
+- **カスタム変数1** にて `expId`、 **カスタム変数2** にて `variationId` を利用したフィルタをかけることができます。
