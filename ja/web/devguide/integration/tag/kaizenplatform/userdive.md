@@ -1,4 +1,4 @@
-```javascript
+```html
 <script>
 (function (userdiveId, root, kzsState, kzsExpId, kzsVarId, data) {
   function getKzsState (dataLayer) {
