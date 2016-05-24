@@ -20,9 +20,11 @@
 
 ## 必要なタグ
 
-- Kaizen Platform `dataLayer` push タグ
-- USERDIVE ロードタグ
-- USERDIVE `dataLayer` pop タグ
+連携には、下記の3つのタグが必要になります。
+
+1. Kaizen Platform スニペット
+1. USERDIVE ロードタグ
+1. Kaizen Platform/USERDIVE 連携タグ
 
 ### Kaizen Platform スニペット
 
