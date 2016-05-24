@@ -1,24 +1,31 @@
 ```html
+<script data-kz-key="XXXXXX"
+  data-kz-namespace="kzs"
+  src="https://cdn.kaizenplatform.net/y/XX/ZZZZZZZ.js"></script>
 <script>
-(function (root) {
-  var kzs = root.kzs || function () {
-    var _ = root.kzs; return (_.q || (_.q = [])).push(arguments);
-  };
-  var testId = -1;
-  var postId = -1;
-  if (typeof kzs === 'undefined') {
-    return;
-  }
+(function (root, kzs) {
   try {
-    kzs('getVariation', function (variation) {
+    kzs = root.kzs || function () {
+      var _ = root.kzs;
+      return (_.q || (_.q = [])).push(arguments);
+    };
+    kzs('getVariation', function (data, state) {
+      var expId;
+      var varId;
       try {
-        if (variation.experimentId && variation.variationId) {
-          testId = variation.experimentId;
-          postId = variation.variationId;
+        if (state === 'unmatched') {
           root.dataLayer.push({
-            event: 'trackKAIZEN',
-            kzsExpId: String(testId),
-            kzsVarId: String(postId)
+            event: 'kzsApply',
+            kzsState: String(state)
+          });
+        } else if (state === 'decided') {
+          expId = data.expId;
+          varId = data.variationId;
+          root.dataLayer.push({
+            event: 'kzsApply',
+            kzsState: String(state),
+            kzsExpId: String(expId),
+            kzsVarId: String(varId)
           });
         }
       } catch (e) {}

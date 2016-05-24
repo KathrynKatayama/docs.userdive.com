@@ -1,39 +1,46 @@
 ```javascript
 <script>
-(function (userdiveId, root) {
-  var expId = -1;
-  var varId = -1;
-  var i;
-  var separator;
-  function generateUrl (dataLayer) {
+(function (userdiveId, root, kzsState, kzsExpId, kzsVarId, data) {
+  function getKzsState (dataLayer) {
+    var i;
     try {
       if (!dataLayer || !dataLayer.length) {
-        return;
+        return {};
       }
-
       for (i = 0; i < dataLayer.length; i++) {
-        if (dataLayer[i].kzsExpId !== undefined) {
-          expId = dataLayer[i].kzsExpId;
-          varId = dataLayer[i].kzsVarId;
+        if (dataLayer[i].kzsState !== undefined) {
+          return dataLayer[i];
         }
       }
-      if (expId !== -1 && varId !== -1) {
-        separator = location.search === '' ? '?' : '&';
-        return location.protocol +
-          '//' +
-          location.host +
-          location.pathname +
-          location.search +
-          separator +
-          '_kzs_var_id=' +
-          varId +
-          location.hash;
-      }
-      return;
     } catch (e) {} finally {}
   }
+
+  function generateUrl (varId, state) {
+    var separator;
+    if (state !== 'decided') {
+      return;
+    }
+
+    separator = location.search === '' ? '?' : '&';
+    return location.protocol +
+      '//' +
+      location.host +
+      location.pathname +
+      location.search +
+      separator +
+      '_kzs_var_id=' +
+      varId +
+      location.hash;
+  }
+
+  data = getKzsState(root.dataLayer);
+  kzsState = data.kzsState;
+  kzsExpId = data.kzsExpId;
+  kzsVarId = data.kzsVarId;
+
   root.ud('create', userdiveId, {
-    'overrideUrl': generateUrl(root.dataLayer)
+    'overrideUrl': generateUrl(kzsVarId, kzsState),
+    'customVar': [kzsVarId, kzsExpId]
   });
   root.ud('analyze');
 })('[ Project Id ]', window);

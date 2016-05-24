@@ -33,13 +33,13 @@ Kaizen Platfom の通常のタグの反映が必要です。
 
 USERDIVE ロードタグの反映が必要です。
 
-{% include './tag/load.md' %}
+{% include '../tag/load.md' %}
 
 USERDIVE ロードタグは `</head>` の直前に反映させることを推奨しています。
 
 ### Kaizen Platform/USERDIVE 連携タグ
 
-{% include './tag/kaizenplatform.min.md' %}
+{% include '../tag/kaizenplatform.min.md' %}
 
 | Field        | Type   | Required | Description                     |
 |:-------------|:-------|:---------|:--------------------------------|
@@ -49,7 +49,7 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 未圧縮の連携タグ
 
-{% include './tag/kaizenplatform.md' %}
+{% include '../tag/kaizenplatform.md' %}
 
 上記のコードで行われる主な処理は下記の2つです。
 
