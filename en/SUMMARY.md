@@ -16,3 +16,8 @@
         - [Integration done manually](./apps/devguide/integration_manual.md)
     - Specification
         - [Tracking data](./apps/devguide/tracking_data.md)
+    - FAQ
+        - [How does USERDIVE get location info?](./apps/devguide/faq/country_region.md)
+        - [How does USERDIVE collect user action?](./apps/devguide/faq/)
+        - [How does USERDIVE's session playback work?](./apps/devguide/faq/sessionplayback.md)
+        - [Where do I take screen shot for the session-playback?](./apps/devguide/faq/screenshot.md)

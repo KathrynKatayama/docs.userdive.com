@@ -52,7 +52,9 @@
             - [SDKファイルサイズについて](./apps/devguide/faq/filesize.md)
             - [SDKリソース使用量について](./apps/devguide/faq/resource_usage.md)
             - [SDKの組み込みはどのくらい時間がかかりますか](./apps/devguide/faq/how_many_times_to_implement_sdk.md)
-        - SDKの仕様        
+        - SDKの仕様
+            - [どのようにユーザの操作を取得しますか](./apps/devguide/faq/how_to_record_user_action.md)
+            - [エンドユーザのスクリーンショットを取得しますか](./apps/devguide/faq/screenshot.md)
             - [ユーザ認証後のビューをトラッキングできますか](./apps/devguide/faq/authenticated_view.md)
             - [画面名の長さの上限はありますか](./apps/devguide/faq/screen_name_length.md)
             - [バックグラウンド状態でセッションは継続しますか](./apps/devguide/faq/session_in_background.md)
@@ -71,7 +73,9 @@
             - [特定のユーザーだけトラッキングできますか](./apps/devguide/faq/track_specified_user.md)
             - [WiFi接続時のみトラッキングできますか](./apps/devguide/faq/track_wifi.md)
         - 管理画面仕様
+            - [国 / 地域とはなんですか](./apps/devguide/faq/country_region.md)
             - [画面単位でトラッキングの有無を設定できますか](./apps/devguide/faq/screen_tracking.md)
             - [AlertViewやActionSheetなどのビューをプレイバックできるか](./apps/devguide/faq/playback_native_view.md)
             - [RAWデータをダウンロードできますか](./apps/devguide/faq/download_raw_data.md)
             - [データの分析結果はいつ確認することが出来ますか](./apps/devguide/faq/processing_interval.md)
+            - [セッションプレイバックは動画ですか](./apps/devguide/faq/sessionplayback.md)
