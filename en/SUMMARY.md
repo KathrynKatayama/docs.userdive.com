@@ -17,7 +17,7 @@
     - Specification
         - [Tracking data](./apps/devguide/tracking_data.md)
     - FAQ
-        - [How to get location info?](./apps/devguide/faq/country_region.md)
-        - [How to collect user action?](./apps/devguide/faq/)
-        - [How it works session playback?](./apps/devguide/faq/sessionplayback.md)
+        - [How does USERDIVE get location info?](./apps/devguide/faq/country_region.md)
+        - [How does USERDIVE collect user action?](./apps/devguide/faq/)
+        - [How does USERDIVE's session playback work?](./apps/devguide/faq/sessionplayback.md)
         - [Where do I take screen shot for the session-playback?](./apps/devguide/faq/screenshot.md)
