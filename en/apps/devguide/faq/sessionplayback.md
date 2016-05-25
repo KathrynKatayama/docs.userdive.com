@@ -1,4 +1,4 @@
-# How it works session-playback?
+# How does USERDIV's session-playback work?
 
 **Session Playback DOES NOT RECORD any video. Session Playback is composed of the same data as Heatmaps, it is just distributed differently.**
 
