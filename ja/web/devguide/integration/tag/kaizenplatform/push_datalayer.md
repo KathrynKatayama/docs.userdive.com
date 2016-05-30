@@ -3,13 +3,13 @@
   data-kz-namespace="kzs"
   src="https://cdn.kaizenplatform.net/y/XX/ZZZZZZZ.js"></script>
 <script>
-(function (root, kzs) {
+(function (root) {
   try {
-    kzs = root.kzs || function () {
+    root.kzs = root.kzs || function () {
       var _ = root.kzs;
       return (_.q || (_.q = [])).push(arguments);
     };
-    kzs('getVariation', function (data, state) {
+    root.kzs('getVariation', function (data, state) {
       var expId;
       var varId;
       try {

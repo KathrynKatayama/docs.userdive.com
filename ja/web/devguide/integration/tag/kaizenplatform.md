@@ -1,14 +1,11 @@
 ```html
 <script>
-(function (userdiveId, root) {
-  var kzs;
-  var separator;
-  var url;
+(function (userdiveId, root, separator, url) {
   try {
-    kzs = root.kzs || function () {
+    root.kzs = root.kzs || function () {
       var _ = root.kzs; return (_.q || (_.q = [])).push(arguments);
     };
-    kzs('getVariation', function (data, state) {
+    root.kzs('getVariation', function (data, state) {
       try {
         if (state === 'decided') {
           separator = root.location.search === '' ? '?' : '&';
@@ -36,6 +33,6 @@
     root.ud('create', userdiveId);
     root.ud('analyze');
   }
-})('[Project Id]', window);
+})('[ Project Id ]', window);
 </script>
 ```
