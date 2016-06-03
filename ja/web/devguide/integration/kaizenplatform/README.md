@@ -6,7 +6,7 @@
 
 1. `Google Tag Manager` を利用する
     - [詳細方法](./gtm.html)
-    - [(Google Tag Manager examples)](https://uncovertruth.github.io/examples/integration/kaizenplatform_with_gtm.html)
+    - [(Google Tag Manager examples)](https://uncovertruth.github.io/examples/integration/kaizenplatform/gtm.html)
 1. HTMLを編集する
     - [詳細方法](./simple.html)
     - [(example)](https://uncovertruth.github.io/examples/integration/kaizenplatform.html)

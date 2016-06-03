@@ -16,7 +16,7 @@
 
 また、こちらの手順では `Google Tag Manager` が提供する `dataLayer` の機能を用いてテスト情報の引き渡しを行います。
 
-- [(Google Tag Manager examples)](https://uncovertruth.github.io/examples/integration/kaizenplatform_with_gtm.html)
+- [(Google Tag Manager examples)](https://uncovertruth.github.io/examples/integration/kaizenplatform/gtm.html)
 
 ## 必要なタグ
 
