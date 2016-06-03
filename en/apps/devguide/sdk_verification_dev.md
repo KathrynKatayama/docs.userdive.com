@@ -2,23 +2,23 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [SDKデベロッパモードの動作確認](#sdk%E3%83%87%E3%83%99%E3%83%AD%E3%83%83%E3%83%91%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
-  - [開始動作の確認](#%E9%96%8B%E5%A7%8B%E5%8B%95%E4%BD%9C%E3%81%AE%E7%A2%BA%E8%AA%8D)
+- [Operation Check for Developer Mode](#sdk%E3%83%87%E3%83%99%E3%83%AD%E3%83%83%E3%83%91%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
+  - [Operation Check for Starting](#%E9%96%8B%E5%A7%8B%E5%8B%95%E4%BD%9C%E3%81%AE%E7%A2%BA%E8%AA%8D)
   - [キャプチャ動作の確認](#%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E5%8B%95%E4%BD%9C%E3%81%AE%E7%A2%BA%E8%AA%8D)
   - [アップロードされた画面キャプチャの確認](#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%9F%E7%94%BB%E9%9D%A2%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%AE%E7%A2%BA%E8%AA%8D)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# SDKデベロッパモードの動作確認
+# Operation Check with Developer Mode SDK
 
-デベロッパモードの動作は以下を確認します。
+Please check the followings.
 
-- 動作ログ
-- キャプチャのアップロード
+- Event log
+- Up loading Capture
 
-## 開始動作の確認
+## Check the start of the operation
 
-デベロッパモード開始後、次のログが出力されることを確認してください。
+After starting developer mode, check if following log is being output.
 
 ```
 2016-04-11 17:53:58.000 AppDiveSample[41018:2951170] ADVAppDive.m(205) -[ADVAppDive startDeveloperMode:trackers:] start developer mode: team_id=1
@@ -27,17 +27,18 @@
 ```
 
 
-## キャプチャ動作の確認
+## Check the capturing operation
 
-画面が遷移するとキャプチャが行われます。
-アップロードダイアログの表示と、アップロード成功後の表示を確認してください。
+The capture is uploaded after the transition is completed.
+Please check the two dialogue boxs before and after uploading.
 
-アップロードの確認は次のようになります。
+When moving to next page to upload the capture, the following dialogue box appears.
+（日本語：アップロードの確認は次のようになります。）
 
 ![upload confirmation dialog](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
 
-アップロードに成功すると次のダイアログが表示されます。
-また、後述のログ出力も確認してください。
+If the upload is successful, then the following dialogue box appears.
+Check if log right blow the dialogue box is also being output.
 
 ![upload status dialog](../../../ja/apps/devguide/files/sdk_verification_capture_2.png)
 
@@ -48,18 +49,19 @@
 2016-04-11 18:07:03.328 AppDiveSample[41018:2993544] ADVAPIClient.m(105) __58-[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:]_block_invoke response body: {"status": "OK"}
 ```
 
-## アップロードされた画面キャプチャの確認
+## Check the uploaded screen capture
 
-アップロードされた画面キャプチャは管理画面上で確認することができます。
-アプリの設定を開きます。
+It's possible to check the screen captures on administrative account.  アップロードされた画面キャプチャは管理画面上で確認することができます。
+Open "Manage" on Home.
 
 ![sdk_verification_capture_3.png](../../../ja/apps/devguide/files/sdk_verification_capture_3.png)
 
-下部の `アップロード済み画面キャプチャの確認` を開きます。
+Open `Check uploaded screen images` below the page.
 
 ![sdk_verification_capture_4.png](../../../ja/apps/devguide/files/sdk_verification_capture_4.png)
 
-画面名と画面キャプチャの一覧が表示されます。
-`画面イメージを表示` をクリックすると、アップロード済みの画面キャプチャが表示されます。
+List of screen names and screen captures are displayed.
+Click on `Preview screen images` to see uploaded screen captures.
+If the captures are not listed, then the upload was not successful.
 
 ![sdk_verification_capture_5.png](../../../ja/apps/devguide/files/sdk_verification_capture_5.png)
