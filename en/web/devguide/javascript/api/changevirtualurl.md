@@ -22,11 +22,16 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 - Web site that uses asynchronous transmission like Ajax
 - Use following JavaScript framework
     - AngularJS
-    - React.js
-    - Ember.js
     - Backbone.js
+    - Ember.js
+    - jQuery
+    - React.js
     - Vue.js
     - etc
+
+## sequence diagram
+
+![change virtual url](./mmd/changevirtualurl.md.png)
 
 # Out of support
 
