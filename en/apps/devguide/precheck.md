@@ -1,18 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Check List in advance](#check-list-in-advance)
-  - [Support devices/Languages](#support-deviceslanguages)
-  - [Counterplan Limitations](#counterplan-limitations)
-  - [Check the App specifications](#check-the-app-specifications)
-  - [SDK lifecycle](#sdk-lifecycle)
-    - [状態遷移](#%E7%8A%B6%E6%85%8B%E9%81%B7%E7%A7%BB)
-    - [Processing Sequence](#processing-sequence)
-  - [Coverage of USERDIVE for App](#coverage-of-userdive-for-app)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Check List in advance
 
 この資料のゴールは、SDKの動作を理解することと、必要な問い合わせ内容や実装方法を理解することです。    

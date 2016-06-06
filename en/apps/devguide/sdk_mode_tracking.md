@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Tracking Mode](#tracking-mode)
-  - [Kinds of Tracker](#kinds-of-tracker)
-  - [Automatically notice screen transitions, and start tracking](#automatically-notice-screen-transitions-and-start-tracking)
-  - [Manually notice screen transitions, and start tracking](#manually-notice-screen-transitions-and-start-tracking)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Tracking Mode
 
 This mode collects user action on released apps or test apps.

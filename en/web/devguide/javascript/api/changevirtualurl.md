@@ -1,12 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [`changeVirtualUrl` API](#changevirtualurl-api)
-- [Out of support](#out-of-support)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # `changeVirtualUrl` API
 
 USERDIVE can track and analyse the user action on each URL. (`window.location.href`)

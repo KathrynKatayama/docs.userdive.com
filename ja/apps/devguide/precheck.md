@@ -1,18 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [事前チェックリスト](#%E4%BA%8B%E5%89%8D%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88)
-  - [対応機種 / 言語](#%E5%AF%BE%E5%BF%9C%E6%A9%9F%E7%A8%AE--%E8%A8%80%E8%AA%9E)
-  - [制限事項](#%E5%88%B6%E9%99%90%E4%BA%8B%E9%A0%85)
-  - [アプリ仕様確認](#%E3%82%A2%E3%83%97%E3%83%AA%E4%BB%95%E6%A7%98%E7%A2%BA%E8%AA%8D)
-  - [SDKライフサイクル](#sdk%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB)
-    - [状態遷移](#%E7%8A%B6%E6%85%8B%E9%81%B7%E7%A7%BB)
-    - [処理シーケンス](#%E5%87%A6%E7%90%86%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3%E3%82%B9)
-  - [通常版SDK / Unityプラグインの違い](#%E9%80%9A%E5%B8%B8%E7%89%88sdk--unity%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E9%81%95%E3%81%84)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # 事前チェックリスト
 
 この資料のゴールは、SDKの動作と実装方法を理解することです。

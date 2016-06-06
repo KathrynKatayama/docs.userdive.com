@@ -1,17 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [`create` API](#create-api)
-  - [複数プロジェクトの設定](#%E8%A4%87%E6%95%B0%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A)
-  - [ページエンコーディング](#%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0)
-    - [指定可能なエンコード一覧](#%E6%8C%87%E5%AE%9A%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E4%B8%80%E8%A6%A7)
-  - [仮想ページ](#%E4%BB%AE%E6%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
-  - [カスタム変数](#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E5%A4%89%E6%95%B0)
-  - [Cookie の設定](#cookie-%E3%81%AE%E8%A8%AD%E5%AE%9A)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # `create` API
 
 `create` API では計測を始める前に必要な情報を登録することができます。

@@ -1,16 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Integration with VWO](#integration-with-vwo)
-  - [Edit HTML](#edit-html)
-    - [VWO tag](#vwo-tag)
-    - [USERDIVE Load tag](#userdive-load-tag)
-    - [VWO/USERDIVE Link tag](#vwouserdive-link-tag)
-  - [Attention](#attention)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Integration with VWO
 
 USERDIVE can receive test information by following process.
