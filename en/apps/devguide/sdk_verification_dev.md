@@ -22,7 +22,7 @@ The capture is uploaded after the transition is completed.
 Please check the two dialogue boxs before and after uploading.
 
 When moving to next page to upload the capture, the following dialogue box appears.
-（日本語：アップロードの確認は次のようになります。）
+（日本語：アップロードの確認は次のようになります）
 
 ![upload confirmation dialog](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
 
@@ -40,7 +40,8 @@ Check if log right blow the dialogue box is also being output.
 
 ## Check the uploaded screen capture
 
-It's possible to check the screen captures on administrative account.  アップロードされた画面キャプチャは管理画面上で確認することができます。
+It's possible to check the screen captures on administrative account.
+
 Open "Manage" on Home.
 
 ![sdk_verification_capture_3.png](../../../ja/apps/devguide/files/sdk_verification_capture_3.png)
