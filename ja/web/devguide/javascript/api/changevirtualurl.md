@@ -22,11 +22,16 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 - Ajaxなどの非同期通信を利用したサイト
 - JavaScript フレームワークを利用したサイト
     - AngularJS
-    - React.js
-    - Ember.js
     - Backbone.js
+    - Ember.js
+    - jQuery
+    - React.js
     - Vue.js
     - etc
+
+## sequence diagram
+
+![change virtual url](./mmd/changevirtualurl.mmd.png)
 
 # サポート外の項目
 
