@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Operation Check for Developer Mode](#sdk%E3%83%87%E3%83%99%E3%83%AD%E3%83%83%E3%83%91%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
-  - [Operation Check for Starting](#%E9%96%8B%E5%A7%8B%E5%8B%95%E4%BD%9C%E3%81%AE%E7%A2%BA%E8%AA%8D)
-  - [キャプチャ動作の確認](#%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E5%8B%95%E4%BD%9C%E3%81%AE%E7%A2%BA%E8%AA%8D)
-  - [アップロードされた画面キャプチャの確認](#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%9F%E7%94%BB%E9%9D%A2%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%AE%E7%A2%BA%E8%AA%8D)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Operation Check with Developer Mode SDK
 
 Please check the followings.

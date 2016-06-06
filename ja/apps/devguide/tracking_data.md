@@ -1,11 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [トラッキングデータ](#%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%87%E3%83%BC%E3%82%BF)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # トラッキングデータ
 
 - 共通データ

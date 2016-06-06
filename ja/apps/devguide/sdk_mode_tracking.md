@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [トラッキングモード](#%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%BC%E3%83%89)
-  - [トラッカーの種類](#%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E)
-  - [自動で画面遷移を認識し、トラッキングする](#%E8%87%AA%E5%8B%95%E3%81%A7%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E3%82%92%E8%AA%8D%E8%AD%98%E3%81%97%E3%80%81%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%81%99%E3%82%8B)
-  - [手動で画面遷移を管理し、トラッキングする](#%E6%89%8B%E5%8B%95%E3%81%A7%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E3%82%92%E7%AE%A1%E7%90%86%E3%81%97%E3%80%81%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%81%99%E3%82%8B)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # トラッキングモード
 
 リリース版アプリまたはテスト版アプリに組み込み、ユーザの動きを追跡するモードです。

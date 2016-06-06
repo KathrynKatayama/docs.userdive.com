@@ -22,8 +22,8 @@
     "typings": "^1.0.3"
   },
   "scripts": {
-    "build": "npm run toc && gitbook build && find _book -type l -delete && gulp build",
-    "deploy": "npm run build",
+    "build": "gitbook build && find _book -type l -delete && gulp build",
+    "deploy": "npm run toc && npm run build",
     "lint": "textlint ja",
     "postinstall": "gitbook install && typings install",
     "prebuild": "rm -rf _book && rm -rf dist",

@@ -1,14 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [SDKトラッキングモードの動作確認](#sdk%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%BC%E3%83%89%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
-  - [開始動作](#%E9%96%8B%E5%A7%8B%E5%8B%95%E4%BD%9C)
-  - [トラッキング動作](#%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E5%8B%95%E4%BD%9C)
-  - [イベントログアップロード動作](#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%83%AD%E3%82%B0%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E5%8B%95%E4%BD%9C)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # SDKトラッキングモードの動作確認
 
 トラッキングモードの動作は以下を確認します。

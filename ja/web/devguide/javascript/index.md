@@ -1,13 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [サイトの計測を開始する](#%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%A8%88%E6%B8%AC%E3%82%92%E9%96%8B%E5%A7%8B%E3%81%99%E3%82%8B)
-- [HTML `<script>` タグの設定](#html-script-%E3%82%BF%E3%82%B0%E3%81%AE%E8%A8%AD%E5%AE%9A)
-- [API について](#api-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ### サイトの計測を開始する
 
 USERDIVE ユーザの行動を計測するために ( UDTracker.js ) を利用します。  
