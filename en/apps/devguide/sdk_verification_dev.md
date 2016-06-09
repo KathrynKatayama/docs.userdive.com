@@ -22,7 +22,6 @@ The capture is uploaded after the transition is completed.
 Please check the two dialogue boxs before and after uploading.
 
 When moving to next page to upload the capture, the following dialogue box appears.
-（日本語：アップロードの確認は次のようになります）
 
 ![upload confirmation dialog](../../../ja/apps/devguide/files/sdk_verification_capture_1.png)
 
