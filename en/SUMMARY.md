@@ -2,6 +2,8 @@
 
 - web analytics
     - [To start tracking the website](./web/devguide/javascript/index.md)
+    - guide
+        - [web snapshot](./web/guide/snapshot.md)
     - API
         - [analyze](./web/devguide/javascript/api/analyze.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
