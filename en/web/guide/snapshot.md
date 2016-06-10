@@ -26,7 +26,7 @@ Followings are required for virtual page.
 
 ## pros/cons
 
-Merit and Demerit of the virtual page.
+pros/cons of the virtual page.
 
 ### pros
 
