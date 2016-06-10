@@ -24,16 +24,16 @@ Followings are required for virtual page.
 - [Create virtual page](../devguide/virtualpage.html)
 - [Specify virtual page and start to tracking](../devguide/javascript/api/create.html)
 
-## Merit/Demerit
+## pros/cons
 
 Merit and Demerit of the virtual page.
 
-### Merit
+### pros
 
 1. Clearly specify the web snapshot that users had made action on, and re-create it
 1. Able to create a safe web snapshot with no personal information
 
-### Demerit
+### cros
 
 1. Must develop a virtual page
 1. Must update the virtual page when there is renewal or changes
