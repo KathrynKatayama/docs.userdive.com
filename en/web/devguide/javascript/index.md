@@ -26,12 +26,3 @@ There is the following four kind of main processing the above cord.
 1. To publish the `<script>` tag which loads the JavaScript that we prodive in async
 1. Register of the ID [(about create API)](./api/create.html)
 1. Start the tracking of the site [(about analyze API)](./api/analyze.md)
-
-# About API
-
-You can use the following API on USERDIVE.
-
-- [`create`](./api/create.html)
-- [`analyze`](./api/analyze.html)
-- [`setcustomVar`](./api/setcustomvar.html)
-- [`changeVirtualUrl`](./api/changevirtualurl.html)

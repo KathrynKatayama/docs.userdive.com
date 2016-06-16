@@ -1,4 +1,4 @@
-# Welcome to USERDIVE
+# USERDIVE へようこそ
 
 - ウェブ解析
     - [計測開始](./web/devguide/javascript/index.md)
@@ -7,8 +7,11 @@
         - [仮想ページの作成](./web/devguide/virtualpage.md)
     - フィルタ
         - [カスタム変数](./web/guide/filter/customvar.md)
-    - API
+    - [API](./web/devguide/javascript/api/index.md)
         - [create](./web/devguide/javascript/api/create.md)
+            - [customvar](./web/devguide/javascript/api/create/customvar.md)
+            - [overrideUrl](./web/devguide/javascript/api/create/overrideurl.md)
+            - [cookie](./web/devguide/javascript/api/create/cookie.md)
         - [analyze](./web/devguide/javascript/api/analyze.md)
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
