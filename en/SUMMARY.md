@@ -11,7 +11,7 @@
             - overrideUrl
             - cookie
         - [analyze](./web/devguide/javascript/api/analyze.md)
-        - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
+        - setCustomVar
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
         - [Optimizely](./web/devguide/integration/optimizely.md)
