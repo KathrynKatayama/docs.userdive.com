@@ -4,7 +4,7 @@
     - [To start tracking the website](./web/devguide/javascript/index.md)
     - Guide
         - [web snapshot](./web/guide/snapshot.md)
-        - [create virtual page](./web/devguide/virtualpage.md)
+        - virtual page
     - [API](./web/devguide/javascript/api/index.md)
         - create
             - customvar
