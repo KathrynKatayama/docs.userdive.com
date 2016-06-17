@@ -10,7 +10,7 @@ API は二種類提供しています。
 
 ## 1. `create` API を利用したカスタム変数の設定
 
-[ `create` API のドキュメント](../api/create.html)を参照ください。
+[ `create` API のドキュメント](../api/create/customvar.html)を参照ください。
 
 ## 2. `setCustomVar` を利用したカスタム変数の設定
 

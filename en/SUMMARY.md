@@ -4,8 +4,14 @@
     - [To start tracking the website](./web/devguide/javascript/index.md)
     - guide
         - [web snapshot](./web/guide/snapshot.md)
-    - API
+        - virtual page
+    - [API](./web/devguide/javascript/api/index.md)
+        - create
+            - customvar
+            - overrideUrl
+            - cookie
         - [analyze](./web/devguide/javascript/api/analyze.md)
+        - setCustomVar
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
         - [vwo](./web/devguide/integration/vwo.md)
