@@ -33,7 +33,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 ![change virtual url](./mmd/changevirtualurl.mmd.png)
 
-# Out of support
+## Out of support
 
 `changeVirtualUrl` API does not support the following two.
 

@@ -33,13 +33,13 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 ![change virtual url](./mmd/changevirtualurl.mmd.png)
 
-# サポート外の項目
+## サポート外の項目
 
 `changeVirtualUrl` API を利用した分析では、下記のことをサポートしていません。
 
 - フォーム分析、およびそれに関係するイベントの計測
 
-# 確認方法
+## 確認方法
 
 [(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html) を例に確認方法について記載します。確認には DeveloperTools などを用います。
 
