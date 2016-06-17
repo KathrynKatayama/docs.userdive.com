@@ -13,7 +13,7 @@
 ここでは `create` API に必須な `[ Project Id ]` の設定方法に関して説明します。
 `[ Project Id ]` の設定は、[計測を開始](./analyze.html)するまでに必ず必要です。
 
-# プロジェクトの設定
+## プロジェクトの設定
 
 ```html
 <script>
@@ -26,7 +26,7 @@ ud("create", "[ Project Id ]", [ Options ]);
 | Project Id | String | Yes      | USERDIVE のプロジェクトIDです。 |
 | options    | Object | No       | オプションを指定                |
 
-## 複数プロジェクトの設定
+### 複数プロジェクトの設定
 
 複数のプロジェクト情報を登録することが可能です
 
@@ -42,7 +42,7 @@ ud("create", {"pc": "[ Project Id 1 ]", "sp": "[ Project Id 2 ]"}, [ Options ]);
 | Project Id 2 | String | Yes      | USERDIVE のプロジェクトIDです。 |
 | Options      | Object | No       | オプションを指定                |
 
-# オプション
+## オプション
 
 `create` API では下記のオプションを指定できます。
 
