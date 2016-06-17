@@ -4,14 +4,16 @@
     - [To start tracking the website](./web/devguide/javascript/index.md)
     - Guide
         - [web snapshot](./web/guide/snapshot.md)
-        - virtual page
+        - [virtual page](./web/devguide/virtualpage.md)
+        - Filter
+            - [customvar](./web/guide/filter/customvar.md)
     - [API](./web/devguide/javascript/api/index.md)
-        - create
-            - customvar
-            - overrideUrl
-            - cookie
+        - [create](./web/devguide/javascript/api/create.md)
+            - [customvar](./web/devguide/javascript/api/create/customvar.md)
+            - [overrideUrl](./web/devguide/javascript/api/create/overrideurl.md)
+            - [cookie](./web/devguide/javascript/api/create/cookie.md)
         - [analyze](./web/devguide/javascript/api/analyze.md)
-        - setCustomVar
+        - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
         - [Optimizely](./web/devguide/integration/optimizely.md)
