@@ -16,10 +16,11 @@
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
-        - [kaizen platform](./web/devguide/integration/kaizenplatform/README.md)
+        - [Kaizen Platform](./web/devguide/integration/kaizenplatform/README.md)
             - [Google Tag Managerを利用する](./web/devguide/integration/kaizenplatform/gtm.md)
             - [HTMLを編集する](./web/devguide/integration/kaizenplatform/simple.md)
-        - [vwo](./web/devguide/integration/vwo.md)
+        - [Optimizely](./web/devguide/integration/optimizely.md)
+        - [VWO](./web/devguide/integration/vwo.md)
 - アプリ解析
     - SDK導入ガイド
         - [事前チェック](./apps/devguide/precheck.md)

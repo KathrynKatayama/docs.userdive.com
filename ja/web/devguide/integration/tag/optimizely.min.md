@@ -1,0 +1,7 @@
+```html
+<script>
+(function(t,n,e,i){var r=0;var o=e||50;var f=i||3;var a=false;function u(){return n.optimizely}function c(){return u().data}function l(){return c().state.redirectExperiment}function s(t){return c().experiments[t]}function d(){return u().activeExperiments}function h(t){return u().variationIdsMap[t]}function p(t){return s(t).section_ids}function y(t,n,e){if(typeof t!=="string"||typeof n!=="string"||typeof e!=="string"||e.length<1)return;if(/\?.+$/.test(t)){return t+"&"+n+"="+e}return"?"+n+"="+e}function v(t,n,e){var i=e.indexOf(n);if(i>=0){if(t){t+="_"+i}else{t=""+i}}return t}function g(e,i,r,o,f,a,g,m,x){try{u().push({type:"integration",OAuthClientId:6281051101});if(l()){e=l().experimentId;if(d().indexOf(e)===-1){d().push(e)}}for(g=0;g<d().length;g++){e=d()[g];r=undefined;for(m=0;m<h(e).length;m++){i=h(e)[m];if(p(e).length){for(x=0;x<p(e).length;x++){r=v(r,i,c().sections[p(e)[x]].variation_ids)}}else{r=v(r,i,s(e).variation_ids)}}o=y(n.location.search,"optimizely_x"+e,r);if(o){f=o}}}catch(_){}finally{a=n.location.protocol+"//"+n.location.host+n.location.pathname+f+n.location.hash;if(a===n.location.href)a=undefined;n.ud("create",t,{overrideUrl:a});n.ud("analyze")}}function m(){try{if(c().state&&!a){g();a=true;return}}catch(t){}finally{if(r<f&&!a){setTimeout(m,o)}r++}}m()})(
+  "[ Project Id ]",window,[ POLLING INTERVAL TIME ],[ POLLING MAX TRY COUNT ]
+);
+</script>
+```
