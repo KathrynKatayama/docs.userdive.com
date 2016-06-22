@@ -1,7 +1,7 @@
 # カスタム変数
 
 USERDIVE では [カスタム変数](../../../../guide/filter/customvar.html) を独自に定義することが可能です。
-`create API` のオプションに対し `customVar` を設定することが可能性です。
+カスタム変数は `create API` への `customVar` オプションによりセットします。
 
 [(example)](https://uncovertruth.github.io/examples/t/setcustomvar.html)
 
