@@ -14,7 +14,8 @@
         - setCustomVar
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
-        - [vwo](./web/devguide/integration/vwo.md)
+        - [Optimizely](./web/devguide/integration/optimizely.md)
+        - [VWO](./web/devguide/integration/vwo.md)
 - App analytics
     - Implementation guide
         - [precheck](./apps/devguide/precheck.md)
