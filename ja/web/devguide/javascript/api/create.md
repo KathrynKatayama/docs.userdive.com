@@ -24,7 +24,7 @@ ud("create", "[ Project Id ]", [ Options ]);
 | Field      | Type   | Required | Description                     |
 |:-----------|:-------|:---------|:--------------------------------|
 | Project Id | String | Yes      | USERDIVE のプロジェクトIDです。 |
-| options    | Object | No       | オプションを指定                |
+| Options    | Object | No       | オプションを指定                |
 
 ### 複数プロジェクトの設定
 
