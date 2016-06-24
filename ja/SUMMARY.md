@@ -5,8 +5,8 @@
     - ガイド
         - [仮想ページ](./web/guide/snapshot.md)
         - [仮想ページの作成](./web/devguide/virtualpage.md)
-    - フィルタ
-        - [カスタム変数](./web/guide/filter/customvar.md)
+        - フィルタ
+            - [カスタム変数](./web/guide/filter/customvar.md)
     - [API](./web/devguide/javascript/api/index.md)
         - [create](./web/devguide/javascript/api/create.md)
             - [customvar](./web/devguide/javascript/api/create/customvar.md)

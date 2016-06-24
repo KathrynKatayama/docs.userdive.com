@@ -31,7 +31,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 ## sequence diagram
 
-![change virtual url](./mmd/changevirtualurl.mmd.png)
+![change virtual url](../../../../../ja/web/devguide/javascript/api/mmd/changevirtualurl.mmd.png)
 
 ## Out of support
 
