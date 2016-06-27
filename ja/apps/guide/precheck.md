@@ -74,14 +74,14 @@ SDKは以下の状態を持ちます。
 | Uploading | トラッキングログをアップロード中。   |
 | Stop      | 停止状態                             |
 
-![lifecycle](./files/lifecycle.png)
+![lifecycle](../files/lifecycle.png)
 
 ### 処理シーケンス
 
 SDKは`Userdive:startTracking:`呼び出すとUserdiveサーバにセッション取得を試みます。
 成功するとトラッキングを開始し、バックグラウンド移行時にログのアップロードを行います。
 
-![sequence](./files/sequence.png)
+![sequence](../files/sequence.png)
 
 
 ## 通常版SDK / Unityプラグインの違い
