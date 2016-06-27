@@ -24,6 +24,7 @@
 - アプリ解析
     - SDK導入ガイド
         - [事前チェック](./apps/devguide/precheck.md)
+        - [アカウント登録](./apps/devguide/signup_account.md)
         - [下準備](./apps/devguide/prepare.md)
         - アプリへの組み込み
             - [CocoaPodsでインストール](./apps/devguide/integration.md)
