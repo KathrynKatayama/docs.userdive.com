@@ -21,6 +21,7 @@
 - App analytics
     - Implementation guide
         - [precheck](./apps/devguide/precheck.md)
+        - [アカウント作成](./apps/devguide/signup_account.md)
         - [prepare for integration](./apps/devguide/prepare.md)
         - Integration
             - [Integration using CocoaPods](./apps/devguide/integration.md)
