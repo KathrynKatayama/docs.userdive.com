@@ -73,14 +73,14 @@ SDK has the following conditions.
 | Uploading  | Uploading tracking log           |
 | Stop       | Stop action                      |
 
-![lifecycle](../../../ja/apps/devguide/files/lifecycle.png)
+![lifecycle](../../../ja/apps/files/lifecycle.png)
 
 ### Processing Sequence
 
 SDKは`Userdive:startTracking:`呼び出すとUserdiveサーバにセッション取得を試みます。  
 成功するとトラッキングを開始し、バックグラウンド移行時にログのアップロードを行います。
 
-![sequence](../../../ja/apps/devguide/files/sequence.png)
+![sequence](../../../ja/apps/files/sequence.png)
 
 
 ## Coverage of USERDIVE for App
