@@ -23,9 +23,10 @@
         - [VWO](./web/devguide/integration/vwo.md)
 - アプリ解析
     - SDK導入ガイド
-        - [事前チェック](./apps/devguide/precheck.md)
-        - [アカウント登録](./apps/devguide/signup_account.md)
-        - [下準備](./apps/devguide/prepare.md)
+        - [対応機種、制限、SDKの基本動作](./apps/guide/precheck.md)
+        - [アカウント登録](./apps/guide/signup_account.md)
+        - [チームIDの取得とアプリの登録](./apps/guide/prepare.md)
+    - 開発ガイド
         - アプリへの組み込み
             - [CocoaPodsでインストール](./apps/devguide/integration.md)
             - [手動でインストール](./apps/devguide/integration_manual.md)
