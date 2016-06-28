@@ -41,7 +41,8 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 ## 確認方法
 
-[(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html) を例に確認方法について記載します。確認には DeveloperTools などを用います。
+[(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html) を例に確認方法について記載します。
+確認には DeveloperTools などを用います。
 
 examples ではヘッダー内に存在している `About` をクリックすることにより、 `changeVirtualUrl` を実行します。
 

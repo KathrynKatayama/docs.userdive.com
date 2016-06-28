@@ -4,19 +4,19 @@ USERDIVE では[カスタム変数](../../../guide/filter/customvar.html)を独�
 
 [(example)](https://uncovertruth.github.io/examples/t/setcustomvar.html)
 
-# Custom Variables API
+## Custom Variables API
 
 API は二種類提供しています。
 
-## 1. `create` API を利用したカスタム変数の設定
+### 1. `create` API を利用したカスタム変数の設定
 
-[ `create` API のドキュメント](../api/create/customvar.html)を参照ください。
+[`create` API のドキュメント](../api/create/customvar.html)を参照ください。
 
-## 2. `setCustomVar` を利用したカスタム変数の設定
+### 2. `setCustomVar` を利用したカスタム変数の設定
 
 `setCustomVar` は任意のタイミングで実行することが可能です
 
-### API
+#### API
 
 ```html
 <script>
@@ -30,7 +30,7 @@ ud("setCustomVar", [
 </script>
 ```
 
-### Parameters
+#### Parameters
 
 | Field      | Type   | Required | Description                                                      |
 |:-----------|:-------|:---------|:-----------------------------------------------------------------|
