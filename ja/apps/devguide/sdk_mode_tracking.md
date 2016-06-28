@@ -15,11 +15,9 @@
 | 2  | InputEventTracker   | キーボード入力                      | ON               | 任意             |
 | 3  | GestureEventTracker | スワイプ等のジェスチャ入力          | ON               | 任意             |
 
-
 ## 自動で画面遷移を認識し、トラッキングする
 
 **ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
-
 
 USERDIVE iOS SDKはユーザのジェスチャや画面遷移を自動的に認識してトラッキングすることができます。
 トラッキングを開始するには `startTrackingMode:` メソッドを呼び出します。

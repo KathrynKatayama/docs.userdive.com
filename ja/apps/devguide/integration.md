@@ -6,7 +6,7 @@ USERDIVE iOS SDKはCocoaPodsからインストールすることができます�
 
 `Podfile` を書きます。
 
-```
+```sh
 pod 'Userdive-iOS-SDK', '~> 1.0'
 ```
 
@@ -14,7 +14,7 @@ pod 'Userdive-iOS-SDK', '~> 1.0'
 
 Podsをインストールします。
 
-```
+```sh
 pod install
 ```
 
@@ -22,6 +22,6 @@ pod install
 
 ワークスペースを開きます。
 
-```
+```sh
 open YourProject.xcworkspace
 ```

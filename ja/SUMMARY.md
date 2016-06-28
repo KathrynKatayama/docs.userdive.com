@@ -1,9 +1,6 @@
 # USERDIVE へようこそ
 
-- [USERDIVE](http://userdive.com)
-    - [ウェブ解析](./web/index.md)
-    - [アプリ解析](./apps/index.md)
-- [ウェブ解析](./web/index.md)
+- [Web 解析](./web/index.md)
     - [計測開始](./web/devguide/javascript/index.md)
     - ガイド
         - [仮想ページ](./web/guide/snapshot.md)

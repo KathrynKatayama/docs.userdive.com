@@ -8,7 +8,6 @@
 
 ![create app 0](./files/create_app_0.png)
 
-
 ## アプリの登録
 
 [USERDIVE for Appsのウェブサイト](https://detector.userdive.com/en/apps/)を開き、アプリの新規登録を実施します。
