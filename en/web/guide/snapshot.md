@@ -9,7 +9,7 @@ Web snapshot is available for three functions.
 - Form analysis
 - Session Playback
 
-# Virtual page
+## Virtual page
 
 On USERDIVE, it is possible to specify a virtual page instead of web page.
 It is recommended to specify on following cirnumstances.
@@ -17,7 +17,7 @@ It is recommended to specify on following cirnumstances.
 - The page that can be viewed only in login status
 - Form (When session information is remaining)
 
-# Requirements
+## Requirements
 
 Followings are required for virtual page.
 

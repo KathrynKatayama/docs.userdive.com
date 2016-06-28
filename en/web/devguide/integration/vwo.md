@@ -41,7 +41,7 @@ Uncompressed link tag
 The code above mainly process following two.
 
 1. VMO finalize on A/B testing result.
-2. Set the result on USERDIVE and start to tracking
+1. Set the result on USERDIVE and start to tracking
 
 Please copy and paste VWO/USERDIVE Link tag after the main `<body>` tag and before the end `</body>` tag of your website code.
 
@@ -50,4 +50,4 @@ Please copy and paste VWO/USERDIVE Link tag after the main `<body>` tag and befo
 VWO/USERDIVE Link tag should be placed after the followings.
 
 1. VWO tag
-2. USERDIVE Load tag
+1. USERDIVE Load tag
