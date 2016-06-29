@@ -1,4 +1,4 @@
-- [Web 解析](./web/index.md)
+- [Web 解析](./web/README.md)
     - [計測開始](./web/devguide/javascript/index.md)
     - ガイド
         - [仮想ページ](./web/guide/snapshot.md)
@@ -19,7 +19,7 @@
             - [HTMLを編集する](./web/devguide/integration/kaizenplatform/simple.md)
         - [Optimizely](./web/devguide/integration/optimizely.md)
         - [VWO](./web/devguide/integration/vwo.md)
-- [アプリ解析](./apps/index.md)
+- [アプリ解析](./apps/README.md)
     - SDK導入ガイド
         - [対応機種、制限、SDKの基本動作](./apps/guide/precheck.md)
         - [アカウント登録](./apps/guide/signup_account.md)
