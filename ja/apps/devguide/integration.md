@@ -6,7 +6,7 @@ USERDIVE iOS SDKはCocoaPodsからインストールすることができます�
 
 `Podfile` を書きます。
 
-```sh
+```ruby
 pod 'Userdive-iOS-SDK', '~> 1.0'
 ```
 
