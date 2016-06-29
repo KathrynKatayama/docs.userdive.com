@@ -1,9 +1,7 @@
 machine:
   timezone: UTC
   node:
-    version: 5.5.0
-  post:
-    - npm install -g npm@3
+    version: 6.1.0
 
 deployment:
   github:
