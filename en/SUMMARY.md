@@ -1,4 +1,4 @@
-- [Web analytics](./web/index.md)
+- [Web analytics](./web/README.md)
     - [To start tracking the website](./web/devguide/javascript/index.md)
     - Guide
         - [web snapshot](./web/guide/snapshot.md)
@@ -16,7 +16,7 @@
     - Integration
         - [Optimizely](./web/devguide/integration/optimizely.md)
         - [VWO](./web/devguide/integration/vwo.md)
-- [App analytics](./apps/index.md)
+- [App analytics](./apps/README.md)
     - SDK guide
         - [Supported devices, Limitation, SDK lifecycle](./apps/guide/precheck.md)
         - [アカウント作成](./apps/guide/signup_account.md)
