@@ -1,5 +1,3 @@
-# USERDIVE へようこそ
-
 - [Web 解析](./web/index.md)
     - [計測開始](./web/devguide/javascript/index.md)
     - ガイド

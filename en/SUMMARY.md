@@ -1,5 +1,3 @@
-# Welcome to USERDIVE
-
 - [Web analytics](./web/index.md)
     - [To start tracking the website](./web/devguide/javascript/index.md)
     - Guide
