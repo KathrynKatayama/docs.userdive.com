@@ -1,15 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Kaizen Platform 連携(Google Tag Manager利用)](#kaizen-platform-%E9%80%A3%E6%90%BAgoogle-tag-manager%E5%88%A9%E7%94%A8)
-  - [必要なタグ](#%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%BF%E3%82%B0)
-    - [Kaizen Platform スニペット](#kaizen-platform-%E3%82%B9%E3%83%8B%E3%83%9A%E3%83%83%E3%83%88)
-    - [USERDIVE ロードタグ](#userdive-%E3%83%AD%E3%83%BC%E3%83%89%E3%82%BF%E3%82%B0)
-    - [Kaizen Platform/USERDIVE 連携タグ](#kaizen-platformuserdive-%E9%80%A3%E6%90%BA%E3%82%BF%E3%82%B0)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Kaizen Platform 連携(Google Tag Manager利用)
 
 `Google Tag Manager` を利用し下記のタグを反映することにより、 USERDIVE にテスト情報を引き渡すことができます。

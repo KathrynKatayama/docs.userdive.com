@@ -1,6 +1,7 @@
 # Starting to tracking web site
 
-You use  ( UDTracker.js ) to measure the action of USERDIVE’s user. In the following, I explain a method to add ( UDTracker.js ) to for a site.
+You use  ( UDTracker.js ) to measure the action of USERDIVE’s user.
+In the following, I explain a method to add ( UDTracker.js ) to for a site.
 
 ## Setting of the HTML `<script>` tag
 
