@@ -1,9 +1,9 @@
-/// <reference path="../../typings/index.d.ts" />
-import gulp = require("gulp");
+/// <reference path='../../typings/index.d.ts' />
+import gulp = require('gulp')
 
-gulp.task("serve", () => {
-  let connect: any = require("gulp-connect");
+gulp.task('serve', () => {
+  const connect: any = require('gulp-connect')
   connect.server({
-    root: "dist"
-  });
-});
+    root: 'dist'
+  })
+})
