@@ -17,10 +17,17 @@
 
 ## 自動で画面遷移を認識し、トラッキングする
 
-**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
+```markdown
+ノート: 組込対象のアプリで下記のいずれかをMethod swizzlingを使用している場合は
+「手動で画面遷移を管理し、トラッキングする」の節に従い組込を行なってください
+
+- `UIApplication:sendEvent:`
+- `UIViewController:viewDidAppear:`
+- `UIViewController:viewWillDisappear:`
 
 USERDIVE iOS SDKはユーザのジェスチャや画面遷移を自動的に認識してトラッキングすることができます。
 トラッキングを開始するには `startTrackingMode:` メソッドを呼び出します。
+```
 
 USERDIVE iOS SDKのヘッダをインポートします。
 
@@ -28,7 +35,8 @@ USERDIVE iOS SDKのヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>` を追加します。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に
+`Userdive:startTrackingMode:<YOUR_TEAM_ID>` を追加します。
 *<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
 
 ```objective-c
@@ -52,8 +60,9 @@ USERDIVE iOS SDKのヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に
+`Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` を追加します。
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
