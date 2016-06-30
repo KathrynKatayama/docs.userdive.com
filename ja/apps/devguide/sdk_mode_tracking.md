@@ -35,9 +35,11 @@ USERDIVE iOS SDKのヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に
-`Userdive:startTrackingMode:<YOUR_TEAM_ID>` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に下記を追加します。
+
+- `Userdive:startTrackingMode:<YOUR_TEAM_ID>`
+
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -60,12 +62,15 @@ USERDIVE iOS SDKのヘッダをインポートします。
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に
-`Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` を追加します。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に下記を追加します。
+
+- `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:`
+
 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+
 {
   [Userdive setLogEnabled:YES];
 
