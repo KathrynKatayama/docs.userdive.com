@@ -27,7 +27,7 @@
 UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
 1ページずつ画面キャプチャを取得することができます。次の手順で実施します。
 
-USERDIVE iOS SDKヘッダをインポートします。
+USERDIVE iOS SDKヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"
@@ -64,7 +64,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 アプリケーション上で `Userdive:updateScreen` を呼び出すことで、SDKは画面遷移が実施されたと判断します。
 次のように実装します。
 
-USERDIVE iOS SDKヘッダをインポートします。
+USERDIVE iOS SDKヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"

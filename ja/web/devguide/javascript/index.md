@@ -1,6 +1,6 @@
 # サイトの計測を開始する
 
-USERDIVE ユーザの行動を計測するために ( UDTracker.js ) を利用します。
+USERDIVE ユーザーの行動を計測するために ( UDTracker.js ) を利用します。
 
 以下では、サイトに対して UDTracker.js を追加する方法を説明します。
 
@@ -27,5 +27,5 @@ ud("analyze");
 
 1. グローバル関数 `ud` の初期化処理を行います。
 1. 弊社の提供する JavaScript を非同期でロードする `<script>` タグを発行します。
-1. `ID` の登録を行います。 [( `create` API について)](./api/create.html)
-1. サイトの計測を開始します。 [( `analyze` API について)](./api/analyze.html)
+1. `ID` の登録を行います [( `create` API について)](./api/create.html)。
+1. サイトの計測を開始します [( `analyze` API について)](./api/analyze.html)。

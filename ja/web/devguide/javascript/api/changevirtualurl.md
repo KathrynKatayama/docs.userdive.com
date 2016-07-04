@@ -1,6 +1,6 @@
 # `changeVirtualUrl` API
 
-USERDIVE では、ユーザの起こしたアクションを URL (`window.location.href`) 単位に集約し、分析を行うことができます。
+USERDIVE では、ユーザーの起こしたアクションを URL (`window.location.href`) 単位に集約し、分析を行うことができます。
 
 [(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html)
 
