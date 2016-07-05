@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "devDependencies": {
-    "@uncovertruth/textlint-config-ja": "0.0.6",
+    "@uncovertruth/textlint-config-ja": "0.0.7",
     "@uncovertruth/tslint-config": "0.0.1",
     "doctoc": "^1.2.0",
     "gitbook-cli": "^2.3.0",
@@ -29,7 +29,7 @@
     "lint:ja": "textlint -c @uncovertruth/textlint-config-ja ja",
     "lint:md": "markdownlint en ja",
     "lint:ts": "tslint gulpfile.ts gulp/**/*.ts",
-    "lint": "npm-run-all lint:*",
+    "lint": "npm-run-all -p lint:*",
     "postinstall": "gitbook install && typings install",
     "prebuild": "rm -rf _book && rm -rf dist",
     "start": "gitbook serve",
