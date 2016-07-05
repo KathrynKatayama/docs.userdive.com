@@ -17,9 +17,9 @@
 ```markdown
 ノート: 組込対象のアプリで
 
-- `UIApplication:sendEvent:`
-- `UIViewController:viewDidAppear:`
-- `UIViewController:viewWillDisappear:`
+- UIApplication:sendEvent:
+- UIViewController:viewDidAppear:
+- UIViewController:viewWillDisappear:
 
 のいずれかをMethod swizzlingを使用している場合は *「手動で画面キャプチャを取得する」* の節に従い組込を行なってください
 ```
