@@ -1,6 +1,6 @@
 # アカウント登録
 
-1. ブラウザで[detector.userdive.com](https://detector.userdive.com)を開いてください
+1. ブラウザーで[detector.userdive.com](https://detector.userdive.com)を開いてください
 1. 登録したいメールアドレスを入力して **Create Account** をクリックしてください
     - ![signup account 1](../files/signup_account_1.png)
     - ![signup account 2](../files/signup_account_2.png)

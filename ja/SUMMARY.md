@@ -50,7 +50,7 @@
         - [+(void)setCustomField1:](./apps/devguide/api/set_custom_field.md)
         - [+(void)setLatitude:longitude:horizontalAccuracy:verticalAccuracy](./apps/devguide/api/set_latitude_longitude_horizontalaccuracy_verticalaccuracy.md)
     - FAQ
-        - 対応機種・サードパーティフレームワーク
+        - 対応機種・サードパーティーフレームワーク
             - [iPadに対応していますか](./apps/faq/ipad.md)
             - [Androidに対応していますか](./apps/faq/android.md)
             - [Unityに対応していますか](./apps/faq/unity.md)
@@ -70,7 +70,7 @@
             - [WebViewに対応していますか](./apps/faq/webview.md)
             - [ブラウザにリダイレクトするとどうなりますか](./apps/faq/browser_redirect.md)
             - [カスタム変数はいくつまで設定できますか](./apps/faq/custom_variables.md)
-            - [オフラインまたはUSERDIVEサーバがダウンしている場合、アプリにどのような影響がありますか](./apps/faq/server_trouble.md)
+            - [オフラインまたはUSERDIVEサーバーがダウンしている場合、アプリにどのような影響がありますか](./apps/faq/server_trouble.md)
         - 取得可能なイベント
             - [位置情報は自動的に取得されますか](./apps/faq/track_location.md)
             - [ドラッグイベントは取得できますか](./apps/faq/track_drag_event.md)

@@ -1,6 +1,6 @@
 # トラッキングモード
 
-リリース版アプリまたはテスト版アプリに組み込み、ユーザの動きを追跡するモードです。
+リリース版アプリまたはテスト版アプリに組み込み、ユーザーの動きを追跡するモードです。
 デベロッパモードと同様に、自動、手動でトラッキングする画面を切り替えることができます。
 
 ## トラッカーの種類
@@ -17,19 +17,29 @@
 
 ## 自動で画面遷移を認識し、トラッキングする
 
-**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
+```markdown
+ノート: 組込対象のアプリで下記のいずれかをMethod swizzlingを使用している場合は
+「手動で画面遷移を管理し、トラッキングする」の節に従い組込を行なってください
 
-USERDIVE iOS SDKはユーザのジェスチャや画面遷移を自動的に認識してトラッキングすることができます。
+- UIApplication:sendEvent:
+- UIViewController:viewDidAppear:
+- UIViewController:viewWillDisappear:
+
+USERDIVE iOS SDKはユーザーのジェスチャや画面遷移を自動的に認識してトラッキングすることができます。
 トラッキングを開始するには `startTrackingMode:` メソッドを呼び出します。
+```
 
-USERDIVE iOS SDKのヘッダをインポートします。
+USERDIVE iOS SDKのヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に下記を追加します。
+
+- `Userdive:startTrackingMode:<YOUR_TEAM_ID>`
+
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -43,20 +53,24 @@ USERDIVE iOS SDKのヘッダをインポートします。
 
 ## 手動で画面遷移を管理し、トラッキングする
 
-独自のビュー構成(iOS標準と異なるビュー構成、サードパーティのライブラリを使用しているなど)の場合、
+独自のビュー構成(iOS標準と異なるビュー構成、サードパーティーのライブラリーを使用しているなど)の場合、
 手動で画面遷移を管理しなければならないことがあります。
 
-USERDIVE iOS SDKのヘッダをインポートします。
+USERDIVE iOS SDKのヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:` を追加します。
-*<YOUR_TEAM_ID>* にはあなたのチームIDを入れてください。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に下記を追加します。
+
+- `Userdive:startTrackingMode:<YOUR_TEAM_ID>:trackers:`
+
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+
 {
   [Userdive setLogEnabled:YES];
 

@@ -1,4 +1,4 @@
-/// <reference path="../../typings/index.d.ts" />
+/// <reference path='../../typings/index.d.ts' />
 
-import gulp = require("gulp");
-gulp.task("default", ["build"]);
+import gulp = require('gulp')
+gulp.task('default', ['build'])

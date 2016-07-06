@@ -1,6 +1,8 @@
 # デベロッパモード
 
-**警告: リリース版アプリではこのモードを使ってはいけません**
+```markdown
+警告: リリース版アプリではこのモードを使ってはいけません
+```
 
 デベロッパモードでは、UIWindowに表示されたビューからヒートマップ背景用画像をキャプチャします。
 
@@ -8,20 +10,32 @@
 
 ### 自動で画面をキャプチャする
 
-**ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。**
+```markdown
+ノート: 任意のタイミングで画面キャプチャを取得したい場合には、後述の「手動で画面キャプチャを取得する」の手順にしたがって実装してください。
+```
 
-**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面キャプチャを取得する」* の節に従い組込を行なってください。**
+```markdown
+ノート: 組込対象のアプリで
+
+- UIApplication:sendEvent:
+- UIViewController:viewDidAppear:
+- UIViewController:viewWillDisappear:
+
+のいずれかをMethod swizzlingを使用している場合は *「手動で画面キャプチャを取得する」* の節に従い組込を行なってください
+```
 
 UINavigationController, UITabBarControllerを利用している場合、画面遷移を自動的に認識して
 1ページずつ画面キャプチャを取得することができます。次の手順で実施します。
 
-USERDIVE iOS SDKヘッダをインポートします。
+USERDIVE iOS SDKヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:` を追加します。 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に
+`Userdive:startDeveloperMode:` を追加します。
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -35,7 +49,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
+アプリを起動すると画面遷移後、キャプチャ取得時に確認ダイアログが表示されるので、
 *送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
 
 ![sdk_verification_capture_1.png](./files/sdk_verification_capture_1.png)
@@ -44,20 +58,22 @@ USERDIVE iOS SDKヘッダをインポートします。
 
 ![sdk_verification_capture_2.png](./files/sdk_verification_capture_2.png)
 
-
 ### 手動で画面キャプチャを取得する
 
 画面を動的に切り替えた場合、画面表示内容が変更されたことをSDKに通知する必要があります。
 アプリケーション上で `Userdive:updateScreen` を呼び出すことで、SDKは画面遷移が実施されたと判断します。
 次のように実装します。
 
-USERDIVE iOS SDKヘッダをインポートします。
+USERDIVE iOS SDKヘッダーをインポートします。
 
 ```objective-c
 #import "Userdive.h"
 ```
 
-`AppDeletegate:application:didFinishLaunchingWithOptions:` に `Userdive:startDeveloperMode:trackers:` を追加します。
+`AppDeletegate:application:didFinishLaunchingWithOptions:` に下記を追加します。
+
+- `Userdive:startDeveloperMode:trackers:`
+
 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
@@ -92,7 +108,7 @@ USERDIVE iOS SDKヘッダをインポートします。
 }
 ```
 
-アプリを起動すると、画面遷移後にキャプチャ取得時に確認ダイアログが表示されるので、
+アプリを起動すると画面遷移後、キャプチャ取得時に確認ダイアログが表示されるので、
 *送信* ボタンをタップして画面イメージをUSERDIVEにアップロードします。
 
 ![sdk_verification_capture_1.png](./files/sdk_verification_capture_1.png)
