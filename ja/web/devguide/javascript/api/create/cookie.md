@@ -1,5 +1,7 @@
 # Cookie の設定
 
+## API
+
 ```html
 <script>
 ud("create", "[ Project Id ]", {
@@ -8,6 +10,8 @@ ud("create", "[ Project Id ]", {
 });
 </script>
 ```
+
+## Parameters
 
 | Field         | Type    | Required | Description                                     |
 |:--------------|:--------|:---------|:------------------------------------------------|

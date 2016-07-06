@@ -10,6 +10,8 @@ USERDIVE のクローラーが `GET` リクエストでアクセスを行う際�
 
 [仮想ページについて](../../../../guide/snapshot.html)
 
+## API
+
 ```html
 <script>
 ud("create", "[ Project Id ]", {
@@ -17,6 +19,8 @@ ud("create", "[ Project Id ]", {
 });
 </script>
 ```
+
+## Parameters
 
 | Field       | Type   | Required | Description                                           |
 |:------------|:-------|:---------|:------------------------------------------------------|
