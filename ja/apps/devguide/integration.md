@@ -66,7 +66,7 @@ pod install
 
 ## 開発開始
 
-ワークスペースは、YourProject.xcodeprojではなく、YourProject.xcworkspaceを指定して開きます。
+ワークスペースは、 `YourProject.xcodeproj` ではなく、 `YourProject.xcworkspace` を指定して開きます。
 
 ```sh
 open YourProject.xcworkspace
