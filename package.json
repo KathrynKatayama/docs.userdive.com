@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "devDependencies": {
-    "@uncovertruth/textlint-config-ja": "0.0.7",
+    "@uncovertruth/textlint-config-ja": "0.0.11",
     "@uncovertruth/tslint-config": "0.0.1",
     "doctoc": "^1.2.0",
     "gitbook-cli": "^2.3.0",
