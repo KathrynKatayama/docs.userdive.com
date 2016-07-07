@@ -2,7 +2,6 @@
   "name": "@uncovertruth/docs.userdive.com",
   "version": "0.0.1",
   "private": true,
-  "description": "http://docs.userdive.com/",
   "devDependencies": {
     "@uncovertruth/textlint-config-ja": "0.0.11",
     "@uncovertruth/tslint-config": "0.0.1",
@@ -42,5 +41,5 @@
   },
   "keywords": [],
   "author": "UNCOVER TRUTH Inc.",
-  "homepage": "https://github.com/uncovertruth/docs.userdive.com#readme"
+  "homepage": "http://docs.userdive.com/"
 }
