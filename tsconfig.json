@@ -4,6 +4,8 @@
     "target": "es5",
     "sourceMap": false
   },
+  "compileOnSave": false,
+  "buildOnSave": false,
   "exclude": [
     "node_modules",
     "typings"

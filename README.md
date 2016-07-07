@@ -1,4 +1,4 @@
-# docs.userdive.com
+# @uncovertruth/docs.userdive.com
 
 [![Circle CI][circie-image]][circie-url] [![Dependency Status][david-dm-image]][david-dm-url] [![devDependency Status][dev-david-dm-image]][dev-david-dm-url]
 

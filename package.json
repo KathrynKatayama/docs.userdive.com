@@ -1,8 +1,7 @@
 {
-  "name": "docs.userdive.com",
+  "name": "@uncovertruth/docs.userdive.com",
   "version": "0.0.1",
   "private": true,
-  "description": "",
   "devDependencies": {
     "@uncovertruth/textlint-config-ja": "0.0.11",
     "@uncovertruth/tslint-config": "0.0.1",
@@ -35,5 +34,12 @@
     "start": "gitbook serve",
     "test": "npm run lint",
     "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README\\|_TEMPLATE')"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uncovertruth/docs.userdive.com.git"
+  },
+  "keywords": [],
+  "author": "UNCOVER TRUTH Inc.",
+  "homepage": "http://docs.userdive.com/"
 }
