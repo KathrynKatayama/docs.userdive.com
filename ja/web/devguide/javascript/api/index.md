@@ -9,6 +9,6 @@ USERDIVE では下記の API を利用することができます。
 
 ## 注意点
 
-API を利用するためには下記のタグが必要が必要です。
+API を利用するためには下記のタグが必要です。
 
 {% include '../../integration/tag/load.md' %}
