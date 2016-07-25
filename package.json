@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "@uncovertruth/textlint-config-ja": "0.0.12",
-    "@uncovertruth/tslint-config": "0.0.1",
+    "@uncovertruth/textlint-config-ja": "^0.0.12",
+    "@uncovertruth/tslint-config": "^0.0.1",
     "doctoc": "^1.2.0",
     "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
