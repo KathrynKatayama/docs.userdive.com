@@ -39,3 +39,7 @@ ud("analyze");
 1. イベントデータの送信を行う
 
 送信されたイベントデータは一定時間たった後、 USERDIVE に反映されます。
+
+## sequence diagram
+
+![sequence](./mmd/analyze.mmd.png)
