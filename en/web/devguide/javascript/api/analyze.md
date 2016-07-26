@@ -41,3 +41,7 @@ When execute above, runned each steps following.
 1. Sending event data.
 
 Sent data which is applied to USERDIVE after the elapse of a certain period of time.
+
+## sequence diagram
+
+![sequence](../../../../../ja/web/devguide/javascript/api/mmd/analyze.mmd.png)
