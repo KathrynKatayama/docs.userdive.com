@@ -42,6 +42,11 @@ When execute above, runned each steps following.
 
 Sent data which is applied to USERDIVE after the elapse of a certain period of time.
 
+## Network
+
+<!-- Created by draw.io  -->
+![network](../../../../../ja/web/devguide/javascript/api/files/network.png)
+
 ## sequence diagram
 
 ![sequence](../../../../../ja/web/devguide/javascript/api/mmd/analyze.mmd.png)
