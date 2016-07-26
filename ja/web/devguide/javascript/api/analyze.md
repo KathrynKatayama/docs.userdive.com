@@ -40,6 +40,11 @@ ud("analyze");
 
 送信されたイベントデータは一定時間たった後、 USERDIVE に反映されます。
 
+## Network
+
+<!-- Created by draw.io  -->
+![network](./files/network.png)
+
 ## sequence diagram
 
 ![sequence](./mmd/analyze.mmd.png)
