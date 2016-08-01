@@ -12,7 +12,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
-    "gulp-uglify": "^1.5.4",
+    "gulp-uglify": "^2.0.0",
     "markdownlint-cli": "^0.1.0",
     "mermaid": "^6.0.0",
     "npm-run-all": "^2.3.0",
