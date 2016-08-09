@@ -1,13 +1,13 @@
 ```html
 <script>
-(function (userdiveId, root, intervalTime, maxTry) {
+(function (userdiveId, global, intervalTime, maxTry) {
   var tryCount = 0;
   var interval = intervalTime || 50;
   var max = maxTry || 3;
   var started = false;
 
   function getOptimizely () {
-    return root.optimizely;
+    return global.optimizely;
   };
   function getData () {
     return getOptimizely().data;
@@ -27,10 +27,10 @@
   function getSectionIds (experimentId) {
     return getExperiment(experimentId).section_ids;
   };
-  function addParam (search, param, value) {
-    if (typeof search !== 'string' || typeof param !== 'string' || typeof value !== 'string' || value.length < 1) return;
-    if (/\?.+$/.test(search)) {
-      return search + '&' + param + '=' + value;
+  function addParam (searchString, param, value) {
+    if (typeof searchString !== 'string' || typeof param !== 'string' || typeof value !== 'string' || value.length < 1) return;
+    if (/\?.+$/.test(searchString)) {
+      return searchString + '&' + param + '=' + value;
     }
     return '?' + param + '=' + value;
   };
@@ -45,7 +45,7 @@
     }
     return param;
   };
-  function start (experimentId, variationId, param, result, search, url, i, j, k) {
+  function start (experimentId, variationId, param, result, url, i, j, k) {
     try {
       getOptimizely().push({
         type: 'integration',
@@ -80,18 +80,16 @@
             );
           }
         }
-        result = addParam(root.location.search, 'optimizely_x' + experimentId, param);
-        if (result) {
-          search = result;
-        }
+        result = addParam(global.location.search, 'optimizely_x' + experimentId, param);
       }
     } catch (err) {} finally {
-      url = root.location.protocol + '//' + root.location.host + root.location.pathname + search + root.location.hash;
-      if (url === root.location.href) url = undefined;
-      root.ud('create', userdiveId, {
+      if (result) {
+        url = global.location.protocol + '//' + global.location.host + global.location.pathname + result + global.location.hash;
+      }
+      global.ud('create', userdiveId, {
         'overrideUrl': url
       });
-      root.ud('analyze');
+      global.ud('analyze');
     }
   };
   function pollForReady () {
