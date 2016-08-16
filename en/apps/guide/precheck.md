@@ -40,11 +40,11 @@ USERDIVE for Apps limits the number of data collected to prevent clogging on App
         - n of events = 1,200 (Tap and Swipe etc)
         - Time = 1 hour
     - Number of sessions per month
-        - *Depends on the plan*
+        - Depends on the plan
     - Number of Daily sessions per App
-        - *Depends on the value set*
+        - Depends on the value set
     - Session each hour per App
-        - *Depends on the value set*
+        - Depends on the value set
 
 ## Check the App specifications
 
