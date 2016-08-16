@@ -1,4 +1,4 @@
-# Where do I take screen shot for the session-playback?
+# Where do I take screen shot for the session-playback
 
 We do not collect any screenshots from the end-users
 

@@ -1,4 +1,4 @@
-# How does USERDIVE get location info?
+# How does USERDIVE get location info
 
 ## Important matters
 

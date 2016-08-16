@@ -1,4 +1,4 @@
-# Can USERDIVE track user data after login?
+# Can USERDIVE track user data after login
 
 Yes, of course. USERDIVE does not differenciate login or logout.
 

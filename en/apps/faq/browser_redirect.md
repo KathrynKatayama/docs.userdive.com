@@ -1,4 +1,4 @@
-# What would happen if we redirect the users to browser site?
+# What would happen if we redirect the users to browser site
 
 USERDIVE define that one session is from the activation of APP to its background mode.
 Therefore, a session ends when the users are redirected to browser site.
