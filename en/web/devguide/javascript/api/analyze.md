@@ -14,9 +14,11 @@ ud("analyze");
 
 When execute above, runned each steps following.
 
-1. Verify your account to via USERDIVE server and create session if verification passed.
+1. Verify your account to via USERDIVE server
+   and create session if verification passed.
 1. Collect user and event data following.
-    - Information about user environment (Data collected from Browser info a.k.a User-Agent)
+    - Information about user environment
+      (Data collected from Browser info a.k.a User-Agent)
         - IP Address (Not saved to database)
         - Country, Region
         - Device

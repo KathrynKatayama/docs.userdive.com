@@ -1,6 +1,7 @@
 # Web snapshot
 
-On USERDIVE, it takes web snapshots from a web page (or from a virtual page) which has USERDIVE tag implemented.
+On USERDIVE, it takes web snapshots from a web page (or from a virtual page)
+which has USERDIVE tag implemented.
 This function allows to compare the current and past data.
 
 Web snapshot is available for three functions.
@@ -30,7 +31,8 @@ pros/cons of the virtual page.
 
 ### pros
 
-1. Clearly specify the web snapshot that users had made action on, and re-create it
+1. Clearly specify the web snapshot that users had made action on,
+   and re-create it
 1. Able to create a safe web snapshot with no personal information
 
 ### cros

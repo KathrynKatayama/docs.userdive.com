@@ -22,7 +22,8 @@ USERDIVE Load tag is necessary for linkage.
 
 {% include './tag/load.md' %}
 
-Please copy and paste the script after the main `<head>` tag and before the end `</head>` tag of your website code.
+Please copy and paste the script after the main `<head>` tag
+and before the end `</head>` tag of your website code.
 
 ### VWO/USERDIVE Link tag
 
@@ -43,7 +44,8 @@ The code above mainly process following two.
 1. VMO finalize on A/B testing result.
 1. Set the result on USERDIVE and start to tracking
 
-Please copy and paste VWO/USERDIVE Link tag after the main `<body>` tag and before the end `</body>` tag of your website code.
+Please copy and paste VWO/USERDIVE Link tag after the main `<body>` tag
+and before the end `</body>` tag of your website code.
 
 ## Attention
 

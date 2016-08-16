@@ -30,7 +30,8 @@ USERDIVE iOS SDK v1.2.0 supports the following devices, architectures and langua
 
 ## Counterplan Limitations
 
-USERDIVE for Apps limits the number of data collected to prevent clogging on Apps which generally occurs due to unexpectedly large volumes of information.
+USERDIVE for Apps limits the number of data collected to prevent clogging on Apps
+which generally occurs due to unexpectedly large volumes of information.
 
 - Limited Contents and its Value
     - Events in one screen
@@ -95,6 +96,9 @@ The coverage of each function differ depending on Apps.
 | Session Playback        | ◯   | ◯            |
 | Filter Function         | ◯   | ◯            |
 
-※1 Can not to get Scroll Heatmap, Looking Heatmap and Other event information on Unity GameView. But can get those out of Unity GameView. Please contact us for more information.
+※1 Can not to get Scroll Heatmap, Looking Heatmap
+and Other event information on Unity GameView.
+But can get those out of Unity GameView.
+Please contact us for more information.
 
 ※2 Unityプラグインは通常版SDKを内包しているので、C#からObjCへのブリッジを記述することで全機能を利用することができる。

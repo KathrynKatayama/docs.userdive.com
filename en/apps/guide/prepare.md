@@ -4,13 +4,15 @@
 
 ### Check the team ID
 
-Open [USERDIVE For Apps website](https://detector.userdive.com/en/apps/) and check your team ID.
+Open [USERDIVE For Apps website](https://detector.userdive.com/en/apps/)
+and check your team ID.
 
 ![check team id](../../../ja/apps/files/create_app_0.png)
 
 ## Create New App
 
-Open [USERDIVE for Apps web site](https://detector.userdive.com/en/apps/) and create new app.
+Open [USERDIVE for Apps web site](https://detector.userdive.com/en/apps/)
+and create new app.
 
 ![create app 1](../../../ja/apps/files/create_app_1.png)
 
