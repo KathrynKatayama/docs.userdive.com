@@ -60,8 +60,6 @@ Optimizely provides the following function.
 [`Redirect experiments`](https://help.optimizely.com/Build_Experiments/Redirect_experiments:_Test_separate_URLs)
 When using this function, please note that integration of Optimizely/USERDIVE needs an additional process.
 
-### Attention
-
 1. After being redirected, the URL needs USERDIVE script tag.
 1. It is recommended for the redirected URL to have same domain as the previous page.
     - When connecting the sessions of two URLs with different domain, then it is necessary to set custom tag to connect the domain after being redirected.

@@ -59,8 +59,6 @@ Optimizely/USERDIVE 連携タグは下記よりもあとに存在する必要が
 Optimizely では [`Redirect experiments`](https://help.optimizely.com/Build_Experiments/Redirect_experiments:_Test_separate_URLs) 機能を提供しています。
 こちらの機能を用いた際、Optimizely/USERDIVE 連携では下記のような注意点があります。
 
-### 注意点
-
 1. リダイレクト後のURLには必ず USERDIVE の計測タグが必要です。
 1. リダイレクトされた URL はリダイレクト前のページと同一ドメインであることを推奨しています。
     - 異なるドメイン間でのセッション継続を行う場合、リダイレクト後のドメインへセッション継続するカスタムタグを設置する必要があります。
