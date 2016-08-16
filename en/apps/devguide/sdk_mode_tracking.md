@@ -15,7 +15,6 @@ When choosing trackers manually, use the following IDs as references.
 | 2  | InputEventTracker   | Keyboard Input                          | ON            | Voluntary       |
 | 3  | GestureEventTracker | Gestures like Swipes                    | ON            | Voluntary       |
 
-
 ## Automatically notice screen transitions, and start tracking
 
 **ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**

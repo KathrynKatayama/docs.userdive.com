@@ -14,7 +14,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 | Field       | Type   | Required | Description                                                            |
 |:------------|:-------|:---------|:-----------------------------------------------------------------------|
-| Virtual URL | String | Yes      | [ virtual page](../../../guide/snapshot.html) URL of the current state |
+| Virtual URL | String | Yes      | [virtual page](../../../guide/snapshot.html) URL of the current state |
 
 `changeVirtualUrl` API can be use the following web site.
 

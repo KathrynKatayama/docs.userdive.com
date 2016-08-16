@@ -34,7 +34,6 @@
 | 2  | InputEventTracker   | キーボード入力                      |
 | 3  | GestureEventTracker | ジェスチャ入力                      |
 
-
 ## 制限
 
 なし。

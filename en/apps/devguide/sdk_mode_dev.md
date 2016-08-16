@@ -4,7 +4,6 @@
 
 On Developer Mode, it captures screen images shown on UIWindow as a back ground image for heatmaps.
 
-
 ## Implementation
 
 ### Automatically captures screen image
@@ -43,7 +42,6 @@ Choose *Send* to upload screen image to USERDIVE.
 The next pop-up shows whether the screen upload was succuessful or not.
 
 ![sdk_verification_capture_2.png](../../../ja/apps/devguide/files/sdk_verification_capture_2.png)
-
 
 ### Manually captures screen image
 
