@@ -15,7 +15,7 @@
     "gulp-uglify": "^2.0.0",
     "markdownlint-cli": "^0.1.0",
     "mermaid": "^6.0.0",
-    "npm-run-all": "^2.3.0",
+    "npm-run-all": "^3.0.0",
     "require-dir": "^0.3.0",
     "textlint": "^7.1.0",
     "tslint": "^3.14.0",
