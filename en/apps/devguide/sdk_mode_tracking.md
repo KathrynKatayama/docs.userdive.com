@@ -3,7 +3,6 @@
 This mode collects user action on released apps or test apps.
 Like in Developer Mode,
 Tracking Mode have two way of noticing screen transitions; Automatically and Manually.
-言い回し少し変えてます
 
 ## Kinds of Tracker
 
