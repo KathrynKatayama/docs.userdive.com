@@ -1,7 +1,8 @@
 # Tracking Mode
 
 This mode collects user action on released apps or test apps.
-Like in Developer Mode, Tracking Mode have two way of noticing screen transitions; Automatically and Manually. 言い回し少し変えてます
+Like in Developer Mode,
+Tracking Mode have two way of noticing screen transitions; Automatically and Manually.
 
 ## Kinds of Tracker
 
@@ -15,13 +16,19 @@ When choosing trackers manually, use the following IDs as references.
 | 2  | InputEventTracker   | Keyboard Input                          | ON            | Voluntary       |
 | 3  | GestureEventTracker | Gestures like Swipes                    | ON            | Voluntary       |
 
-
 ## Automatically notice screen transitions, and start tracking
 
-**ノート: 組込対象のアプリで `UIApplication:sendEvent:` , `UIViewController:viewDidAppear:` , `UIViewController:viewWillDisappear:` のいずれかをMethod swizzlingを使用している場合は *「手動で画面遷移を管理し、トラッキングする」* の節に従い組込を行なってください。**
+```markdown
+ノート: 組込対象のアプリで下記のいずれかをMethod swizzlingを使用している場合は
+「手動で画面遷移を管理し、トラッキングする」の節に従い組込を行なってください
+
+- UIApplication:sendEvent:
+- UIViewController:viewDidAppear:
+- UIViewController:viewWillDisappear:
 
 USERDIVE iOS SDK can automatically notice and track user gestures or transitions.
 Call `startTrackingMode:` method to start tracking.
+```
 
 Import USERDIVE iOS SDK headder.
 
@@ -44,7 +51,9 @@ Make sure to put your `team ID` in *\<YOUR_TEAM_ID\>*.
 
 ## Manually notice screen transitions, and start tracking
 
-When using own view structure (such as different from iPO standard view structure or using third-patry library), then screen transitions ofthen times needs manual management.
+When using own view structure
+(such as different from iOS standard view structure or using third-patry library),
+then screen transitions ofthen times needs manual management.
 
 Import USERDIVE iOS SDK headder.
 

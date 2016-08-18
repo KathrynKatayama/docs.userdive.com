@@ -52,14 +52,17 @@ Optimizely/USERDIVE 連携タグは下記よりもあとに存在する必要が
 
 下記の場合、 USERDIVE の計測は開始されません。
 
-1. Optimizely での実験が一定時間以内( [ POLLING INTERVAL TIME] * [ POLLING MAX TRY COUNT ] ミリ秒以内) に確定されなかった場合
+1. Optimizely での実験が一定時間以内
+   ( [ POLLING INTERVAL TIME] * [ POLLING MAX TRY COUNT ] ミリ秒以内)
+   に確定されなかった場合
 
 ## Redirect experiments
 
-Optimizely では [`Redirect experiments`](https://help.optimizely.com/Build_Experiments/Redirect_experiments:_Test_separate_URLs) 機能を提供しています。
+Optimizely では [`Redirect experiments`](https://help.optimizely.com/Build_Experiments/Redirect_experiments:_Test_separate_URLs)
+機能を提供しています。
 こちらの機能を用いた際、Optimizely/USERDIVE 連携では下記のような注意点があります。
 
-### 注意点
+### ノート
 
 1. リダイレクト後のURLには必ず USERDIVE の計測タグが必要です。
 1. リダイレクトされた URL はリダイレクト前のページと同一ドメインであることを推奨しています。

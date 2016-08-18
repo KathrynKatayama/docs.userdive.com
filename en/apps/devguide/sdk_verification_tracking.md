@@ -10,7 +10,7 @@
 
 トラッキングモード開始後、次のログが出力されることを確認してください。
 
-```
+```console
 2016-04-11 18:24:47.586 AppDiveSample[42606:3050491] ADVAppDive.m(250) -[ADVAppDive startTrackingMode:trackers:] start tracking mode: team_id=1
 2016-04-11 18:24:47.586 AppDiveSample[42606:3050491] [Userdive][INFO] VERSION: 1.2.0 ()
 2016-04-11 18:24:47.586 AppDiveSample[42606:3050491] [Userdive][INFO] start tracking (team_id=1)
@@ -30,7 +30,7 @@
 画面遷移やUIオブジェクトの操作など、アプリを操作してください。
 次のようなログが出力されることを確認してください。
 
-```
+```console
 2016-04-11 18:27:22.960 AppDiveSample[42606:3050491] ADVLogManager.m(60) -[ADVLogManager logEvent:] {
     area = main;
     event = tap;
@@ -85,7 +85,7 @@
 
 アプリをバックグラウンドへ移し、次のようなログが表示されることを確認します。
 
-```
+```console
 2016-04-11 18:28:05.429 AppDiveSample[42606:3058057] ADVAPIClient.m(62) -[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:] request to https://spear.userdive.com/tracking
 2016-04-11 18:28:06.681 AppDiveSample[42606:3058107] ADVAPIClient.m(104) __58-[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:]_block_invoke response code: 200
 2016-04-11 18:28:06.682 AppDiveSample[42606:3058107] ADVAPIClient.m(105) __58-[ADVAPIClient postToPath:dictionary:onSuccess:onFailure:]_block_invoke response body: {"status": "OK"}

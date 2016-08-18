@@ -4,7 +4,8 @@ USERDIVE can track and analyse the user action on each URL. (`window.location.hr
 
 [(example)](https://uncovertruth.github.io/examples/t/changevirtualurl.html)
 
-USERDIVE can also analyze a web site that adds the element dynamically within the same URL.
+USERDIVE can also analyze a web site that adds the element dynamically within
+the same URL.
 
 ```html
 <script>
@@ -14,7 +15,7 @@ ud("changeVirtualUrl", "[ Virtual Url ]");
 
 | Field       | Type   | Required | Description                                                            |
 |:------------|:-------|:---------|:-----------------------------------------------------------------------|
-| Virtual URL | String | Yes      | [ virtual page](../../../guide/snapshot.html) URL of the current state |
+| Virtual URL | String | Yes      | [virtual page](../../../guide/snapshot.html) URL of the current state |
 
 `changeVirtualUrl` API can be use the following web site.
 

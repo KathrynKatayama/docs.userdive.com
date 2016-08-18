@@ -9,7 +9,8 @@ Download USERDIVE SDK corresponding to the platform from the following links.
 
 ## Add SDK
 
-Decompress the file which you downloaded, and add it to the Xcode project on application you want to analyse.
+Decompress the file which you downloaded,
+and add it to the Xcode project on application you want to analyse.
 
 ## Add framework
 
