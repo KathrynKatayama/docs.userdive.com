@@ -1,4 +1,4 @@
-import gulp = require('gulp')
+import * as gulp from 'gulp'
 
 gulp.task('serve', () => {
   const connect: any = require('gulp-connect')
