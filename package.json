@@ -11,6 +11,7 @@
     "@uncovertruth/textlint-config-ja": "^0.0.12",
     "@uncovertruth/tslint-config": "^0.0.1",
     "doctoc": "^1.2.0",
+    "ghpages": "0.0.8",
     "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
@@ -30,8 +31,7 @@
     "typescript-require": "^0.2.9-1"
   },
   "scripts": {
-    "build": "gitbook build && find _book -type l -delete && gulp build",
-    "deploy": "npm run toc && npm run build",
+    "build": "gitbook build && find _book -type l -delete && npm run toc && gulp build",
     "lint:ja": "textlint -c @uncovertruth/textlint-config-ja ja",
     "lint:md:en": "markdownlint en",
     "lint:md:ja": "markdownlint ja",

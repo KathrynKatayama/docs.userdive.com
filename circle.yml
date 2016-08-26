@@ -3,9 +3,16 @@ machine:
   node:
     version: 6.1.0
 
+dependencies:
+  pre:
+    - git config --global user.name "userdivebot"
+    - git config --global user.email "develop@uncovertruth.jp"
+
 deployment:
   github:
     branch: master
     commands:
-      - npm run deploy || exit 1
-      - sh deploy.sh
+      - npm run build || exit 1
+      - cp assets/CNAME dist/CNAME
+      - cp assets/robots.txt dist/robots.txt
+      - ghpages --path dist
