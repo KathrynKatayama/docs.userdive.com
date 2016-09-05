@@ -1,0 +1,17 @@
+sequenceDiagram
+    Site-->>Site: insert USEDIVE script tag
+    opt USERDIVE script tag
+      Site->>USERDIVE: JavaScript Download Request
+      Site-->>Site: create request
+      Site-->>Site: analyze request
+    end
+    USERDIVE->>Site: Send JavaScript(UDTracker.js)
+    opt USERDIVE Tracker
+      Site->>Site: execute create
+      Site->>Site: execute analyze
+      Site->>USERDIVE: start request
+    end
+    USERDIVE->>Site: ok
+    Note over Site: Tracking start
+    Site->>USERDIVE: send event data
+    Site->>USERDIVE: send event data
