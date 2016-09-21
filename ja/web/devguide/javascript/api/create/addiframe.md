@@ -1,6 +1,8 @@
 # iframe を用いたクロスドメインの設定
 
-USERDIVE では、 iframe を用いたクロスドメインのAPIを提供します。
+USERDIVE では、 iframe を用いたセッション継続のAPIを提供します。
+
+[(examples)](http://uncovertruth.github.io/examples/gtm/iframe/)
 
 ## `addIframe` API
 

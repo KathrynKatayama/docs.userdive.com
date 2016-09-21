@@ -1,8 +1,8 @@
 # `sessionIgnores` API
 
-[(examples)](https://uncovertruth.github.io/examples/gtm/autolink/ssl.html)
+[(examples)](http://uncovertruth.github.io/examples/gtm/iframe/)
 
-`sessionIgnores` API を用いて、クロスドメインを行うことが出来ます。
+`sessionIgnores` API には、セッションを継続を許可するドメインを複数指定刷ることが可能です。
 
 ## API
 
@@ -20,3 +20,10 @@ ud("create", "[ Project Id ]", {
 |:-----------|:-------|:---------|:-----------------------------------------------------|
 | Project Id | String | Yes      | USERDIVE のプロジェクトIDです。                      |
 | Domain     | String | No       | クロスドメインを行う遷移先のドメインを指定できます。 |
+
+## Details
+
+`sessionIgnores` は下記のAPIと併用して利用します。
+
+- [`addiFrame` API](./addiframe.html)
+- [`sslAutolink` API](./sslautolink.html)
