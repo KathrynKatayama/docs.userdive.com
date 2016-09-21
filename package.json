@@ -1,5 +1,6 @@
 {
   "name": "@uncovertruth/docs.userdive.com",
+  "description": "USERDIVE simple specs",
   "version": "0.0.1",
   "author": "UNCOVER TRUTH Inc.",
   "devDependencies": {
@@ -32,13 +33,14 @@
   },
   "homepage": "http://docs.userdive.com/",
   "keywords": [],
+  "main": "",
   "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/uncovertruth/docs.userdive.com.git"
   },
   "scripts": {
-    "build": "gitbook build && find _book -type l -delete && npm run toc && gulp build",
+    "build": "npm run toc && gitbook build && find _book -type l -delete && gulp build",
     "lint": "npm-run-all -p lint:*",
     "lint:ja": "textlint -c @uncovertruth/textlint-config-ja ja",
     "lint:md": "npm-run-all -p lint:md:*",
