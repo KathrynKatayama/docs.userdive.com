@@ -40,9 +40,10 @@ USERDIVE では `cookie` を用いたセッション継続を行います。
 
 ## `Iframe source URL`
 
-`iframe source URL` には下記の点に注意する必要があります
+`iframe source URL` に指定したURLで出力されるHTMLには注意点があります
 
 - `addCookieFromUDC` API を利用した HTML(下記を推奨)
+- `P3P` ヘッダーの適応
 
 ### `addCookieFromUDC` API
 
@@ -66,7 +67,7 @@ ud("addCookieFromUDC", "[ Cookie Domain ]");
 </html>
 ```
 
-### 注意点
+### P3P ヘッダー
 
 - `Iframe source URL` のページに対して、 下記のヘッダーを指定することを推奨します。
 
