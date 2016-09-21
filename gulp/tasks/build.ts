@@ -1,17 +1,17 @@
-/// <reference path='../../typings/index.d.ts' />
-import gulp = require('gulp')
+import * as gulp from 'gulp'
+import * as gulpIf from 'gulp-if'
+import * as htmlmin from 'gulp-htmlmin'
+import * as path from 'path'
+import * as uglify from 'gulp-uglify'
+
+import { global } from '../config'
 
 gulp.task('build', function (callback: Function) {
-  const path: any = require('path')
-  const root: any = require('../config').root
-  const gulpIf: any =  require('gulp-if')
-  const htmlmin: any = require('gulp-htmlmin')
   const cssnano: any = require('gulp-cssnano')
-  const uglify: any = require('gulp-uglify')
 
-  return gulp.src(path.join(root, '_book/**'))
+  return gulp.src(path.join(global, '_book/**'))
     .pipe(gulpIf('*.js', uglify({preserveComments: 'some'})))
     .pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true})))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest(path.join(root, 'dist')))
+    .pipe(gulp.dest(path.join(global, 'dist')))
 })

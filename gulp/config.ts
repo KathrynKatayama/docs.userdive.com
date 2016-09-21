@@ -1,9 +1,4 @@
-/// <reference path="../typings/index.d.ts" />
+import * as path from 'path'
 
-import path = require('path')
-let root: any = path.join(__dirname, '../')
-
-export = {
-  dist: path.join(root, 'dist'),
-  root: root
-}
+export const global = path.join(__dirname, '../')
+export const dist = path.join(global, 'dist')
