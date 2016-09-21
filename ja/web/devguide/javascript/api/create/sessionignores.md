@@ -2,7 +2,7 @@
 
 [(examples)](http://uncovertruth.github.io/examples/gtm/iframe/)
 
-`sessionIgnores` API には、セッションを継続を許可するドメインを複数指定刷ることが可能です。
+`sessionIgnores` API には、セッションを継続を許可するドメインを、複数指定することが可能です。
 
 ## API
 

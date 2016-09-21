@@ -32,7 +32,7 @@ USERDIVE では `cookie` を用いたセッション継続を行います。
 - `A.com` から `B.com` へ遷移する場合
     - `A.com` に `addIframe`
         - `B.com` のドメインを利用した `Iframe source URL`
-    - `B.com` に
+    - `B.com` に `addIframe`, [`sessionIgnores`](./sessionignores.html)
 - `A.com`, `B.com` 相互に遷移する場合
     - `A.com`, `B.com` に `addIframe`, [`sessionIgnores`](./sessionignores.html)
         - `A.com` に `B.com` のドメインを利用した `Iframe source URL`
