@@ -1,7 +1,7 @@
 {
   "name": "@uncovertruth/docs.userdive.com",
   "version": "0.0.1",
-  "private": true,
+  "author": "UNCOVER TRUTH Inc.",
   "devDependencies": {
     "@types/gulp": "^3.8.31",
     "@types/gulp-htmlmin": "^1.3.28",
@@ -30,25 +30,25 @@
     "typescript": "^2.0.0",
     "typescript-require": "^0.2.9-1"
   },
+  "homepage": "http://docs.userdive.com/",
+  "keywords": [],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uncovertruth/docs.userdive.com.git"
+  },
   "scripts": {
     "build": "gitbook build && find _book -type l -delete && npm run toc && gulp build",
+    "lint": "npm-run-all -p lint:*",
     "lint:ja": "textlint -c @uncovertruth/textlint-config-ja ja",
+    "lint:md": "npm-run-all -p lint:md:*",
     "lint:md:en": "markdownlint en",
     "lint:md:ja": "markdownlint ja",
-    "lint:md": "npm-run-all -p lint:md:*",
     "lint:ts": "tslint gulpfile.ts \"gulp/**/*.ts\"",
-    "lint": "npm-run-all -p lint:*",
     "postinstall": "gitbook install",
     "prebuild": "rimraf _book dist",
     "start": "gitbook serve",
     "test": "npm run lint",
     "toc": "doctoc $(find . | grep md | grep -v 'node_modules\\|SUMMARY\\|GLOSSARY\\|LANGS\\|README\\|_TEMPLATE')"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/uncovertruth/docs.userdive.com.git"
-  },
-  "keywords": [],
-  "author": "UNCOVER TRUTH Inc.",
-  "homepage": "http://docs.userdive.com/"
+  }
 }
