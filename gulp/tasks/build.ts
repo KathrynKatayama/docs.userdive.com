@@ -10,7 +10,7 @@ gulp.task('build', function (callback: Function) {
   const cssnano: any = require('gulp-cssnano')
 
   return gulp.src(path.join(global, '_book/**'))
-    .pipe(gulpIf('*.js', uglify({preserverComments: 'some'})))
+    .pipe(gulpIf('*.js', uglify({preserveComments: 'some'})))
     .pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true})))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest(path.join(global, 'dist')))
