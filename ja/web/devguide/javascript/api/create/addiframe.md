@@ -25,7 +25,7 @@ ud("create", "[ Project Id ]", {
 
 USERDIVE では `cookie` を用いたセッション継続を行います。
 
-`addIFrame` API では、`Iframe source URL` のドメインに対して `cookie` を発行します。
+`addIFrame` API では、`Iframe source URL` のドメインに対して `cookie` を発行します。
 
 ![a2b2a](../mmd/crossdomain.mmd.png)
 
