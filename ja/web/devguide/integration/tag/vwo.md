@@ -68,6 +68,11 @@
   }
   global.ud('create', userdiveId);
   pollForReady();
-})('[Project Id]', window);
+})(
+  "[ Project Id ]",
+  window,
+  [ POLLING INTERVAL TIME ],
+  [ POLLING MAX TRY COUNT ]
+);
 </script>
 ```
