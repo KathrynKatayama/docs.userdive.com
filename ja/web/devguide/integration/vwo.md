@@ -28,9 +28,11 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 {% include './tag/vwo.min.md' %}
 
-| Field        | Type   | Required | Description                     |
-|:-------------|:-------|:---------|:--------------------------------|
-| [Project Id] | String | Yes      | USERDIVE のプロジェクトIDです。 |
+| Field                     | Type    | Required | Description                       |
+|:--------------------------|:--------|:---------|:----------------------------------|
+| [Project Id]              | String  | Yes      | USERDIVE のプロジェクトIDです。   |
+| [ POLLING INTERVAL TIME ] | Integer | No       | デフォルト 100 ミリ秒             |
+| [ POLLING MAX TRY COUNT ] | Integer | No       | 最大ポーリング回数。 デフォルト 5 |
 
 プロジェクトIDは USERDIVE より取得することができます。
 
