@@ -1,47 +1,78 @@
 ```html
 <script>
-(function (userdiveId, root) {
-  var _vis_counter = 0;
-  root._vis_opt_queue = root._vis_opt_queue || [];
-  root._vis_opt_queue.push(function () {
-    var _vis_combination;
-    var _vis_id;
-    var _vis_l = 0;
-    var url;
-    function addParam (search, param, value) {
-      if (/\?.+$/.test(search)) {
-        return search + '&' + param + '=' + value;
-      }
-      return '?' + param + '=' + value;
-    };
-    try {
-      if (!_vis_counter) {
-        for (;_vis_l < root._vwo_exp_ids.length; _vis_l++) {
-          _vis_id = root._vwo_exp_ids[_vis_l];
-          if (root._vwo_exp[_vis_id].ready) {
-            _vis_combination = root._vis_opt_readCookie('_vis_opt_exp_' + _vis_id + '_combi');
-            if (typeof (root._vwo_exp[_vis_id].combination_chosen) !== 'undefined') {
-              _vis_combination = root._vwo_exp[_vis_id].combination_chosen;
+(function (userdiveId, global, intervalTime, maxTry) {
+  var visCounter = 0;
+  var interval = intervalTime || 100;
+  var max = maxTry || 5;
+  var started = false;
+  var tryCount = 0;
+
+  function addParam (search, param, value) {
+    if (/\?.+$/.test(search)) {
+      return search + '&' + param + '=' + value;
+    }
+    return '?' + param + '=' + value;
+  }
+  function createUrl (l, id) {
+    return l.protocol + '//' + l.host + l.pathname + addParam(l.search, 'vwo', id) + l.hash;
+  }
+
+  function start (queue, vwoExpIds, vwoExp, url, visCombination, visId, i) {
+    queue.push(function () {
+      try {
+        if (!visCounter) {
+          for (i = 0; i < vwoExpIds.length; i++) {
+            visId = vwoExpIds[i];
+            if (!vwoExp[visId].ready) {
+              continue;
             }
-            if (typeof (root._vwo_exp[_vis_id].comb_n[_vis_combination]) !== 'undefined') {
-              _vis_counter++;
+            visCombination = global._vis_opt_readCookie('_vis_opt_exp_' + visId + '_combi');
+            if (typeof (vwoExp[visId].combination_chosen) !== 'undefined') {
+              visCombination = vwoExp[visId].combination_chosen;
+            }
+            if (typeof (vwoExp[visId].comb_n[visCombination]) !== 'undefined') {
+              visCounter++;
             }
           }
+          if (visCounter) {
+            url = createUrl(global.location, visCombination);
+            if (url === global.location.href) url = undefined;
+            global.ud('create', userdiveId, {
+              'overrideUrl': url
+            });
+            global.ud('analyze');
+            started = true;
+          }
         }
-        if (_vis_counter) {
-          url = root.location.protocol + '//' + root.location.host +
-            root.location.pathname +
-            addParam(root.location.search, 'vwo', _vis_combination) +
-            root.location.hash;
-          if (url === root.location.href) url = undefined;
-          root.ud('create', userdiveId, {
-            'overrideUrl': url
-          });
-          root.ud('analyze');
-        }
+      } catch (err) {};
+    });
+  }
+
+  function pollForReady () {
+    try {
+      if (tryCount < max && typeof global._vwo_exp_ids !== 'undefined' && !started) {
+        start(global._vis_opt_queue, global._vwo_exp_ids, global._vwo_exp);
+        return;
       }
-    } catch (err) {};
-  });
-})('[Project Id]', window);
+      if (started || tryCount < max) {
+        return;
+      }
+      global.ud('analyze');
+      started = true;
+    } catch (err) {} finally {
+      if (tryCount < max && !started) {
+        setTimeout(pollForReady, interval);
+      }
+      tryCount++;
+    }
+  }
+  global.ud('create', userdiveId);
+  pollForReady();
+})(
+  "[ Project Id ]",
+  window,
+  [ POLLING INTERVAL TIME ],
+  [ POLLING MAX TRY COUNT ]
+);
 </script>
 ```

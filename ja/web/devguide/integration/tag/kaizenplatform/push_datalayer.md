@@ -32,5 +32,5 @@
     });
   } catch (e) {}
 })(window);
-<script>
+</script>
 ```
