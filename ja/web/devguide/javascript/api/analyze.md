@@ -59,7 +59,7 @@ ud("analyze");
             - `create` API で適切な設定が行われなかった
             - Project ID の設定に誤りがある
         - `E_TRACK_OVER_PAGEVIEWS`
-            - 日次／月次のpageview上限に到達している
+            - 時間内／月内のpageview上限に到達している
         - `E_TRACK_EXCLUDE_IP`
             - IPが除外対象に設定されている
 - `//harpoon3.userdive.com/v2/events`
