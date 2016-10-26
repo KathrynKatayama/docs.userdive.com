@@ -2,7 +2,7 @@
 
 USERDIVE では、 iframe を用いたセッション継続のAPIを提供します。
 
-[(examples)](http://uncovertruth.github.io/examples/gtm/iframe/)
+[(examples)](http://uncovertruth.github.io/examples/t/iframe/)
 
 ## `addIframe` API
 

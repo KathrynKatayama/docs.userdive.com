@@ -1,6 +1,6 @@
 # URL パラメーターを用いたセッション継続
 
-[(examples)](https://uncovertruth.github.io/examples/gtm/autolink/ssl.html)
+[(examples)](https://uncovertruth.github.io/examples/t/autolink/ssl.html)
 
 `sslAutolink` API を用いて、セッション継続を行うことが出来ます。
 
