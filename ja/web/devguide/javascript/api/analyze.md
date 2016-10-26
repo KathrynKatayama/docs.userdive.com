@@ -47,4 +47,22 @@ ud("analyze");
 
 ## sequence diagram
 
+`analyze` API では二種類のAPI通信が行われます。
+
+- `//harpoon3.userdive.com/v2/ping`
+    - `analyze` を実行し、設定確認・計測開始を行います。
+    - 設定の例外には下記のようなものがあります。
+        - `E_TRACK_SET_NOT_TRACKING_TARGET`
+            - DOMAINのstatusが0、もしくは有効なDomainが見つからなかった
+        - `E_TRACK_PARAM_NOT_ENOUGH`
+        - `E_TRACK_PROJECT_NOT_FOUND`
+            - `create` API で適切な設定が行われなかった
+            - Project ID の設定に誤りがある
+        - `E_TRACK_OVER_PAGEVIEWS`
+            - 時間内／月内のpageview上限に到達している
+        - `E_TRACK_EXCLUDE_IP`
+            - IPが除外対象に設定されている
+- `//harpoon3.userdive.com/v2/events`
+    - 取得したイベント・ユーザー情報を送信する
+
 ![sequence](./mmd/analyze.mmd.png)
