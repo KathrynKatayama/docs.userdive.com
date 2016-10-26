@@ -1,6 +1,6 @@
 # `sessionIgnores` API
 
-[(examples)](http://uncovertruth.github.io/examples/gtm/iframe/)
+[(examples)](http://uncovertruth.github.io/examples/t/iframe/)
 
 `sessionIgnores` API には、セッションを継続を許可するドメインを、複数指定することが可能です。
 
