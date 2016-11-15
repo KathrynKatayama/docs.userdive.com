@@ -3,7 +3,8 @@
 `create` API can set virtual page URL.
 It is possible to specify one virtual page for one URL.
 
-This URL is used for collecting the customer's site information which is necessary to analyze in the USERDIVE by crawler can access by `GET` request.
+This URL is used for collecting the customer's site information
+which is necessary to analyze in the USERDIVE by crawler can access by `GET` request.
 
 When End user is accessed, tracker does not issue request for this URL.
 
