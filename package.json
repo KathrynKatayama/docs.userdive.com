@@ -9,6 +9,7 @@
     "@types/gulp-if": "0.0.30",
     "@types/gulp-uglify": "0.0.29",
     "@types/node": "^7.0.3",
+    "@uncovertruth/textlint-config-en": "^0.0.2",
     "@uncovertruth/textlint-config-ja": "^0.0.12",
     "@uncovertruth/tslint-config": "^1.0.0",
     "doctoc": "^1.2.0",
@@ -42,6 +43,7 @@
   "scripts": {
     "build": "npm run toc && gitbook build && find _book -type l -delete && gulp build",
     "lint": "npm-run-all -p lint:*",
+    "lint:en": "textlint --cache -c @uncovertruth/textlint-config-en en",
     "lint:ja": "textlint --cache -c @uncovertruth/textlint-config-ja ja",
     "lint:md": "npm-run-all -p lint:md:*",
     "lint:md:en": "markdownlint en",
