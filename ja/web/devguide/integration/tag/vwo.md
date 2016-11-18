@@ -2,8 +2,8 @@
 <script>
 (function (userdiveId, global, intervalTime, maxTry) {
   var visCounter = 0;
-  var interval = intervalTime || 100;
-  var max = maxTry || 5;
+  var interval = intervalTime || 200;
+  var max = maxTry || 10;
   var started = false;
   var tryCount = 0;
 
