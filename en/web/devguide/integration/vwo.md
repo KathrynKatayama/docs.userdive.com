@@ -29,11 +29,11 @@ and before the end `</head>` tag of your website code.
 
 {% include './tag/vwo.min.md' %}
 
-| Field                     | Type    | Required | Description                                   |
-|:--------------------------|:--------|:---------|:----------------------------------------------|
-| [Project Id]              | String  | Yes      | Project ID for USERDIVE                       |
-| [ POLLING INTERVAL TIME ] | Integer | No       | Default 100 millisecounds                     |
-| [ POLLING MAX TRY COUNT ] | Integer | No       | 5 Maximum numbers of polling: Default 5 times |
+| Field                     | Type    | Required | Description                                     |
+|:--------------------------|:--------|:---------|:------------------------------------------------|
+| [Project Id]              | String  | Yes      | Project ID for USERDIVE                         |
+| [ POLLING INTERVAL TIME ] | Integer | No       | Default 200 millisecounds                       |
+| [ POLLING MAX TRY COUNT ] | Integer | No       | 10 Maximum numbers of polling: Default 10 times |
 
 Project ID can be found on USERDIVE.
 
