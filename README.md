@@ -20,11 +20,11 @@ CiecleCi acts for you
 
 ## Auther
 
-Uncovertruth Co., Ltd
+UNCOVER TRUTH Inc.
 
 [david-dm-image]: https://david-dm.org/uncovertruth/docs.userdive.com.svg
 [david-dm-url]: https://david-dm.org/uncovertruth/docs.userdive.com
 [dev-david-dm-image]: https://david-dm.org/uncovertruth/docs.userdive.com/dev-status.svg
-[dev-david-dm-url]: https://david-dm.org/uncovertruth/docs.userdive.com#info=devDependencies
+[dev-david-dm-url]: https://david-dm.org/uncovertruth/docs.userdive.com?type=dev
 [circie-image]: https://circleci.com/gh/uncovertruth/docs.userdive.com/tree/master.svg?style=svg&circle-token=79ced5584386e0858dc73acb6be688ca99055a52
 [circie-url]: https://circleci.com/gh/uncovertruth/docs.userdive.com/tree/master
