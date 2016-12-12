@@ -31,6 +31,7 @@
         - アプリへの組み込み
             - [CocoaPodsでインストール](./apps/devguide/integration.md)
             - [手動でインストール](./apps/devguide/integration_manual.md)
+            - [Swiftへの組込](./apps/devguide/integration_swift.md)
         - SDKの実行
             - [デベロッパモード](./apps/devguide/sdk_mode_dev.md)
             - [トラッキングモード](./apps/devguide/sdk_mode_tracking.md)
