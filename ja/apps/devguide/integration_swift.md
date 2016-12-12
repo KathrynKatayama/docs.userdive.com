@@ -18,8 +18,8 @@ Swift環境で利用するためにはブリッジングヘッダーを作成す
 #endif /* AppName_Bridging_Header_h */
 ```
 
-次に、プロジェクトでブリッジングヘッダーを参照するため *Project -> 
-Build Settings -> Objective-C Bridging Header* に 
+次に、プロジェクトでブリッジングヘッダーを参照するため *Project ->
+Build Settings -> Objective-C Bridging Header* に
 `$(SRCROOT)/AppName/AppName_Bridging_Header.h` と記述してください。
 
 ![bridging header build settings](../files/bridging_build_settings.png)
