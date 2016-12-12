@@ -19,8 +19,9 @@ Swift環境で利用するためにはブリッジングヘッダーを作成す
 ```
 
 次に、プロジェクトでブリッジングヘッダーを参照するため *Project ->
-Build Settings -> Objective-C Bridging Header* に
-`$(SRCROOT)/AppName/AppName_Bridging_Header.h` と記述してください。
+Build Settings -> Objective-C Bridging Header* を設定します。
+
+設定内容は `$(SRCROOT)/AppName/AppName_Bridging_Header.h` としてください。
 
 ![bridging header build settings](../files/bridging_build_settings.png)
 
