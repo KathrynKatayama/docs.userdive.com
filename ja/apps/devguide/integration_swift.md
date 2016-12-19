@@ -9,7 +9,7 @@ Swift環境で利用するためにはブリッジングヘッダーを作成す
 
 次の内容を書き込みます（ `AppName` の部分は自身のアプリ名に置き換えてください）。
 
-```objectivec
+```c
 #ifndef AppName_Bridging_Header_h
 #define AppName_Bridging_Header_h
 
