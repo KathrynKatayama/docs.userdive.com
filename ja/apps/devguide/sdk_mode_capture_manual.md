@@ -83,7 +83,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```swift
 override func viewDidAppear(animated: Bool) {
   super.viewDidAppear(animated)
- 
+
   Userdive.updateScreen()
   Userdive.setScreenName("screen A")
 }
