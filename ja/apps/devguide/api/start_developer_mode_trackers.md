@@ -8,6 +8,18 @@
 
 ## 使い方
 
+任意のトラッカーを指定してキャプチャを実行することが出来る。
+指定可能なトラッカーは以下の通り。
+
+| ID | トラッカ            | 機能                                |
+|:---|:--------------------|:---------------------------------|
+| 0  | ScreenEventTracker  | 画面遷移                           |
+| 1  | RotateEventTracker  | 回転イベント (portrait / landscape) |
+| 2  | InputEventTracker   | キーボード入力                      |
+| 3  | GestureEventTracker | ジェスチャ入力                      |
+
+### Objective-C
+
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,14 +37,18 @@
 }
 ```
 
-指定可能なトラッカーは以下の通り。
+### Swift
 
-| ID | トラッカ            | 機能                                |
-|:---|:--------------------|:------------------------------------|
-| 0  | ScreenEventTracker  | 画面遷移                            |
-| 1  | RotateEventTracker  | 回転イベント (portrait / landscape) |
-| 2  | InputEventTracker   | キーボード入力                      |
-| 3  | GestureEventTracker | ジェスチャ入力                      |
+```swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // 起動したい任意のトラッカーを指定する
+    let trackers = [1, 2, 3]
+    
+    // Team IDを引数として渡す
+    Userdive.startDeveloperMode(123, trackers: trackers)
+    return true
+}
+```
 
 ## 制限
 

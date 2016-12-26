@@ -8,10 +8,20 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [Userdive webViewDidFinishLoad:webView];
+}
+```
+
+### Swift
+
+```swift
+func webViewDidFinishLoad(webView: UIWebView) {
+    Userdive.webViewDidFinishLoad(webView)
 }
 ```
 

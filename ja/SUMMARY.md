@@ -36,12 +36,13 @@
             - [Swiftへの組込](./apps/devguide/integration_swift.md)
         - SDKの実行
             - [キャプチャの取得](./apps/devguide/sdk_mode_capture.md)
-                - [自動キャプチャ取得](./apps/devguide/sdk_mode_dev_automatic.md)
-                - [手動でのキャプチャ取得](./apps/devguide/sdk_mode_dev_manual.md)
+                - [自動キャプチャ取得](./apps/devguide/sdk_mode_capture_automatic.md)
+                - [手動キャプチャ取得](./apps/devguide/sdk_mode_capture_manual.md)
+            	- [キャプチャ動作確認](./apps/devguide/sdk_mode_capture_verification.md)
             - [トラッキング](./apps/devguide/sdk_mode_tracking.md)
-        - 動作確認
-            - [デベロッパモード](./apps/devguide/sdk_verification_dev.md)
-            - [トラッキングモード](./apps/devguide/sdk_verification_tracking.md)
+                - [自動トラッキング](./apps/devguide/sdk_mode_tracking_automatic.md)
+                - [手動トラッキング](./apps/devguide/sdk_mode_tracking_manual.md)
+            	- [トラッキング動作確認](./apps/devguide/sdk_mode_tracking_verification.md)
     - 仕様
         - [トラッキングデータ詳細](./apps/devguide/tracking_data.md)
     - API

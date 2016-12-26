@@ -8,10 +8,20 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (IBAction)resumeButtonTapped:(id)sender
 {
     [Userdive resume];
+}
+```
+
+### Swift
+
+```swift
+func resumeButtonTapped(sender: AnyObject) {
+    Userdive.resume()
 }
 ```
 

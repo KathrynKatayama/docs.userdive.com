@@ -8,11 +8,22 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
-- (void)viewWillAppear:(id)sender
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:sender];
+    [super viewWillAppear:animated];
     [Userdive setScreenName:@"TutorialScreen 1"];
+}
+```
+
+### Swift
+
+```swift
+func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    Userdive.setScreenName("TutorialScreen 1")
 }
 ```
 

@@ -8,6 +8,8 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -17,6 +19,17 @@
     [Userdive setCustomField1:@"male"];
     [Userdive setCustomField2:@"33"];
     return YES;
+}
+```
+
+### Swift
+
+```swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    Userdive.startTrackingMode(123)
+    Userdive.setCustomField1("male")
+    Userdive.setCustomField1("33")
+    return true
 }
 ```
 

@@ -8,10 +8,20 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (IBAction)pauseButtonTapped:(id)sender
 {
     [Userdive pause];
+}
+```
+
+### Swift
+
+```swift
+func pauseButtonTapped(sender: AnyObject) {
+    Userdive.pause()
 }
 ```
 
