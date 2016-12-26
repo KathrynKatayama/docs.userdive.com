@@ -27,8 +27,8 @@
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     let location = locations[0]
-    
-    Userdive.setLatitude(location.coordinate.latitude, 
+
+    Userdive.setLatitude(location.coordinate.latitude,
                          longitude: location.coordinate.longitude,
                          horizontalAccuracy: location.horizontalAccuracy,
                          verticalAccuracy: location.verticalAccuracy)

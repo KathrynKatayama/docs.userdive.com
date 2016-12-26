@@ -3,7 +3,6 @@
 ビューの切替をSDK任せではなく手動で行う方法です。
 自動取得がうまくいかない場合にはこちらの方法を検討してください。
 
-
 ## 組込手順
 
 ### Objective-C
@@ -40,8 +39,6 @@ USERDIVE iOS SDKヘッダーをインポートします。
 アプリケーション上で `Userdive:updateScreen` を呼び出すと、
 ビューが変更されたことをSDKに通知します。
 
-
-
 画面キャプチャを取得したい画面が表示されたら、次のようにメソッドを呼び出してください。
 
 - `updateScreen`を呼び出すと、画面キャプチャ取得の準備を行います
@@ -59,7 +56,7 @@ USERDIVE iOS SDKヘッダーをインポートします。
 
 ### Swift
 
-`AppDelegate.swift` 内に 
+`AppDelegate.swift` 内に
 `Userdive.startDeveloperMode(<YOUR_TEAM_ID>, trackers: [Int])`
 を追加します。`trackers`の引数に注意してください。
 また、 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
@@ -86,7 +83,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```swift
 override func viewDidAppear(animated: Bool) {
   super.viewDidAppear(animated)
-  
+ 
   Userdive.updateScreen()
   Userdive.setScreenName("screen A")
 }

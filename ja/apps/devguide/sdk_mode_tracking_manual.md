@@ -66,7 +66,7 @@ USERDIVE iOS SDKのヘッダーをインポートします。
 
 ### Swift
 
-`AppDelegate.swift` 内に 
+`AppDelegate.swift` 内に
 `Userdive.startTrackingMode(<YOUR_TEAM_ID>, trackers: [Int])`
 を追加します。`trackers`の引数に注意してください。
 また、 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
@@ -89,7 +89,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```swift
 override func viewDidAppear(animated: Bool) {
   super.viewDidAppear(animated)
-  
+
   Userdive.updateScreen()
   Userdive.setScreenName("screen A")
 }

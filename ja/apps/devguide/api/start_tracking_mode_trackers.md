@@ -18,7 +18,6 @@
 | 2  | InputEventTracker   | キーボード入力                      |
 | 3  | GestureEventTracker | ジェスチャ入力                      |
 
-
 ### Objective-C
 
 ```objective-c
@@ -44,7 +43,7 @@
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // 起動したい任意のトラッカーを指定する
     let trackers = [1, 2, 3]
-    
+
     // Team IDを引数として渡す
     Userdive.startTrackingMode(123, trackers: trackers)
     return true

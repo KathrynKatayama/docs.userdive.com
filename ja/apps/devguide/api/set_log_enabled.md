@@ -31,7 +31,6 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 }
 ```
 
-
 ## 制限
 
 なし。

@@ -38,11 +38,11 @@
             - [キャプチャの取得](./apps/devguide/sdk_mode_capture.md)
                 - [自動キャプチャ取得](./apps/devguide/sdk_mode_capture_automatic.md)
                 - [手動キャプチャ取得](./apps/devguide/sdk_mode_capture_manual.md)
-            	- [キャプチャ動作確認](./apps/devguide/sdk_mode_capture_verification.md)
+                - [キャプチャ動作確認](./apps/devguide/sdk_mode_capture_verification.md)
             - [トラッキング](./apps/devguide/sdk_mode_tracking.md)
                 - [自動トラッキング](./apps/devguide/sdk_mode_tracking_automatic.md)
                 - [手動トラッキング](./apps/devguide/sdk_mode_tracking_manual.md)
-            	- [トラッキング動作確認](./apps/devguide/sdk_mode_tracking_verification.md)
+                - [トラッキング動作確認](./apps/devguide/sdk_mode_tracking_verification.md)
     - 仕様
         - [トラッキングデータ詳細](./apps/devguide/tracking_data.md)
     - API

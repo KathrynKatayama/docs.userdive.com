@@ -43,7 +43,7 @@
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // 起動したい任意のトラッカーを指定する
     let trackers = [1, 2, 3]
-    
+
     // Team IDを引数として渡す
     Userdive.startDeveloperMode(123, trackers: trackers)
     return true
