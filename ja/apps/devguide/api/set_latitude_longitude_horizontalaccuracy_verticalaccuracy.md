@@ -8,6 +8,8 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
@@ -17,6 +19,19 @@
                 longitude:location.coordinate.longitude
        horizontalAccuracy:location.horizontalAccuracy
          verticalAccuracy:location.verticalAccuracy];
+}
+```
+
+### Swift
+
+```swift
+func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let location = locations[0]
+
+    Userdive.setLatitude(location.coordinate.latitude,
+                         longitude: location.coordinate.longitude,
+                         horizontalAccuracy: location.horizontalAccuracy,
+                         verticalAccuracy: location.verticalAccuracy)
 }
 ```
 

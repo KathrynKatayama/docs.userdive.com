@@ -8,11 +8,22 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (void)viewDidAppear:(BOOL) animated
 {
     [super viewDidAppear:animated];
     [Userdive updateScreen];
+}
+```
+
+### Swift
+
+```swift
+func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    Userdive.updateScreen()
 }
 ```
 

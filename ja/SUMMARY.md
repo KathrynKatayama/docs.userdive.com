@@ -24,19 +24,25 @@
         - [VWO](./web/devguide/integration/vwo.md)
 - [アプリ解析](./apps/README.md)
     - SDK導入ガイド
-        - [対応機種、制限、SDKの基本動作](./apps/guide/precheck.md)
-        - [アカウント登録](./apps/guide/signup_account.md)
-        - [チームIDの取得とアプリの登録](./apps/guide/prepare.md)
+        - [対応機種](./apps/guide/sdk_supported_devices.md)
+        - [制限事項](./apps/guide/sdk_limitations.md)
+        - [SDKのライフサイクル](./apps/guide/sdk_lifecycle.md)
+        - [アカウント登録](./apps/guide/user_registration.md)
+        - [チームIDの取得とアプリの登録](./apps/guide/app_registration.md)
     - 開発ガイド
         - アプリへの組み込み
-            - [CocoaPodsでインストール](./apps/devguide/integration.md)
+            - [CocoaPodsでインストール (推奨)](./apps/devguide/integration_cocoapods.md)
             - [手動でインストール](./apps/devguide/integration_manual.md)
+            - [Swiftへの組込](./apps/devguide/integration_swift.md)
         - SDKの実行
-            - [デベロッパモード](./apps/devguide/sdk_mode_dev.md)
-            - [トラッキングモード](./apps/devguide/sdk_mode_tracking.md)
-        - 動作確認
-            - [デベロッパモード](./apps/devguide/sdk_verification_dev.md)
-            - [トラッキングモード](./apps/devguide/sdk_verification_tracking.md)
+            - [キャプチャの取得](./apps/devguide/sdk_mode_capture.md)
+                - [自動キャプチャ取得](./apps/devguide/sdk_mode_capture_automatic.md)
+                - [手動キャプチャ取得](./apps/devguide/sdk_mode_capture_manual.md)
+                - [キャプチャ動作確認](./apps/devguide/sdk_mode_capture_verification.md)
+            - [トラッキング](./apps/devguide/sdk_mode_tracking.md)
+                - [自動トラッキング](./apps/devguide/sdk_mode_tracking_automatic.md)
+                - [手動トラッキング](./apps/devguide/sdk_mode_tracking_manual.md)
+                - [トラッキング動作確認](./apps/devguide/sdk_mode_tracking_verification.md)
     - 仕様
         - [トラッキングデータ詳細](./apps/devguide/tracking_data.md)
     - API

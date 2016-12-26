@@ -8,12 +8,24 @@
 
 ## 使い方
 
+### Objective-C
+
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Team IDを引数として渡す
     [Userdive startDeveloperMode:123];
     return YES;
+}
+```
+
+### Swift
+
+```swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // Team IDを引数として渡す
+    Userdive.startDeveloperMode(123)
+    return true
 }
 ```
 
