@@ -42,9 +42,7 @@ YourProject はアプリケーション名によって違いますが、Podfile�
 自動生成した場合には自動で設定されています。`# Pods for YourProject` の次の行に
 Userdive-iOS-SDKの行を追加します。
 
-[Podsのインストールへ](#pods&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;)
-
-## インストール
+## CocoaPods管理のライブラリーのインストール
 
 Podfileで定義したライブラリー群をインストールします。
 
