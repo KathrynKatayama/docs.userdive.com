@@ -5,9 +5,9 @@
  組込対象のアプリで下記のいずれかをMethod swizzlingを使用している場合は
 「手動で画面遷移を管理し、トラッキングする」の節に従い組込を行なってください
 
-- UIApplication:sendEvent:
-- UIViewController:viewDidAppear:
-- UIViewController:viewWillDisappear:
+- `UIApplication:sendEvent:`
+- `UIViewController:viewDidAppear:`
+- `UIViewController:viewWillDisappear:`
 
 USERDIVE iOS SDKはユーザーのジェスチャや画面遷移を自動的に認識してトラッキングすることができます。
 トラッキングを開始するには `startTrackingMode:` メソッドを呼び出します。
