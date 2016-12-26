@@ -1,8 +1,10 @@
 # 手動で画面遷移を管理し、トラッキングする
 
-UIWindow上に直接ビューオブジェクトを配置する場合など、
-UINavigationControllerやUITabBarControllerを使用せずに
-画面内容が切り替わる場合、手動で画面切替を行う必要があります。
+UIWindow上に直接ビューオブジェクトを配置する
+場合など、 UINavigationControllerや
+UITabBarControllerを使用せずに 画面内容が
+切り替わる場合、手動で画面切替を行う必要が
+あります。
 
 ## トラッカーの種類
 

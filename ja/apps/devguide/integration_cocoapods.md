@@ -46,7 +46,7 @@ Userdive-iOS-SDKの行を追加します。
 
 ## インストール
 
-Podfileで定義したライブラリ群をインストールします。
+Podfileで定義したライブラリー群をインストールします。
 
 ```sh
 pod install
