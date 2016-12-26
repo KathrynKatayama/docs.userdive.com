@@ -14,11 +14,11 @@ USERDIVE iOS SDKヘッダーをインポートします。
 ```
 
 `AppDeletegate:application:didFinishLaunchingWithOptions:`
-に下記の例に従い
+内でSDK開始メソッドを呼び出します。
+手動でキャプチャを行うために、下記の例のように
 `Userdive:startDeveloperMode:trackers:`
 を追加します。
-`trackers`の引数に注意してください。
-また、 `<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
+`<YOUR_TEAM_ID>` にはあなたのチームIDを入れてください。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
