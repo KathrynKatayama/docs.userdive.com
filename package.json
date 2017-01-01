@@ -22,7 +22,7 @@
     "gulp-uglify": "^2.0.0",
     "markdownlint-cli": "^0.2.0",
     "mermaid": "^6.0.0",
-    "npm-run-all": "^3.1.2",
+    "npm-run-all": "^4.0.0",
     "require-dir": "^0.3.1",
     "rimraf": "^2.5.4",
     "textlint": "^7.2.0",
