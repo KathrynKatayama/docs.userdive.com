@@ -40,7 +40,7 @@ USERDIVE iOS SDKヘッダーをインポートします。
   [Userdive setLogEnabled:YES];
 
   // START DEVELOPER MODE
-  [Userdive startDeveloperMode:<your team id>];
+  [Userdive startDeveloperMode:YOUR_TEAM_ID];
 
   return YES;
 }
@@ -57,7 +57,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
   Userdive.setLogEnabled(true)
 
   // START DEVELOPER MODE
-  Userdive.startDeveloperMode(TEAM_ID)
+  Userdive.startDeveloperMode(YOUR_TEAM_ID)
   return true
 }
 ```
