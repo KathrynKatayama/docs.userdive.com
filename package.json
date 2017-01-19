@@ -10,7 +10,7 @@
     "@types/gulp-uglify": "0.0.29",
     "@types/node": "^7.0.0",
     "@uncovertruth/textlint-config-ja": "^0.0.12",
-    "@uncovertruth/tslint-config": "^0.0.2",
+    "@uncovertruth/tslint-config": "^1.0.0",
     "doctoc": "^1.2.0",
     "ghpages": "0.0.8",
     "gitbook-cli": "^2.3.0",
