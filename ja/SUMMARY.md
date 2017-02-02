@@ -17,6 +17,7 @@
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
+        - [DLPO](./web/devguide/integration/dlpo.md)
         - [Kaizen Platform](./web/devguide/integration/kaizenplatform/README.md)
             - [Google Tag Managerを利用する](./web/devguide/integration/kaizenplatform/gtm.md)
             - [HTMLを編集する](./web/devguide/integration/kaizenplatform/simple.md)
