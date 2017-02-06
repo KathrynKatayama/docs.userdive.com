@@ -2,7 +2,7 @@
 
 下記の手順を用いて、 USERDIVE にテスト情報を引き渡すことができます。
 
-- [(example)](http://hashimoto.data-artist.info/test/userdive_test.html)
+- [(example)](http://www.data-artist.info/userdive/userdive.html)
 
 ## HTML の編集
 
@@ -14,7 +14,7 @@
 
 ### DLPO タグ
 
-DLPO の通常のタグの反映が必要です。
+DLPOサーバーと通信を行うJSファイルを読み込むタグの反映が必要です。
 
 ### USERDIVE ロードタグ
 
@@ -40,16 +40,14 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 上記のコードで行われる主な処理は下記の2つです。
 
-1. DLPO がA/Bテストの結果を確定する。
-1. 確定された情報を USERDIVE に設定し、 USERDIVE の計測を開始する。
+1. DLPO で実施したA/Bテストの確定情報が USERDIVE に設定される。
+1. DLPO から送信された情報を USERDIVE に設定し、USERDIVE の計測を開始する。
 
 DLPO/USERDIVE 連携タグは `</body>` の直前に反映させることを推奨しています。
 
 ## 注意点
 
-- DLPO/USERDIVE 連携は、DLPO管理画面よりキャンペーンを有効にしてください。
-
+- DLPO/USERDIVE 連携をご利用の際は、DLPO管理画面のキャンペーンメニューより【USERDIVE連携】を有効にしてください。
 - DLPO/USERDIVE 連携タグは、下記の2つのタグよりも後に存在する必要があります。
-
     1. DLPO タグ
     1. USERDIVE ロードタグ
