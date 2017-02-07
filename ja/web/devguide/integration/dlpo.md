@@ -40,8 +40,8 @@ USERDIVE ロードタグは `</head>` の直前に反映させることを推奨
 
 上記のコードで行われる主な処理は下記の2つです。
 
-1. DLPO で実施したA/Bテストの確定情報が USERDIVE に設定される。
-1. DLPO から送信された情報を USERDIVE に設定し、USERDIVE の計測を開始する。
+1. DLPO で実施したA/Bテストの確定情報が USERDIVE にセットされる。
+1. DLPO からセットされた情報を USERDIVE に送信し、USERDIVE の計測を開始する。
 
 DLPO/USERDIVE 連携タグは `</body>` の直前に反映させることを推奨しています。
 
