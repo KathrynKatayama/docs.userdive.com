@@ -12,7 +12,7 @@
     "@uncovertruth/textlint-config-ja": "^0.0.12",
     "@uncovertruth/tslint-config": "^1.0.0",
     "doctoc": "^1.2.0",
-    "ghpages": "0.0.9",
+    "ghpages": "0.0.10",
     "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
