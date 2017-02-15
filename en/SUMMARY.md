@@ -17,6 +17,7 @@
         - [setCustomVar](./web/devguide/javascript/api/setcustomvar.md)
         - [changeVirtualUrl](./web/devguide/javascript/api/changevirtualurl.md)
     - Integration
+        - [DLPO](./web/devguide/integration/dlpo.md)
         - [Optimizely](./web/devguide/integration/optimizely.md)
         - [VWO](./web/devguide/integration/vwo.md)
 - [App analytics](./apps/README.md)
